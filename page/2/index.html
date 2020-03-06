@@ -128,70 +128,6 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-03-06T14:40:00.382Z">2020-03-06</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/%E5%8D%8E%E4%B8%BA%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/">华为刷机教程</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    4 分钟 读完 (大约 599 个字)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2020/03/06/%E5%8D%8E%E4%B8%BAE83272h-155-nv%E4%BF%A1%E6%81%AF%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B/">华为E83272h-155IMEISNMACSSIDWIFI密码webui版本修复</a>
-            
-        </h1>
-        <div class="content">
-            <p>华为E8372h-155的设备如果乱用usbloader.bin来刷机，会丢失IMEI/SN/MAC/SSID/WIFI密码甚至是webui version，前面这几个小问题很容易就解决，后面的WEBUI版本就是了会无法刷入其他单独的WEBUI，而且会影响到系统检测升级，导致无法获取最新版本。如下图：</p>
-<p>huawei webui version变为了 00.00.00.000.03</p>
-<p>华为E83272h-155IMEI/SN/MAC/SSID/WIFI密码/webui版本修复</p>
-<hr>
-<p>当你降级或者救砖后，华为E8372h-55降级救砖教程 设备重启后，两个端口还在，打开终端或者putty，我是比较喜欢终端，你也可以用dcunlock，用下面的命令结合自己的设备信息，重写信息即可。</p>
-<p>华为E83272h-155IMEI/SN/MAC/SSID/WIFI密码/webui版本修复</p>
-<p>参考命令</p>
-<p>AT ^ PHYNUM = IMEI, 你的imei<br>AT ^ SN = 你的sn<br>AT ^ PHYNUM = MACWLAN, 888888888888 (像888….这种，不带任何符号)<br>AT ^ SSID = 0, “HUAWEI-后面的随便”<br>AT ^ WIKEY = 0, “密码随便写”</p>
-<p>缺什么补什么，每输一次，显示ok就可以了</p>
-<p>保存与覆盖</p>
-<p>AT^INFORBU</p>
-<p>重启（如果丢失webui，请不要使用此命令，等修复webui使用或者手动拔掉设备也是同样效果）</p>
-<p>AT^RESET</p>
-<p>——————————————–修复webui版本————————————————-</p>
-<p>webui丢失，这个比较难想到办法，单独刷webui会被系统报错（最终明白了，因为有usblsafe，原来的信息是无法覆盖），华为是根据设备信息来升级降级的，如果丢失了或者不对的话都直接报错，无法单独刷webui。</p>
-<p>首先必须用usbloader-E8372h-155.bin，usblodaer这种引导会清空NV信息，把原来错误的webui信息清除，接着进刷机模式，刷入一个固件，先不要乱动，等重启查看两个端口是否还在，还在的话之后马上打开Update_WEBUI_21.100.32.00.233_NE5.exe单独刷入webui即可（如果失败可以试2次左右，不行就从usbloder再来一次）。</p>
-<p>华为E83272h-155IMEI/SN/MAC/SSID/WIFI密码/webui版本修复</p>
-<p>简单来说就是刷USBloader，会自动进刷机模式再刷固件，再单独刷一个webui就可以解决的。</p>
-<p>华为E83272h-155IMEI/SN/MAC/SSID/WIFI密码/webui版本修复</p>
-
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    
-<div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
                 <time class="level-item has-text-grey" datetime="2020-03-06T14:40:00.115Z">2020-03-06</time>
                 
                 <div class="level-item">
@@ -608,7 +544,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    1 分钟 读完 (大约 204 个字)
+                    2 分钟 读完 (大约 336 个字)
                 </span>
                 
                 
@@ -621,29 +557,37 @@
             
         </h1>
         <div class="content">
-            <p>第一步：</p>
+            <p><strong>第一步：</strong></p>
 <ol>
-<li><p>在u盘新建一个文件夹为：upgrade</p>
-</li>
-<li><p>将固件拷贝到 upgrade的文件夹里，固件必须重命名为：update.bin</p>
-</li>
-<li><p>接着，将U盘插入到盒子后面的usb接口。</p>
+<li><p>在u盘新建一个文件夹为：</p>
+<p>   upgrade</p>
 </li>
 </ol>
+<ol start="2">
+<li><p>将固件拷贝到 upgrade的文件夹里，固件必须重命名为：</p>
+<p>   update.bin</p>
+</li>
+</ol>
+<ol start="3">
+<li>接着，将U盘插入到盒子后面的usb接口。</li>
+</ol>
 <hr>
-<p>第二步：</p>
+<p><strong>第二步：</strong></p>
 <p>1.打开盒子，稍等一会，系统会弹出升级提示，点击确定。</p>
+<p><img src="/2020/03/06/%E5%8D%8E%E4%B8%BA%E8%8D%A3%E8%80%80%E7%9B%92%E5%AD%90pro%E5%9B%BA%E4%BB%B6hitv-m1%E9%99%8D%E7%BA%A7%E6%95%99%E7%A8%8B/%E5%BC%B9%E5%87%BA%E5%8D%87%E7%BA%A7%E7%95%8C%E9%9D%A2.jpg" alt="此图为原创，网上均为盗图"></p>
 <p>2.等待关机重启，自动升级</p>
-<hr>
-<p>第三步：</p>
+<h2 id><a href="#" class="headerlink" title></a><img src="/2020/03/06/%E5%8D%8E%E4%B8%BA%E8%8D%A3%E8%80%80%E7%9B%92%E5%AD%90pro%E5%9B%BA%E4%BB%B6hitv-m1%E9%99%8D%E7%BA%A7%E6%95%99%E7%A8%8B/%E6%AD%A3%E5%9C%A8%E5%8D%87%E7%BA%A7.jpg" alt="此图为原创，网上均为盗图"></h2><p><strong>第三步：</strong></p>
 <ol>
 <li>升级后，盒子会自动重启，开机后还会默认弹出升级，请取消，然后断电拔掉U盘即可。</li>
 </ol>
 <hr>
-<p>注意事项：</p>
+<p><strong>注意事项：</strong></p>
 <p>在升级完成或升级异常之前，不要移除U盘。</p>
 <p>升级过程中如果出现断电情况，则尝试再次使用U盘升级。</p>
 <p>升级后成功后拔出U盘。</p>
+<hr>
+<p><strong>升级/降级失败的解决方法：</strong></p>
+<p>  把U盘/内存卡，格式化成fat32格式的，不要用电脑自带的格式化工具，一定要用第三方工具，或者用手机格式化U盘/内存卡。</p>
 
         </div>
         
@@ -690,11 +634,16 @@
         </h1>
         <div class="content">
             <p>QPST_2.7.474.zip 高通刷机救砖工具     </p>
-<pre><code>下载地址：www.lanzous.com/i3eh27i</code></pre><p>QUD.WIN.1.1+Installer-10040.5.zip 高通通用usb驱动，模式必须为高通模式</p>
-<pre><code>下载地址：www.lanzous.com/i3eh2ub</code></pre><p>MZTOOL-1.2.1a.zip 用于计算NV值的工具</p>
-<pre><code>下载地址： www.lanzous.com/i3eh11g</code></pre><p>高通mdm平台at命令手册.pdf，用于at调试的参考（域格）    </p>
-<pre><code>下载地址： www.lanzous.com/i3eh0sh</code></pre><p>中兴MF253S刷机工具    </p>
-<pre><code>下载地址：www.lanzous.com/i4l1hkd</code></pre>
+<pre><code>下载地址：www.lanzous.com/i3eh27i</code></pre><hr>
+<p>QUD.WIN.1.1+Installer-10040.5.zip 高通通用usb驱动，模式必须为高通模式</p>
+<pre><code>下载地址：www.lanzous.com/i3eh2ub</code></pre><hr>
+<p>MZTOOL-1.2.1a.zip 用于计算NV值的工具</p>
+<pre><code>下载地址： www.lanzous.com/i3eh11g</code></pre><hr>
+<p>高通mdm平台at命令手册.pdf，用于at调试的参考（域格）    </p>
+<pre><code>下载地址： www.lanzous.com/i3eh0sh</code></pre><hr>
+<p>中兴MF253S刷机工具    </p>
+<pre><code>下载地址：www.lanzous.com/i4l1hkd</code></pre><hr>
+
         </div>
         
         
@@ -740,29 +689,52 @@
         </h1>
         <div class="content">
             <p> balong_flash.exe 用于刷入（原版）固件，用错会报错    </p>
-<pre><code>下载地址：www.lanzous.com/i7k703c</code></pre><p> balong_flash.exe 用于刷入（修改版）固件，用错会报错    </p>
-<pre><code>下载地址：www.lanzous.com/i333mcd</code></pre><p> balong_usbdload.exe 用于刷入引导loaderbin    </p>
-<pre><code>下载地址：www.lanzous.com/i333mde</code></pre><p> Balong_USB_Downloader_1.0.1.10.exe 用于刷入引导loaderbin</p>
-<pre><code>下载地址：www.lanzous.com/i333mef </code></pre><p> E5172sBootRomDownloadTool.exe用于刷入固件（图形化）    </p>
-<pre><code>下载地址：www.lanzous.com/i333tyh </code></pre><p> multicast_upgrade_tool.exe 用网线升级的工具    </p>
-<pre><code>下载地址：www.lanzous.com/i333u0j </code></pre><p> curl.exe用于进模式的网页工具    </p>
-<pre><code>下载地址：www.lanzous.com/i333u1a </code></pre><p> PUTTY.exe用于talent等模式调试工具    </p>
-<pre><code>下载地址：www.lanzous.com/i333u2b </code></pre><p> usblsafe_b315-b310.bin用于引导的文件（国内外310/315适用）    </p>
-<pre><code>下载地址：www.lanzous.com/i3341vc </code></pre><p> usbloader-b310.bin用于引导的文件（会清除信息，适合异常机器）    </p>
-<pre><code>下载地址：www.lanzous.com/i3341zg </code></pre><p> FC_Serial_Driver_Setup.exe 华为FC-PC下载模式端口驱动    </p>
-<pre><code>下载地址：www.lanzous.com/i3350ja</code></pre><p>HUAWEI_DataCard_Driver(此驱动更新了，比教程写的会新一些，不用介意版本) 华为3G-PC模式端口驱动    </p>
-<pre><code>下载地址：www.lanzous.com/i94seje</code></pre><p>进模式.bat 用于进模式的命令，与curl.exe需在同一文件夹    </p>
-<pre><code>下载地址：www.lanzous.com/i3eggxc</code></pre><p> 进模式.xml 用于进模式的文件，与curl.exe需在同一文件夹    </p>
-<pre><code>下载地址：www.lanzous.com/i3egjpc</code></pre><p> 华为at命令手册.pdf，用于at各种调试    </p>
-<pre><code>下载地址：www.lanzous.com/i3egjna </code></pre><p>B315修复工具，用于修复B315不开机等情况     </p>
-<pre><code>下载地址：www.lanzous.com/i3egjif</code></pre><p>B315修复坏块.txt 用于擦写分区的命令说明    </p>
-<pre><code>下载地址：www.lanzous.com/i3egj8f</code></pre><p> fastboot-b315-baderase.bin，用于修复不开机，使用usbloader方法让机器变fastboot模式刷入    </p>
-<pre><code>下载地址：www.lanzous.com/i3egs1c</code></pre><p> Fix.bin 用于修复B310不开机，使用usbloader方法刷入    </p>
-<pre><code>下载地址：www.lanzous.com/i3egsbc</code></pre><p>WIN8/10不认usb注册表，适合电脑白痴-不会另存为reg文件</p>
-<pre><code>下载地址：www.lanzous.com/i3s3jud</code></pre><p>MobileBrServ.zip，E系列机器自带的，普通上网的驱动    </p>
-<pre><code>下载地址：www.lanzous.com/i6xy9yb</code></pre><p>dc-unlocker2client_1277.rar，用于打开端口与命令的工具    </p>
-<pre><code>下载地址：www.lanzous.com/i75vy2j</code></pre><p>产线驱动_2.78.11.00.rar，E系列机器自带的，普通上网的驱动    </p>
-<pre><code>下载地址：www.lanzous.com/i83ujza</code></pre><p>本文资料未经过本人同意，已被某些网站恶意转载。</p>
+<pre><code>下载地址：www.lanzous.com/i7k703c</code></pre><hr>
+<p> balong_flash.exe 用于刷入（修改版）固件，用错会报错    </p>
+<pre><code>下载地址：www.lanzous.com/i333mcd</code></pre><hr>
+<p> balong_usbdload.exe 用于刷入引导loaderbin    </p>
+<pre><code>下载地址：www.lanzous.com/i333mde</code></pre><hr>
+<p> Balong_USB_Downloader_1.0.1.10.exe 用于刷入引导loaderbin</p>
+<pre><code>下载地址：www.lanzous.com/i333mef </code></pre><hr>
+<p> E5172sBootRomDownloadTool.exe用于刷入固件（图形化）    </p>
+<pre><code>下载地址：www.lanzous.com/i333tyh </code></pre><hr>
+<p> multicast_upgrade_tool.exe 用网线升级的工具    </p>
+<pre><code>下载地址：www.lanzous.com/i333u0j </code></pre><hr>
+<p> curl.exe用于进模式的网页工具    </p>
+<pre><code>下载地址：www.lanzous.com/i333u1a </code></pre><hr>
+<p> PUTTY.exe用于talent等模式调试工具    </p>
+<pre><code>下载地址：www.lanzous.com/i333u2b </code></pre><hr>
+<p> usblsafe_b315-b310.bin用于引导的文件（国内外310/315适用）    </p>
+<pre><code>下载地址：www.lanzous.com/i3341vc </code></pre><hr>
+<p> usbloader-b310.bin用于引导的文件（会清除信息，适合异常机器）    </p>
+<pre><code>下载地址：www.lanzous.com/i3341zg </code></pre><hr>
+<p> FC_Serial_Driver_Setup.exe 华为FC-PC下载模式端口驱动    </p>
+<pre><code>下载地址：www.lanzous.com/i3350ja</code></pre><hr>
+<p>HUAWEI_DataCard_Driver(此驱动更新了，比教程写的会新一些，不用介意版本) 华为3G-PC模式端口驱动    </p>
+<pre><code>下载地址：www.lanzous.com/i94seje</code></pre><hr>
+<p>进模式.bat 用于进模式的命令，与curl.exe需在同一文件夹    </p>
+<pre><code>下载地址：www.lanzous.com/i3eggxc</code></pre><hr>
+<p> 进模式.xml 用于进模式的文件，与curl.exe需在同一文件夹    </p>
+<pre><code>下载地址：www.lanzous.com/i3egjpc</code></pre><hr>
+<p> 华为at命令手册.pdf，用于at各种调试    </p>
+<pre><code>下载地址：www.lanzous.com/i3egjna </code></pre><hr>
+<p>B315修复工具，用于修复B315不开机等情况     </p>
+<pre><code>下载地址：www.lanzous.com/i3egjif</code></pre><hr>
+<p>B315修复坏块.txt 用于擦写分区的命令说明    </p>
+<pre><code>下载地址：www.lanzous.com/i3egj8f</code></pre><hr>
+<p> fastboot-b315-baderase.bin，用于修复不开机，使用usbloader方法让机器变fastboot模式刷入    </p>
+<pre><code>下载地址：www.lanzous.com/i3egs1c</code></pre><hr>
+<p> Fix.bin 用于修复B310不开机，使用usbloader方法刷入    </p>
+<pre><code>下载地址：www.lanzous.com/i3egsbc</code></pre><hr>
+<p>WIN8/10不认usb注册表，适合电脑白痴-不会另存为reg文件</p>
+<pre><code>下载地址：www.lanzous.com/i3s3jud</code></pre><hr>
+<p>MobileBrServ.zip，E系列机器自带的，普通上网的驱动    </p>
+<pre><code>下载地址：www.lanzous.com/i6xy9yb</code></pre><hr>
+<p>dc-unlocker2client_1277.rar，用于打开端口与命令的工具    </p>
+<pre><code>下载地址：www.lanzous.com/i75vy2j</code></pre><hr>
+<p>产线驱动_2.78.11.00.rar，E系列机器自带的，普通上网的驱动    </p>
+<pre><code>下载地址：www.lanzous.com/i83ujza</code></pre><hr>
+<p>本文资料未经过本人同意，已被某些网站恶意转载。</p>
 
         </div>
         
@@ -842,7 +814,7 @@
                     </p>
                     <a href="/archives">
                         <p class="title has-text-weight-normal">
-                            19
+                            18
                         </p>
                     </a>
                 </div>
@@ -971,25 +943,6 @@
         
         <article class="media">
             
-            <a href="/2020/03/06/%E9%A3%8E%E6%B5%81%E4%BA%91/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="风流云">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-06T15:27:23.000Z">2020-03-06</time></div>
-                    <a href="/2020/03/06/%E9%A3%8E%E6%B5%81%E4%BA%91/" class="title has-link-black-ter is-size-6 has-text-weight-normal">风流云</a>
-                    <p class="is-size-7 is-uppercase">
-                        
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
             <a href="/2020/03/06/%E9%80%9A%E7%94%A8%20-%20%E5%89%AF%E6%9C%AC%20(15)/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/images/thumbnail.svg" alt="华为荣耀盒子pro固件hitv-m1降级教程">
@@ -1064,6 +1017,25 @@
             </div>
         </article>
         
+        <article class="media">
+            
+            <a href="/2020/03/06/%E9%80%9A%E7%94%A8%20-%20%E5%89%AF%E6%9C%AC%20(11)/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="华为荣耀盒子pro固件hitv-m1降级教程">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-06T14:40:01.751Z">2020-03-06</time></div>
+                    <a href="/2020/03/06/%E9%80%9A%E7%94%A8%20-%20%E5%89%AF%E6%9C%AC%20(11)/" class="title has-link-black-ter is-size-6 has-text-weight-normal">华为荣耀盒子pro固件hitv-m1降级教程</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E5%8D%8E%E4%B8%BA%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/">华为刷机教程</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
     </div>
 </div>
         
@@ -1081,7 +1053,7 @@
                     <span class="level-item">三月 2020</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">19</span>
+                    <span class="level-item tag">18</span>
                 </span>
             </a>
         </li>
@@ -1137,25 +1109,6 @@
         
         <article class="media">
             
-            <a href="/2020/03/06/%E9%A3%8E%E6%B5%81%E4%BA%91/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="风流云">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-06T15:27:23.000Z">2020-03-06</time></div>
-                    <a href="/2020/03/06/%E9%A3%8E%E6%B5%81%E4%BA%91/" class="title has-link-black-ter is-size-6 has-text-weight-normal">风流云</a>
-                    <p class="is-size-7 is-uppercase">
-                        
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
             <a href="/2020/03/06/%E9%80%9A%E7%94%A8%20-%20%E5%89%AF%E6%9C%AC%20(15)/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/images/thumbnail.svg" alt="华为荣耀盒子pro固件hitv-m1降级教程">
@@ -1230,6 +1183,25 @@
             </div>
         </article>
         
+        <article class="media">
+            
+            <a href="/2020/03/06/%E9%80%9A%E7%94%A8%20-%20%E5%89%AF%E6%9C%AC%20(11)/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="华为荣耀盒子pro固件hitv-m1降级教程">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-06T14:40:01.751Z">2020-03-06</time></div>
+                    <a href="/2020/03/06/%E9%80%9A%E7%94%A8%20-%20%E5%89%AF%E6%9C%AC%20(11)/" class="title has-link-black-ter is-size-6 has-text-weight-normal">华为荣耀盒子pro固件hitv-m1降级教程</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E5%8D%8E%E4%B8%BA%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/">华为刷机教程</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
     </div>
 </div>
     
@@ -1247,7 +1219,7 @@
                     <span class="level-item">三月 2020</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">19</span>
+                    <span class="level-item tag">18</span>
                 </span>
             </a>
         </li>
