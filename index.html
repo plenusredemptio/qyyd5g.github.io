@@ -453,7 +453,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    几秒 读完 (大约 0 个字)
+                    4 分钟 读完 (大约 627 个字)
                 </span>
                 
                 
@@ -462,11 +462,38 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                <a class="has-link-black-ter" href="/2020/03/06/%E9%80%9A%E7%94%A8%20-%20%E5%89%AF%E6%9C%AC%20(8)/">华为荣耀盒子pro固件hitv-m1降级教程</a>
+                <a class="has-link-black-ter" href="/2020/03/06/%E5%8D%8E%E4%B8%BAE%E7%B3%BB%E5%88%97%E5%8D%A1%E6%89%98%E4%B8%8A%E7%BD%91%E5%8D%A1%E5%85%8D%E6%8B%86-%E5%8D%87%E7%BA%A7%E9%99%8D%E7%BA%A7-%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5E8372h%E4%B8%BA%E4%BE%8B%EF%BC%89/">华为E系列卡托上网卡免拆-升级降级-教程（以E8372h为例）</a>
             
         </h1>
         <div class="content">
-            
+            <p>本教程适用于卡托，usb上网卡那种，如果你的是带电池的mifi，想升级或者降级，</p>
+<p>建议请在博客中看这个《华为E系列mifi免拆-升级/降级-教程（以E5885为例）》</p>
+<hr>
+<h2 id="第一步：准备工作。"><a href="#第一步：准备工作。" class="headerlink" title="第一步：准备工作。"></a>第一步：准备工作。</h2><hr>
+<h4 id="工具（先到工具篇自行下载）："><a href="#工具（先到工具篇自行下载）：" class="headerlink" title="工具（先到工具篇自行下载）："></a>工具（先到工具篇自行下载）：</h4><p> 1.balong_flash.exe。</p>
+<p> 2.产线驱动_2.78.11.00.rar（此驱动只能用于刷机，不用时，需要卸载，否则不能插电脑上网）</p>
+<p> 3.dc-unlocker2client_1277.rar</p>
+<p> 4.WIN8/10不认usb注册表。</p>
+<hr>
+<h4 id="固件（自行准备）："><a href="#固件（自行准备）：" class="headerlink" title="固件（自行准备）："></a>固件（自行准备）：</h4><p>E8372h-155_UPDATE_21.329.62.01.233_WEBUI_21.100.42.00.233.ZIP</p>
+<hr>
+<h2 id="第二步：安装驱动-进刷机模式"><a href="#第二步：安装驱动-进刷机模式" class="headerlink" title="第二步：安装驱动,进刷机模式"></a>第二步：安装驱动,进刷机模式</h2><hr>
+<h4 id="1-安装产线驱动，然后把设备插入电脑，电脑显示两个端口。"><a href="#1-安装产线驱动，然后把设备插入电脑，电脑显示两个端口。" class="headerlink" title="1.安装产线驱动，然后把设备插入电脑，电脑显示两个端口。"></a>1.安装产线驱动，然后把设备插入电脑，电脑显示两个端口。</h4><p><img src="/2020/03/06/%E5%8D%8E%E4%B8%BAE%E7%B3%BB%E5%88%97%E5%8D%A1%E6%89%98%E4%B8%8A%E7%BD%91%E5%8D%A1%E5%85%8D%E6%8B%86-%E5%8D%87%E7%BA%A7%E9%99%8D%E7%BA%A7-%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5E8372h%E4%B8%BA%E4%BE%8B%EF%BC%89/%E5%8F%8C%E7%AB%AF%E5%8F%A3.png" alt="安装驱动"></p>
+<h4 id="2-打开dc-unlocker。点击放大镜，"><a href="#2-打开dc-unlocker。点击放大镜，" class="headerlink" title="2.打开dc-unlocker。点击放大镜，"></a>2.打开dc-unlocker。点击放大镜，</h4><p>   然后会自动显示你的设备信息，</p>
+<p>   在下方的空白处，输入： <strong>AT^GODLOAD</strong> （小写字母也可以）然后回车。</p>
+<p>   设备会变成闪烁的灯，进入到下载模式。</p>
+<p><img src="/2020/03/06/%E5%8D%8E%E4%B8%BAE%E7%B3%BB%E5%88%97%E5%8D%A1%E6%89%98%E4%B8%8A%E7%BD%91%E5%8D%A1%E5%85%8D%E6%8B%86-%E5%8D%87%E7%BA%A7%E9%99%8D%E7%BA%A7-%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5E8372h%E4%B8%BA%E4%BE%8B%EF%BC%89/dcunlocker.png" alt="dc-unlocer命令"></p>
+<p>（win8/win10需要安装“WIN8/10不认usb注册表”，而且可能还需要重启电脑一次。 ）<br>（建议win7及以下系统刷机！）</p>
+<hr>
+<h2 id="第三步：刷机"><a href="#第三步：刷机" class="headerlink" title="第三步：刷机"></a>第三步：刷机</h2><hr>
+<h4 id="1-鼠标按住固件，把固件拖动到balong-flash-exe，如下图。"><a href="#1-鼠标按住固件，把固件拖动到balong-flash-exe，如下图。" class="headerlink" title="1.鼠标按住固件，把固件拖动到balong_flash.exe，如下图。"></a>1.鼠标按住固件，把固件拖动到balong_flash.exe，如下图。</h4><p> <img src="/2020/03/06/%E5%8D%8E%E4%B8%BAE%E7%B3%BB%E5%88%97%E5%8D%A1%E6%89%98%E4%B8%8A%E7%BD%91%E5%8D%A1%E5%85%8D%E6%8B%86-%E5%8D%87%E7%BA%A7%E9%99%8D%E7%BA%A7-%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5E8372h%E4%B8%BA%E4%BE%8B%EF%BC%89/%E6%8B%96%E5%8A%A8%E5%88%B7%E6%9C%BA.jpg" alt="刷机"></p>
+<p>  不行的，请在固件的文件夹内，使用cmd命令 balong_flash.exe 固件名</p>
+<p> 如：<br>  <strong>balong_flash.exe  E8372h- 155_UPDATE_21.329.62.01.233_WEBUI_21.100.42.00.233.ZIP</strong></p>
+<p>（建议win7系统，在刷机文件夹内按住“shift”+右键，选择“在此处打开命令  窗口”）<br>    请不要在windows的“开始”调出cmd，不然自己要cd到文件夹路径）</p>
+<hr>
+<h4 id="2-显示如下界面过后，等待固件全部刷完，按任意键退出刷机。"><a href="#2-显示如下界面过后，等待固件全部刷完，按任意键退出刷机。" class="headerlink" title="2.显示如下界面过后，等待固件全部刷完，按任意键退出刷机。"></a>2.显示如下界面过后，等待固件全部刷完，按任意键退出刷机。</h4><p> <img src="/2020/03/06/%E5%8D%8E%E4%B8%BAE%E7%B3%BB%E5%88%97%E5%8D%A1%E6%89%98%E4%B8%8A%E7%BD%91%E5%8D%A1%E5%85%8D%E6%8B%86-%E5%8D%87%E7%BA%A7%E9%99%8D%E7%BA%A7-%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5E8372h%E4%B8%BA%E4%BE%8B%EF%BC%89/%E5%88%B7%E6%9C%BA%E8%BF%9B%E5%BA%A6.jpg" alt="刷机结束"></p>
+<pre><code>（此图仅供参看，具体以实际刷机为主）</code></pre><hr>
+<h4 id="3-拔掉usb上网卡，重新插上即可正常使用。"><a href="#3-拔掉usb上网卡，重新插上即可正常使用。" class="headerlink" title="3.拔掉usb上网卡，重新插上即可正常使用。"></a>3.拔掉usb上网卡，重新插上即可正常使用。</h4>
         </div>
         
         
@@ -498,7 +525,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    7 分钟 读完 (大约 1105 个字)
+                    7 分钟 读完 (大约 1051 个字)
                 </span>
                 
                 
@@ -512,42 +539,40 @@
         </h1>
         <div class="content">
             <p>如果你看不到教程的图片，请直接下载本页面的离线教程<br>下载地址：<a href="https://www.lanzous.com/i66ffda">https://www.lanzous.com/i66ffda</a></p>
-<pre><code>准备工作</code></pre><p>  B310型号的设备，请先拆机焊接相应的USB。如下图焊接。</p>
-<p>   华为B310/B315等路由器刷机救砖教程（只亮电源灯类/各种变砖类）</p>
-<p>   <img src="/2020/03/06/%E5%8D%8E%E4%B8%BAB310-B315%E7%AD%89%E8%B7%AF%E7%94%B1%E5%99%A8%E5%88%B7%E6%9C%BA%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B%EF%BC%88%E5%8F%AA%E4%BA%AE%E7%94%B5%E6%BA%90%E7%81%AF%E7%B1%BB%E5%90%84%E7%A7%8D%E5%8F%98%E7%A0%96%E7%B1%BB%EF%BC%89/B310%E7%84%8A%E6%8E%A5.jpg" alt="焊接图片"></p>
-<p>   B315的设备，请直接使用双工头usb线，插到usb口即可</p>
-<p>   <img src="/2020/03/06/%E5%8D%8E%E4%B8%BAB310-B315%E7%AD%89%E8%B7%AF%E7%94%B1%E5%99%A8%E5%88%B7%E6%9C%BA%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B%EF%BC%88%E5%8F%AA%E4%BA%AE%E7%94%B5%E6%BA%90%E7%81%AF%E7%B1%BB%E5%90%84%E7%A7%8D%E5%8F%98%E7%A0%96%E7%B1%BB%EF%BC%89/%E5%8F%8C%E5%B7%A5%E5%A4%B4usb.jpg" alt="双工头图片"></p>
-<p>华为B310/B315等路由器刷机救砖教程（只亮电源灯类/各种变砖类）</p>
-<p>   2.准备好工具如下（自行到工具篇下载）：</p>
-<p>  balong_flash.exe 用于刷入（原版）固件<br>  Balong_USB_Downloader_1.0.1.10.exe<br>  usblsafe_b315-b310.bin<br>  FC_Serial_Driver_Setup.exe<br>  HUAWEI_DataCard_Driver</p>
-<p>  （WIN8/10）不认usb驱动注册表（WIN8/10必须安装）</p>
 <hr>
-<pre><code>固件自行准备</code></pre><p>第一步 进模式<br>1.拔电源，用镊子或者螺丝刀，短接下图的两个触点，再插入电源。</p>
-<p><img src="/2020/03/06/%E5%8D%8E%E4%B8%BAB310-B315%E7%AD%89%E8%B7%AF%E7%94%B1%E5%99%A8%E5%88%B7%E6%9C%BA%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B%EF%BC%88%E5%8F%AA%E4%BA%AE%E7%94%B5%E6%BA%90%E7%81%AF%E7%B1%BB%E5%90%84%E7%A7%8D%E5%8F%98%E7%A0%96%E7%B1%BB%EF%BC%89/%E7%9F%AD%E6%8E%A5%E7%82%B9.jpg" alt="短接图片"></p>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><h3 id="B310型号的设备，请先拆机焊接相应的USB。如下图焊接。"><a href="#B310型号的设备，请先拆机焊接相应的USB。如下图焊接。" class="headerlink" title="B310型号的设备，请先拆机焊接相应的USB。如下图焊接。"></a>B310型号的设备，请先拆机焊接相应的USB。如下图焊接。</h3><p>   <img src="/2020/03/06/%E5%8D%8E%E4%B8%BAB310-B315%E7%AD%89%E8%B7%AF%E7%94%B1%E5%99%A8%E5%88%B7%E6%9C%BA%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B%EF%BC%88%E5%8F%AA%E4%BA%AE%E7%94%B5%E6%BA%90%E7%81%AF%E7%B1%BB%E5%90%84%E7%A7%8D%E5%8F%98%E7%A0%96%E7%B1%BB%EF%BC%89/B310%E7%84%8A%E6%8E%A5.jpg" alt="焊接图片"></p>
+<hr>
+<h3 id="B315的设备，请直接使用双工头usb线，插到usb口即可"><a href="#B315的设备，请直接使用双工头usb线，插到usb口即可" class="headerlink" title="B315的设备，请直接使用双工头usb线，插到usb口即可"></a>B315的设备，请直接使用双工头usb线，插到usb口即可</h3><p>   <img src="/2020/03/06/%E5%8D%8E%E4%B8%BAB310-B315%E7%AD%89%E8%B7%AF%E7%94%B1%E5%99%A8%E5%88%B7%E6%9C%BA%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B%EF%BC%88%E5%8F%AA%E4%BA%AE%E7%94%B5%E6%BA%90%E7%81%AF%E7%B1%BB%E5%90%84%E7%A7%8D%E5%8F%98%E7%A0%96%E7%B1%BB%EF%BC%89/%E5%8F%8C%E5%B7%A5%E5%A4%B4usb.jpg" alt="双工头图片"></p>
+<hr>
+<h3 id="2-准备好工具如下（自行到工具篇下载）："><a href="#2-准备好工具如下（自行到工具篇下载）：" class="headerlink" title="2.准备好工具如下（自行到工具篇下载）："></a>2.准备好工具如下（自行到工具篇下载）：</h3><p>  balong_flash.exe 用于刷入（原版）固件<br>  Balong_USB_Downloader_1.0.1.10.exe<br>  usblsafe_b315-b310.bin<br>  FC_Serial_Driver_Setup.exe<br>  HUAWEI_DataCard_Driver</p>
+<p>（WIN8/10）不认usb驱动注册表（WIN8/10必须安装）</p>
+<hr>
+<pre><code>固件自行准备</code></pre><hr>
+<h2 id="第一步-进模式"><a href="#第一步-进模式" class="headerlink" title="第一步 进模式"></a>第一步 进模式</h2><hr>
+<h4 id="1-拔电源，用镊子或者螺丝刀，短接下图的两个触点，再插入电源。"><a href="#1-拔电源，用镊子或者螺丝刀，短接下图的两个触点，再插入电源。" class="headerlink" title="1.拔电源，用镊子或者螺丝刀，短接下图的两个触点，再插入电源。"></a>1.拔电源，用镊子或者螺丝刀，短接下图的两个触点，再插入电源。</h4><p><img src="/2020/03/06/%E5%8D%8E%E4%B8%BAB310-B315%E7%AD%89%E8%B7%AF%E7%94%B1%E5%99%A8%E5%88%B7%E6%9C%BA%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B%EF%BC%88%E5%8F%AA%E4%BA%AE%E7%94%B5%E6%BA%90%E7%81%AF%E7%B1%BB%E5%90%84%E7%A7%8D%E5%8F%98%E7%A0%96%E7%B1%BB%EF%BC%89/%E7%9F%AD%E6%8E%A5%E7%82%B9.jpg" alt="短接图片"></p>
 <p>   一定要确认短接成功才可以，不然你看后面的教程也没用！！！</p>
 <p>  判断短接是否成功<br>   短接成功后，路由器所有灯全灭，<br>   短接不成功，有任何一个灯亮着，请再次拔电源短接。</p>
 <p>   短接成功后可以拿走镊子。</p>
-<p>2.插上usb线，安装驱动HUAWEI_DataCard_Driver和FC_Serial_Driver_Setup.exe。安装成功后，电脑会出现如下端口。</p>
-<p>  <img src="/2020/03/06/%E5%8D%8E%E4%B8%BAB310-B315%E7%AD%89%E8%B7%AF%E7%94%B1%E5%99%A8%E5%88%B7%E6%9C%BA%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B%EF%BC%88%E5%8F%AA%E4%BA%AE%E7%94%B5%E6%BA%90%E7%81%AF%E7%B1%BB%E5%90%84%E7%A7%8D%E5%8F%98%E7%A0%96%E7%B1%BB%EF%BC%89/%E5%8D%95%E7%AB%AF%E5%8F%A3.jpg" alt="端口图片"></p>
+<hr>
+<h4 id="2-插上usb线，安装驱动HUAWEI-DataCard-Driver和FC-Serial-Driver-Setup-exe。安装成功后，电脑会出现如下端口。"><a href="#2-插上usb线，安装驱动HUAWEI-DataCard-Driver和FC-Serial-Driver-Setup-exe。安装成功后，电脑会出现如下端口。" class="headerlink" title="2.插上usb线，安装驱动HUAWEI_DataCard_Driver和FC_Serial_Driver_Setup.exe。安装成功后，电脑会出现如下端口。"></a>2.插上usb线，安装驱动HUAWEI_DataCard_Driver和FC_Serial_Driver_Setup.exe。安装成功后，电脑会出现如下端口。</h4><p>  <img src="/2020/03/06/%E5%8D%8E%E4%B8%BAB310-B315%E7%AD%89%E8%B7%AF%E7%94%B1%E5%99%A8%E5%88%B7%E6%9C%BA%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B%EF%BC%88%E5%8F%AA%E4%BA%AE%E7%94%B5%E6%BA%90%E7%81%AF%E7%B1%BB%E5%90%84%E7%A7%8D%E5%8F%98%E7%A0%96%E7%B1%BB%EF%BC%89/%E5%8D%95%E7%AB%AF%E5%8F%A3.jpg" alt="端口图片"></p>
 <p>如果是win8/win10，请再电脑注册表加入相应的注册信息才能识别。为了方便，请把下载“（WIN8/10）不认usb驱动注册表”并且双击后注册到电脑里，</p>
-<p>第二步 刷入引导与固件<br> 1.小白刷usbloader：打开Balong_USB_Downloader_1.0.1.10.exe</p>
-<p> <img src="/2020/03/06/%E5%8D%8E%E4%B8%BAB310-B315%E7%AD%89%E8%B7%AF%E7%94%B1%E5%99%A8%E5%88%B7%E6%9C%BA%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B%EF%BC%88%E5%8F%AA%E4%BA%AE%E7%94%B5%E6%BA%90%E7%81%AF%E7%B1%BB%E5%90%84%E7%A7%8D%E5%8F%98%E7%A0%96%E7%B1%BB%EF%BC%89/%E5%8A%A0%E8%BD%BDusbloader.jpg" alt="加载usbloader图片"></p>
-<p>请确保一定要带usblsafe的字眼的文件。否则会损坏NVRAM信息。丢失一堆信息的。</p>
-<p>注意此工具不是刷固件的，只能刷带usbloader或者usblsafe的引导文件。自己看图</p>
-<p> 等待结束后，按任意键结束，此时电脑又会识别出两个新的端口。</p>
-<ol start="2">
-<li>接着或者像我直接把文件拖到balong_flash.exe也是一样的</li>
-</ol>
-<p>   <img src="/2020/03/06/%E5%8D%8E%E4%B8%BAB310-B315%E7%AD%89%E8%B7%AF%E7%94%B1%E5%99%A8%E5%88%B7%E6%9C%BA%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B%EF%BC%88%E5%8F%AA%E4%BA%AE%E7%94%B5%E6%BA%90%E7%81%AF%E7%B1%BB%E5%90%84%E7%A7%8D%E5%8F%98%E7%A0%96%E7%B1%BB%EF%BC%89/%E6%8B%96%E5%8A%A8%E5%88%B7%E6%9C%BA.jpg" alt="拖动刷机图片"></p>
+<hr>
+<h2 id="第二步-刷入引导与固件"><a href="#第二步-刷入引导与固件" class="headerlink" title="第二步 刷入引导与固件"></a>第二步 刷入引导与固件</h2><hr>
+<h4 id="1-小白刷usbloader：打开Balong-USB-Downloader-1-0-1-10-exe"><a href="#1-小白刷usbloader：打开Balong-USB-Downloader-1-0-1-10-exe" class="headerlink" title="1.小白刷usbloader：打开Balong_USB_Downloader_1.0.1.10.exe"></a>1.小白刷usbloader：打开Balong_USB_Downloader_1.0.1.10.exe</h4><p> <img src="/2020/03/06/%E5%8D%8E%E4%B8%BAB310-B315%E7%AD%89%E8%B7%AF%E7%94%B1%E5%99%A8%E5%88%B7%E6%9C%BA%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B%EF%BC%88%E5%8F%AA%E4%BA%AE%E7%94%B5%E6%BA%90%E7%81%AF%E7%B1%BB%E5%90%84%E7%A7%8D%E5%8F%98%E7%A0%96%E7%B1%BB%EF%BC%89/%E5%8A%A0%E8%BD%BDusbloader.jpg" alt="加载usbloader图片"></p>
+<pre><code>请确保一定要带usblsafe的字眼的文件。否则会损坏NVRAM信息。丢失一堆信息的。
+
+注意此工具不是刷固件的，只能刷带usbloader或者usblsafe的引导文件。自己看图</code></pre><p>  等待结束后，按任意键结束，此时电脑又会识别出两个新的端口。</p>
+<hr>
+<h4 id="2-接着或者像我直接把文件拖到balong-flash-exe也是一样的"><a href="#2-接着或者像我直接把文件拖到balong-flash-exe也是一样的" class="headerlink" title="2. 接着或者像我直接把文件拖到balong_flash.exe也是一样的"></a>2. 接着或者像我直接把文件拖到balong_flash.exe也是一样的</h4><p>   <img src="/2020/03/06/%E5%8D%8E%E4%B8%BAB310-B315%E7%AD%89%E8%B7%AF%E7%94%B1%E5%99%A8%E5%88%B7%E6%9C%BA%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B%EF%BC%88%E5%8F%AA%E4%BA%AE%E7%94%B5%E6%BA%90%E7%81%AF%E7%B1%BB%E5%90%84%E7%A7%8D%E5%8F%98%E7%A0%96%E7%B1%BB%EF%BC%89/%E6%8B%96%E5%8A%A8%E5%88%B7%E6%9C%BA.jpg" alt="拖动刷机图片"></p>
 <pre><code>（图片只是示意，不用在乎机型和固件，懒得再截图了）</code></pre><hr>
 <p>   不行的，确认好驱动和设备是否正常运转，不然就用cmd命令刷固件！！</p>
-<p>   balong_flash.exe -g5 B310As-852_UPDATE_21.316.01.102.59(全网).BIN<br>  就会自动刷入刷机包，等待100%全结束后。</p>
-<p>注意：balong_flash.exe 不是双击打开，也不用打开。工具直接把固件直接拖到balong_flash.exe，而是不打开任何程序，也不需要打开任何程序。</p>
-<p>  <img src="/2020/03/06/%E5%8D%8E%E4%B8%BAB310-B315%E7%AD%89%E8%B7%AF%E7%94%B1%E5%99%A8%E5%88%B7%E6%9C%BA%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B%EF%BC%88%E5%8F%AA%E4%BA%AE%E7%94%B5%E6%BA%90%E7%81%AF%E7%B1%BB%E5%90%84%E7%A7%8D%E5%8F%98%E7%A0%96%E7%B1%BB%EF%BC%89/%E5%88%B7%E6%9C%BA%E8%BF%9B%E5%BA%A6.jpg" alt="加载usbloader图片"></p>
-<p> 接着按任意键退出。此时路由器会重启，此时可以拔电源与usb，再接上电源，等待开机。</p>
-<p> 如果看到usb接口一直插入的消息，那么也请拔掉usb以及电源，再插入电源等待开机。</p>
-<p>  如果上面的刷机成功，但开机还是只亮电源灯，说明机器损坏了，需要先修复，请先短接，用cmd命令 balong_usbload.exe -c fix.bin 修复机器，再按照上面的教程再走一次，基本就能开机了。</p>
+<p>   ** balong_flash.exe -g5 B310As-852_UPDATE_21.316.01.102.59(全网).BIN **</p>
+<p>  就会自动刷入刷机包，等待100%全结束后。</p>
+<hr>
+<pre><code>注意：balong_flash.exe 不是双击打开，也不用打开。工具直接把固件直接拖到balong_flash.exe，而是不打开任何程序，也不需要打开任何程序。</code></pre><p>  <img src="/2020/03/06/%E5%8D%8E%E4%B8%BAB310-B315%E7%AD%89%E8%B7%AF%E7%94%B1%E5%99%A8%E5%88%B7%E6%9C%BA%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B%EF%BC%88%E5%8F%AA%E4%BA%AE%E7%94%B5%E6%BA%90%E7%81%AF%E7%B1%BB%E5%90%84%E7%A7%8D%E5%8F%98%E7%A0%96%E7%B1%BB%EF%BC%89/%E5%88%B7%E6%9C%BA%E8%BF%9B%E5%BA%A6.jpg" alt="加载usbloader图片"></p>
+<pre><code>接着按任意键退出。此时路由器会重启，此时可以拔电源与usb，再接上电源，等待开机。
 
+如果看到usb接口一直插入的消息，那么也请拔掉usb以及电源，再插入电源等待开机。</code></pre><h4 id="如果上面的刷机成功，但开机还是只亮电源灯，说明机器损坏了，需要先修复，请先短接，用cmd命令-balong-usbload-exe-c-fix-bin-修复机器，再按照上面的教程再走一次，基本就能开机了。"><a href="#如果上面的刷机成功，但开机还是只亮电源灯，说明机器损坏了，需要先修复，请先短接，用cmd命令-balong-usbload-exe-c-fix-bin-修复机器，再按照上面的教程再走一次，基本就能开机了。" class="headerlink" title="如果上面的刷机成功，但开机还是只亮电源灯，说明机器损坏了，需要先修复，请先短接，用cmd命令 balong_usbload.exe -c fix.bin 修复机器，再按照上面的教程再走一次，基本就能开机了。"></a>如果上面的刷机成功，但开机还是只亮电源灯，说明机器损坏了，需要先修复，请先短接，用cmd命令 balong_usbload.exe -c fix.bin 修复机器，再按照上面的教程再走一次，基本就能开机了。</h4>
         </div>
         
         
@@ -572,14 +597,14 @@
                 <time class="level-item has-text-grey" datetime="2020-03-06T14:40:00.382Z">2020-03-06</time>
                 
                 <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/%E5%8D%8E%E4%B8%BA%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/">华为刷机教程</a>
+                <a class="has-link-grey -link" href="/categories/%E5%8D%8E%E4%B8%BANV%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B/">华为NV修复教程</a>
                 </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    4 分钟 读完 (大约 599 个字)
+                    6 分钟 读完 (大约 856 个字)
                 </span>
                 
                 
@@ -588,29 +613,61 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                <a class="has-link-black-ter" href="/2020/03/06/%E5%8D%8E%E4%B8%BAE83272h-155-nv%E4%BF%A1%E6%81%AF%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B/">华为E83272h-155IMEISNMACSSIDWIFI密码webui版本修复</a>
+                <a class="has-link-black-ter" href="/2020/03/06/%E5%8D%8E%E4%B8%BAE%E7%B3%BB%E5%88%97nv%E4%BF%A1%E6%81%AFIMEI%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5E8372%E4%B8%BA%E4%BE%8B%EF%BC%89/">华为E系列nv信息IMEI修复教程（以E8372为例）</a>
             
         </h1>
         <div class="content">
-            <p>华为E8372h-155的设备如果乱用usbloader.bin来刷机，会丢失IMEI/SN/MAC/SSID/WIFI密码甚至是webui version，前面这几个小问题很容易就解决，后面的WEBUI版本就是了会无法刷入其他单独的WEBUI，而且会影响到系统检测升级，导致无法获取最新版本。如下图：</p>
-<p>huawei webui version变为了 00.00.00.000.03</p>
-<p>华为E83272h-155IMEI/SN/MAC/SSID/WIFI密码/webui版本修复</p>
+            <hr>
 <hr>
-<p>当你降级或者救砖后，华为E8372h-55降级救砖教程 设备重启后，两个端口还在，打开终端或者putty，我是比较喜欢终端，你也可以用dcunlock，用下面的命令结合自己的设备信息，重写信息即可。</p>
-<p>华为E83272h-155IMEI/SN/MAC/SSID/WIFI密码/webui版本修复</p>
-<p>参考命令</p>
-<p>AT ^ PHYNUM = IMEI, 你的imei<br>AT ^ SN = 你的sn<br>AT ^ PHYNUM = MACWLAN, 888888888888 (像888….这种，不带任何符号)<br>AT ^ SSID = 0, “HUAWEI-后面的随便”<br>AT ^ WIKEY = 0, “密码随便写”</p>
-<p>缺什么补什么，每输一次，显示ok就可以了</p>
-<p>保存与覆盖</p>
-<p>AT^INFORBU</p>
-<p>重启（如果丢失webui，请不要使用此命令，等修复webui使用或者手动拔掉设备也是同样效果）</p>
-<p>AT^RESET</p>
-<p>——————————————–修复webui版本————————————————-</p>
-<p>webui丢失，这个比较难想到办法，单独刷webui会被系统报错（最终明白了，因为有usblsafe，原来的信息是无法覆盖），华为是根据设备信息来升级降级的，如果丢失了或者不对的话都直接报错，无法单独刷webui。</p>
-<p>首先必须用usbloader-E8372h-155.bin，usblodaer这种引导会清空NV信息，把原来错误的webui信息清除，接着进刷机模式，刷入一个固件，先不要乱动，等重启查看两个端口是否还在，还在的话之后马上打开Update_WEBUI_21.100.32.00.233_NE5.exe单独刷入webui即可（如果失败可以试2次左右，不行就从usbloder再来一次）。</p>
-<p>华为E83272h-155IMEI/SN/MAC/SSID/WIFI密码/webui版本修复</p>
-<p>简单来说就是刷USBloader，会自动进刷机模式再刷固件，再单独刷一个webui就可以解决的。</p>
-<p>华为E83272h-155IMEI/SN/MAC/SSID/WIFI密码/webui版本修复</p>
+<p>像华为E8372h-155的这些E系列的设备，如果乱用usbloader.bin来刷机，会丢失IMEI/SN/MAC/SSID/WIFI密码甚至是webui version，</p>
+<p>如下图：</p>
+<p><img src="/2020/03/06/%E5%8D%8E%E4%B8%BAE%E7%B3%BB%E5%88%97nv%E4%BF%A1%E6%81%AFIMEI%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5E8372%E4%B8%BA%E4%BE%8B%EF%BC%89/%E9%94%99%E8%AF%AF.jpg" alt="丢失nv信息图片"></p>
+<p>接下来就给大家分享一下普通的NV信息修复方法和比较困难的webui版本修复方法。</p>
+<hr>
+<hr>
+<h2 id="一-修复基本的nv信息"><a href="#一-修复基本的nv信息" class="headerlink" title="一.   修复基本的nv信息"></a>一.   修复基本的nv信息</h2><hr>
+<p><strong>修复需要双端口的模式。</strong></p>
+<p><img src="/2020/03/06/%E5%8D%8E%E4%B8%BAE%E7%B3%BB%E5%88%97nv%E4%BF%A1%E6%81%AFIMEI%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5E8372%E4%B8%BA%E4%BE%8B%EF%BC%89/%E5%8F%8C%E7%AB%AF%E5%8F%A3.png" alt="双端口图片"></p>
+<p>方法1：当你降级或者救砖后，设备自动重启后，两个端口还在。</p>
+<p>方法2：安装产线驱动（此驱动无法使用usb上网，不用的时候需要卸载），会有两个端口。</p>
+<p>方法3：部分型号可直接打开dc-unlocker，点击放大镜。</p>
+<p>。。。。。</p>
+<p>这三种常用的就够了</p>
+<hr>
+<p>接着打开dc-unlocker，点击放大镜。</p>
+<p><img src="/2020/03/06/%E5%8D%8E%E4%B8%BAE%E7%B3%BB%E5%88%97nv%E4%BF%A1%E6%81%AFIMEI%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5E8372%E4%B8%BA%E4%BE%8B%EF%BC%89/dcunlocker.png" alt="dcunlocker图片"></p>
+<pre><code>（图中命令不是修复命令，请勿输入，具体看下面）</code></pre><p><strong>用下面的参考命令结合自己的设备信息，重写信息即可。</strong></p>
+<hr>
+<p><strong>参考命令</strong></p>
+<pre><code>AT^PHYNUM=IMEI,你的imei
+
+AT^SN=你的sn
+
+AT^PHYNUM=MACWLAN,ABCDEFGHIJ (像ABC....这种，不带任何符号)
+
+AT^SSID=0,&quot;HUAWEI-后面的随便&quot;
+
+AT^WIKEY=0,&quot;密码随便写&quot;</code></pre><p>缺什么补什么，每输一次，显示ok就完成这一项修复。</p>
+<hr>
+<pre><code>AT^INFORBU</code></pre><p>（保存与覆盖）</p>
+<hr>
+<pre><code>AT^RESET</code></pre><p>（重启）</p>
+<hr>
+<hr>
+<h2 id="二-修复webui版本"><a href="#二-修复webui版本" class="headerlink" title="二.  修复webui版本"></a>二.  修复webui版本</h2><hr>
+<p>部分机型刷机会丢失webui版本信息，华为的WEBUI版本信息也很重要，华为是根据设备信息来升级降级的，如果丢失了或者不对的话都直接报错，导致无法获取最新版本，</p>
+<p>如果你是丢失的，请先修复这个问题，再修复上面的NV信息，因为NV信息很容易就解决，webui修复起来就比较麻烦。</p>
+<p>   像huawei webui version变为了 00.00.00.000.03属于错误的信息</p>
+<p><img src="/2020/03/06/%E5%8D%8E%E4%B8%BAE%E7%B3%BB%E5%88%97nv%E4%BF%A1%E6%81%AFIMEI%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5E8372%E4%B8%BA%E4%BE%8B%EF%BC%89/%E9%94%99%E8%AF%AF.jpg" alt="丢失nv信息图片"></p>
+<hr>
+<pre><code>**webui版本信息丢失，（需要usbloader加载，不能用usblsafe，safe无法清除限制）**</code></pre><p>首先必须用usbloader-E8372h-155.bin，像<strong>usbloader</strong>这种引导会清空NV信息，把原来错误的webui信息清除，</p>
+<hr>
+<p>接着进刷机模式，刷入一个固件，</p>
+<hr>
+<p>先不要乱动，设备自动重启，你看看查看两个端口是否还在，还在的话之后马上打开Update_WEBUI_21.100.32.00.233_NE5.exe进行刷机，</p>
+<p>单独刷入webui即可（如果失败可以再试几次，不行就重刷usbloder再来一次）。</p>
+<p><img src="/2020/03/06/%E5%8D%8E%E4%B8%BAE%E7%B3%BB%E5%88%97nv%E4%BF%A1%E6%81%AFIMEI%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5E8372%E4%B8%BA%E4%BE%8B%EF%BC%89/%E5%8D%95%E5%88%B7webui.jpg" alt="单刷webui图片"></p>
+<pre><code>简单来说就是刷usbloader，会自动进刷机模式再刷固件，再单独刷一个webui就可以解决的，修复完成后，如下图。</code></pre><p><img src="/2020/03/06/%E5%8D%8E%E4%B8%BAE%E7%B3%BB%E5%88%97nv%E4%BF%A1%E6%81%AFIMEI%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5E8372%E4%B8%BA%E4%BE%8B%EF%BC%89/%E5%AE%8C%E6%88%90.jpg" alt="修复完成图片"></p>
 
         </div>
         
@@ -702,7 +759,7 @@
                     </p>
                     <a href="/categories">
                         <p class="title has-text-weight-normal">
-                            2
+                            3
                         </p>
                     </a>
                 </div>
@@ -714,7 +771,7 @@
                     </p>
                     <a href="/tags">
                         <p class="title has-text-weight-normal">
-                            2
+                            3
                         </p>
                     </a>
                 </div>
@@ -786,12 +843,20 @@
                 <span class="level-item tag">2</span>
             </span>
         </a></li><li>
+        <a class="level is-marginless" href="/categories/%E5%8D%8E%E4%B8%BANV%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B/">
+            <span class="level-start">
+                <span class="level-item">华为NV修复教程</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">1</span>
+            </span>
+        </a></li><li>
         <a class="level is-marginless" href="/categories/%E5%8D%8E%E4%B8%BA%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/">
             <span class="level-start">
                 <span class="level-item">华为刷机教程</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">16</span>
+                <span class="level-item tag">15</span>
             </span>
         </a></li>
             </ul>
@@ -804,7 +869,7 @@
         <h3 class="menu-label">
             标签云
         </h3>
-        <a href="/tags/%E5%88%B7%E6%9C%BA%E5%B7%A5%E5%85%B7/" style="font-size: 10px;">刷机工具</a> <a href="/tags/%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/" style="font-size: 20px;">刷机教程</a>
+        <a href="/tags/NV%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B/" style="font-size: 10px;">NV修复教程</a> <a href="/tags/%E5%88%B7%E6%9C%BA%E5%B7%A5%E5%85%B7/" style="font-size: 15px;">刷机工具</a> <a href="/tags/%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/" style="font-size: 20px;">刷机教程</a>
     </div>
 </div>
     
@@ -948,6 +1013,13 @@
             <div class="field is-grouped is-grouped-multiline">
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/tags/NV%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B/">
+                        <span class="tag">NV修复教程</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/tags/%E5%88%B7%E6%9C%BA%E5%B7%A5%E5%85%B7/">
                         <span class="tag">刷机工具</span>
                         <span class="tag is-grey">2</span>
@@ -957,7 +1029,7 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/">
                         <span class="tag">刷机教程</span>
-                        <span class="tag is-grey">16</span>
+                        <span class="tag is-grey">15</span>
                     </a>
                 </div>
                 
@@ -1114,6 +1186,13 @@
             <div class="field is-grouped is-grouped-multiline">
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/tags/NV%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B/">
+                        <span class="tag">NV修复教程</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/tags/%E5%88%B7%E6%9C%BA%E5%B7%A5%E5%85%B7/">
                         <span class="tag">刷机工具</span>
                         <span class="tag is-grey">2</span>
@@ -1123,7 +1202,7 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/">
                         <span class="tag">刷机教程</span>
-                        <span class="tag is-grey">16</span>
+                        <span class="tag is-grey">15</span>
                     </a>
                 </div>
                 
