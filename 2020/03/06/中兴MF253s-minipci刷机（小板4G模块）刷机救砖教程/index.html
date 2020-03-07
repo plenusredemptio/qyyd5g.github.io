@@ -10,16 +10,16 @@
 <title>中兴MF253s-minipci刷机（小板4G模块）救砖教程 - 风流云</title>
 
 
-    <meta name="description" content="此教程只能刷小板的4G模块，需要刷大板的请看ttl那篇。  一。准备工作： 1。mini-pci转usb模块（淘宝十来块就有了，或者笔记本带mini-pci的也可以用机子内部的pci口）。 2。解包固件，得到的小板固件：XXX.bin。（非编程器那个16m的） 3。驱动：ZTE_TSP_Driver.exe 4。查看ZX297510芯片的AT手册命令转换模式或者用转换工具：辅助工具.exe 5">
+    <meta name="description" content="此教程只能刷小板的4G模块，需要刷大板的请看ttl那篇。 由于新浪播客的图都挂了，无法备份出来，只能将就重写了，而且也不用这机器了，所以有些图文可能会没那么仔细！！  一。准备工作： 1。mini-pci转usb模块（淘宝十来块就有了，或者笔记本带mini-pci的也可以用机子内部的pci口）。 2。解包固件，得到的小板固件：XXX.bin。（非编程器那个16m的） 3。驱动：ZTE_TSP_">
 <meta property="og:type" content="article">
 <meta property="og:title" content="中兴MF253s-minipci刷机（小板4G模块）救砖教程">
 <meta property="og:url" content="http://yoursite.com/2020/03/06/%E4%B8%AD%E5%85%B4MF253s-minipci%E5%88%B7%E6%9C%BA%EF%BC%88%E5%B0%8F%E6%9D%BF4G%E6%A8%A1%E5%9D%97%EF%BC%89%E5%88%B7%E6%9C%BA%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B/index.html">
 <meta property="og:site_name" content="风流云">
-<meta property="og:description" content="此教程只能刷小板的4G模块，需要刷大板的请看ttl那篇。  一。准备工作： 1。mini-pci转usb模块（淘宝十来块就有了，或者笔记本带mini-pci的也可以用机子内部的pci口）。 2。解包固件，得到的小板固件：XXX.bin。（非编程器那个16m的） 3。驱动：ZTE_TSP_Driver.exe 4。查看ZX297510芯片的AT手册命令转换模式或者用转换工具：辅助工具.exe 5">
+<meta property="og:description" content="此教程只能刷小板的4G模块，需要刷大板的请看ttl那篇。 由于新浪播客的图都挂了，无法备份出来，只能将就重写了，而且也不用这机器了，所以有些图文可能会没那么仔细！！  一。准备工作： 1。mini-pci转usb模块（淘宝十来块就有了，或者笔记本带mini-pci的也可以用机子内部的pci口）。 2。解包固件，得到的小板固件：XXX.bin。（非编程器那个16m的） 3。驱动：ZTE_TSP_">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://yoursite.com/images/og_image.png">
 <meta property="article:published_time" content="2020-03-06T14:40:02.098Z">
-<meta property="article:modified_time" content="2020-03-07T06:05:14.930Z">
+<meta property="article:modified_time" content="2020-03-07T09:27:08.724Z">
 <meta property="article:author" content="风流云">
 <meta property="article:tag" content="刷机教程">
 <meta name="twitter:card" content="summary">
@@ -139,7 +139,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    3 分钟 读完 (大约 464 个字)
+                    4 分钟 读完 (大约 637 个字)
                 </span>
                 
                 
@@ -155,12 +155,13 @@
             <hr>
 <hr>
 <p>此教程<strong>只能刷小板的4G模块</strong>，需要刷大板的请看ttl那篇。</p>
+<p>由于新浪播客的图都挂了，无法备份出来，只能将就重写了，而且也不用这机器了，所以有些图文可能会没那么仔细！！</p>
 <hr>
 <h2 id="一。准备工作："><a href="#一。准备工作：" class="headerlink" title="一。准备工作："></a><strong>一。准备工作：</strong></h2><hr>
 <h4 id="1。mini-pci转usb模块"><a href="#1。mini-pci转usb模块" class="headerlink" title="1。mini-pci转usb模块"></a>1。mini-pci转usb模块</h4><pre><code>（淘宝十来块就有了，或者笔记本带mini-pci的也可以用机子内部的pci口）。</code></pre><hr>
 <h4 id="2。解包固件，得到的小板固件："><a href="#2。解包固件，得到的小板固件：" class="headerlink" title="2。解包固件，得到的小板固件："></a>2。解包固件，得到的小板固件：</h4><pre><code>XXX.bin。（非编程器那个16m的）</code></pre><hr>
 <h4 id="3。驱动：ZTE-TSP-Driver-exe"><a href="#3。驱动：ZTE-TSP-Driver-exe" class="headerlink" title="3。驱动：ZTE_TSP_Driver.exe"></a>3。驱动：ZTE_TSP_Driver.exe</h4><hr>
-<h4 id="4。查看ZX297510芯片的AT手册命令转换模式"><a href="#4。查看ZX297510芯片的AT手册命令转换模式" class="headerlink" title="4。查看ZX297510芯片的AT手册命令转换模式"></a>4。查看ZX297510芯片的AT手册命令转换模式</h4><pre><code>或者用转换工具：辅助工具.exe</code></pre><hr>
+<h4 id="4。查看ZX297510芯片（ME3760V2模块）的AT手册命令转换模式"><a href="#4。查看ZX297510芯片（ME3760V2模块）的AT手册命令转换模式" class="headerlink" title="4。查看ZX297510芯片（ME3760V2模块）的AT手册命令转换模式"></a>4。查看ZX297510芯片（ME3760V2模块）的AT手册命令转换模式</h4><pre><code>或者用转换工具：辅助工具.exe</code></pre><hr>
 <h4 id="5。开发人员使用的zx297510芯片下载工具：Downloader-exe"><a href="#5。开发人员使用的zx297510芯片下载工具：Downloader-exe" class="headerlink" title="5。开发人员使用的zx297510芯片下载工具：Downloader.exe"></a>5。开发人员使用的zx297510芯片下载工具：Downloader.exe</h4><hr>
 <hr>
 <pre><code>以上文件自行准备，博客不提供！！</code></pre><hr>
@@ -169,14 +170,16 @@
 <h4 id="1。安装驱动。"><a href="#1。安装驱动。" class="headerlink" title="1。安装驱动。"></a>1。安装驱动。</h4><hr>
 <p>比较简单，就不太详细说了，按照软件提示一直去就行了。</p>
 <hr>
-<h4 id="2。转换模式，用putty输入at命令，显示OK即可。"><a href="#2。转换模式，用putty输入at命令，显示OK即可。" class="headerlink" title="2。转换模式，用putty输入at命令，显示OK即可。"></a>2。转换模式，用putty输入at命令，显示OK即可。</h4><hr>
+<h4 id="2。插入模块，转换一下刷机模式，用putty输入at命令，显示OK即可。"><a href="#2。插入模块，转换一下刷机模式，用putty输入at命令，显示OK即可。" class="headerlink" title="2。插入模块，转换一下刷机模式，用putty输入at命令，显示OK即可。"></a>2。插入模块，转换一下刷机模式，用putty输入at命令，显示OK即可。</h4><pre><code>（如果模块变砖了，需要先短接，具体短接位置自己测试。）</code></pre><p>具体命令忘了，自己进手册里面查，好像是AT+什么的</p>
+<hr>
 <pre><code>或者： 打开辅助工具，单击打开，显示升级功能打开后就可以了，然后再点右上角关闭。</code></pre><hr>
 <h2 id="第三步：刷入固件，模式转换恢复。"><a href="#第三步：刷入固件，模式转换恢复。" class="headerlink" title="第三步：刷入固件，模式转换恢复。"></a><strong>第三步：刷入固件，模式转换恢复。</strong></h2><hr>
-<p>1。打开<strong>Downloader.exe</strong>，单击 <strong>“ + ”</strong>的图标。选择<strong>固件</strong>路径，然后单击<strong>开始</strong>按钮。</p>
+<h4 id="1。打开Downloader-exe，单击-“-”的图标。选择固件路径，然后单击开始按钮。"><a href="#1。打开Downloader-exe，单击-“-”的图标。选择固件路径，然后单击开始按钮。" class="headerlink" title="1。打开Downloader.exe，单击 “ + ”的图标。选择固件路径，然后单击开始按钮。"></a>1。打开<strong>Downloader.exe</strong>，单击 <strong>“ + ”</strong>的图标。选择<strong>固件</strong>路径，然后单击<strong>开始</strong>按钮。</h4><p><img src="/2020/03/06/%E4%B8%AD%E5%85%B4MF253s-minipci%E5%88%B7%E6%9C%BA%EF%BC%88%E5%B0%8F%E6%9D%BF4G%E6%A8%A1%E5%9D%97%EF%BC%89%E5%88%B7%E6%9C%BA%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B/%E9%80%89%E6%96%87%E4%BB%B6.png" alt="文件图片">    </p>
 <hr>
-<p>2。重新插拔一次小板。会自动安装驱动。并且两个端口才行。然后工具会自动刷入固件。</p>
+<h4 id="2。重新插拔一次小板。会自动安装驱动。并且两个端口才行。"><a href="#2。重新插拔一次小板。会自动安装驱动。并且两个端口才行。" class="headerlink" title="2。重新插拔一次小板。会自动安装驱动。并且两个端口才行。"></a>2。重新插拔一次小板。会自动安装驱动。并且两个端口才行。</h4><p><strong>然后工具会自动刷入固件。</strong></p>
+<p><img src="/2020/03/06/%E4%B8%AD%E5%85%B4MF253s-minipci%E5%88%B7%E6%9C%BA%EF%BC%88%E5%B0%8F%E6%9D%BF4G%E6%A8%A1%E5%9D%97%EF%BC%89%E5%88%B7%E6%9C%BA%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B/%E5%88%B7%E6%9C%BA.png" alt="刷机图片">   </p>
 <hr>
-<p>3。关闭刷机工具，连接putty输入at命令，把模式转换会原来的。<br>   或者打开辅助工具。恢复一下模式，防止出现什么意外问题。</p>
+<h4 id="3。关闭刷机工具，连接putty输入at命令，把模式转换会原来的。"><a href="#3。关闭刷机工具，连接putty输入at命令，把模式转换会原来的。" class="headerlink" title="3。关闭刷机工具，连接putty输入at命令，把模式转换会原来的。"></a>3。关闭刷机工具，连接putty输入at命令，把模式转换会原来的。</h4><pre><code>或者打开辅助工具。</code></pre><p>恢复一下模式，防止出现什么意外问题。</p>
 <hr>
 <hr>
 <h2 id="相关问题："><a href="#相关问题：" class="headerlink" title="相关问题："></a><strong>相关问题：</strong></h2><hr>
@@ -300,7 +303,7 @@
                     </p>
                     <a href="/categories">
                         <p class="title has-text-weight-normal">
-                            4
+                            5
                         </p>
                     </a>
                 </div>
@@ -312,7 +315,7 @@
                     </p>
                     <a href="/tags">
                         <p class="title has-text-weight-normal">
-                            4
+                            3
                         </p>
                     </a>
                 </div>
@@ -376,12 +379,20 @@
             </h3>
             <ul class="menu-list">
             <li>
+        <a class="level is-marginless" href="/categories/%E4%B8%AD%E5%85%B4NV%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B/">
+            <span class="level-start">
+                <span class="level-item">中兴NV修复教程</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">1</span>
+            </span>
+        </a></li><li>
         <a class="level is-marginless" href="/categories/%E4%B8%AD%E5%85%B4%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/">
             <span class="level-start">
                 <span class="level-item">中兴刷机教程</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">5</span>
+                <span class="level-item tag">6</span>
             </span>
         </a></li><li>
         <a class="level is-marginless" href="/categories/%E5%88%B7%E6%9C%BA%E5%B7%A5%E5%85%B7/">
@@ -405,7 +416,7 @@
                 <span class="level-item">华为刷机教程</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">11</span>
+                <span class="level-item tag">9</span>
             </span>
         </a></li>
             </ul>
@@ -418,7 +429,7 @@
         <h3 class="menu-label">
             标签云
         </h3>
-        <a href="/tags/NV%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B/" style="font-size: 10px;">NV修复教程</a> <a href="/tags/%E5%88%B7%E6%9C%BA%E5%B7%A5%E5%85%B7/" style="font-size: 15px;">刷机工具</a> <a href="/tags/%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/" style="font-size: 20px;">刷机教程</a> <a href="/tags/%E5%8D%8E%E4%B8%BANV%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B/" style="font-size: 10px;">华为NV修复教程</a>
+        <a href="/tags/NV%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B/" style="font-size: 15px;">NV修复教程</a> <a href="/tags/%E5%88%B7%E6%9C%BA%E5%B7%A5%E5%85%B7/" style="font-size: 10px;">刷机工具</a> <a href="/tags/%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/" style="font-size: 20px;">刷机教程</a>
     </div>
 </div>
     
@@ -430,18 +441,18 @@
         
         <article class="media">
             
-            <a href="/2020/03/07/%E9%80%9A%E7%94%A8%20-%20%E5%89%AF%E6%9C%AC%20(16)%20-%20%E5%89%AF%E6%9C%AC/" class="media-left">
+            <a href="/2020/03/07/%E4%B8%AD%E5%85%B4mf91s%E7%B3%BB%E5%88%97%E5%BC%80%E5%90%AFftp%E5%8A%9F%E8%83%BD%E6%95%99%E7%A8%8B/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="华为荣耀盒子pro固件hitv-m1降级教程">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="中兴mf91s系列开启ftp功能教程">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-07T07:10:04.717Z">2020-03-07</time></div>
-                    <a href="/2020/03/07/%E9%80%9A%E7%94%A8%20-%20%E5%89%AF%E6%9C%AC%20(16)%20-%20%E5%89%AF%E6%9C%AC/" class="title has-link-black-ter is-size-6 has-text-weight-normal">华为荣耀盒子pro固件hitv-m1降级教程</a>
+                    <a href="/2020/03/07/%E4%B8%AD%E5%85%B4mf91s%E7%B3%BB%E5%88%97%E5%BC%80%E5%90%AFftp%E5%8A%9F%E8%83%BD%E6%95%99%E7%A8%8B/" class="title has-link-black-ter is-size-6 has-text-weight-normal">中兴mf91s系列开启ftp功能教程</a>
                     <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/%E5%8D%8E%E4%B8%BA%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/">华为刷机教程</a>
+                        <a class="has-link-grey -link" href="/categories/%E4%B8%AD%E5%85%B4%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/">中兴刷机教程</a>
                     </p>
                 </div>
             </div>
@@ -449,18 +460,18 @@
         
         <article class="media">
             
-            <a href="/2020/03/07/%E9%80%9A%E7%94%A8%20-%20%E5%89%AF%E6%9C%AC%20(15)%20-%20%E5%89%AF%E6%9C%AC/" class="media-left">
+            <a href="/2020/03/07/%E4%B8%AD%E5%85%B4MDM9615%E7%B1%BB%E6%9C%BA%E5%99%A8%E6%81%A2%E5%A4%8D%E6%95%99%E7%A8%8Bnv%E6%81%A2%E5%A4%8D%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5mf91s%E4%B8%BA%E4%BE%8B%EF%BC%89/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="华为荣耀盒子pro固件hitv-m1降级教程">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="中兴MDM9615类机器恢复教程nv恢复教程（以mf91s为例）">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-07T07:10:04.180Z">2020-03-07</time></div>
-                    <a href="/2020/03/07/%E9%80%9A%E7%94%A8%20-%20%E5%89%AF%E6%9C%AC%20(15)%20-%20%E5%89%AF%E6%9C%AC/" class="title has-link-black-ter is-size-6 has-text-weight-normal">华为荣耀盒子pro固件hitv-m1降级教程</a>
+                    <a href="/2020/03/07/%E4%B8%AD%E5%85%B4MDM9615%E7%B1%BB%E6%9C%BA%E5%99%A8%E6%81%A2%E5%A4%8D%E6%95%99%E7%A8%8Bnv%E6%81%A2%E5%A4%8D%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5mf91s%E4%B8%BA%E4%BE%8B%EF%BC%89/" class="title has-link-black-ter is-size-6 has-text-weight-normal">中兴MDM9615类机器恢复教程nv恢复教程（以mf91s为例）</a>
                     <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/%E5%8D%8E%E4%B8%BA%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/">华为刷机教程</a>
+                        <a class="has-link-grey -link" href="/categories/%E4%B8%AD%E5%85%B4NV%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B/">中兴NV修复教程</a>
                     </p>
                 </div>
             </div>
@@ -561,7 +572,7 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/NV%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B/">
                         <span class="tag">NV修复教程</span>
-                        <span class="tag is-grey">1</span>
+                        <span class="tag is-grey">3</span>
                     </a>
                 </div>
                 
@@ -575,14 +586,7 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/">
                         <span class="tag">刷机教程</span>
-                        <span class="tag is-grey">16</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/%E5%8D%8E%E4%B8%BANV%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B/">
-                        <span class="tag">华为NV修复教程</span>
-                        <span class="tag is-grey">1</span>
+                        <span class="tag is-grey">15</span>
                     </a>
                 </div>
                 

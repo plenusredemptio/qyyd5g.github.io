@@ -138,6 +138,84 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-03-07T07:10:04.180Z">2020-03-07</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/%E4%B8%AD%E5%85%B4NV%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B/">中兴NV修复教程</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    3 分钟 读完 (大约 408 个字)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2020/03/07/%E4%B8%AD%E5%85%B4MDM9615%E7%B1%BB%E6%9C%BA%E5%99%A8%E6%81%A2%E5%A4%8D%E6%95%99%E7%A8%8Bnv%E6%81%A2%E5%A4%8D%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5mf91s%E4%B8%BA%E4%BE%8B%EF%BC%89/">中兴MDM9615类机器恢复教程nv恢复教程（以mf91s为例）</a>
+            
+        </h1>
+        <div class="content">
+            <hr>
+<hr>
+<p>中兴mf91s系列mifi刷机后，如果未备份，就无法恢复以前的信息。那么对丢失imei等一些系统信息。</p>
+<p><img src="/2020/03/07/%E4%B8%AD%E5%85%B4MDM9615%E7%B1%BB%E6%9C%BA%E5%99%A8%E6%81%A2%E5%A4%8D%E6%95%99%E7%A8%8Bnv%E6%81%A2%E5%A4%8D%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5mf91s%E4%B8%BA%E4%BE%8B%EF%BC%89/%E9%97%AE%E9%A2%98.jpg" alt="问题图片"> </p>
+<hr>
+<p>我这修复方法分为两部分。</p>
+<hr>
+<hr>
+<h2 id="修复imei-sn码。"><a href="#修复imei-sn码。" class="headerlink" title="修复imei/sn码。"></a>修复imei/sn码。</h2><hr>
+<p>这个比较简单，只要进调试模式，端口还在即可。</p>
+<pre><code>（必须要关闭所有占用端口的软件，尤其是QPST。）</code></pre><p><strong>打开高通写号工具</strong></p>
+<p>修复原理与QXDM一样，这个会方便一点。</p>
+<p><img src="/2020/03/07/%E4%B8%AD%E5%85%B4MDM9615%E7%B1%BB%E6%9C%BA%E5%99%A8%E6%81%A2%E5%A4%8D%E6%95%99%E7%A8%8Bnv%E6%81%A2%E5%A4%8D%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5mf91s%E4%B8%BA%E4%BE%8B%EF%BC%89/%E5%86%99%E5%8F%B7.jpg" alt="写号图片"> </p>
+<p>按照机子的相应信息写入即可。</p>
+<hr>
+<hr>
+<h2 id="修复ssid（wifi名称）和wifi密码"><a href="#修复ssid（wifi名称）和wifi密码" class="headerlink" title="修复ssid（wifi名称）和wifi密码"></a>修复ssid（wifi名称）和wifi密码</h2><hr>
+<p>还不会ftp的，可以查看另外一篇的开启ftp的方式。</p>
+<p>或者直接用adb的方式修改。</p>
+<hr>
+<p>下面以ftp为例。</p>
+<p>用ftp连接192.168.0.1，</p>
+<pre><code>用户名：root
+密码（无）</code></pre><p>确认，直接进入根目录</p>
+<p>然后打开文件夹 zte/zteconf/wlan，找到图中的两个文件。</p>
+<p><img src="/2020/03/07/%E4%B8%AD%E5%85%B4MDM9615%E7%B1%BB%E6%9C%BA%E5%99%A8%E6%81%A2%E5%A4%8D%E6%95%99%E7%A8%8Bnv%E6%81%A2%E5%A4%8D%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5mf91s%E4%B8%BA%E4%BE%8B%EF%BC%89/%E7%9B%AE%E5%BD%95.jpg" alt="目录图片"> </p>
+<hr>
+<p>接着根据自己的mifi，修改相应的地方。</p>
+<pre><code>wlan_ap_config.conf
+wlan_ap_config.conf.bak</code></pre><p><img src="/2020/03/07/%E4%B8%AD%E5%85%B4MDM9615%E7%B1%BB%E6%9C%BA%E5%99%A8%E6%81%A2%E5%A4%8D%E6%95%99%E7%A8%8Bnv%E6%81%A2%E5%A4%8D%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5mf91s%E4%B8%BA%E4%BE%8B%EF%BC%89/%E4%BF%AE%E5%A4%8D.jpg" alt="修复图片"> </p>
+<hr>
+<hr>
+<p>你也可以用adb修复，这机器进调试模式会默认开启adb。</p>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    
+<div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
                 <time class="level-item has-text-grey" datetime="2020-03-06T14:40:00.382Z">2020-03-06</time>
                 
                 <div class="level-item">
@@ -227,6 +305,129 @@ AT^WIKEY=0,&quot;密码随便写&quot;</code></pre><p>缺什么补什么，每�
 
 
 
+    
+<div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-03-06T14:39:59.139Z">2020-03-06</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/%E5%8D%8E%E4%B8%BANV%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B/">华为NV修复教程</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    8 分钟 读完 (大约 1143 个字)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2020/03/06/%E5%8D%8E%E4%B8%BAB%E7%B3%BB%E5%88%97nv%E4%BF%A1%E6%81%AFIMEI%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5B310%E4%B8%BA%E4%BE%8B%EF%BC%89/">华为B系列nv信息IMEI修复教程（以B310为例）</a>
+            
+        </h1>
+        <div class="content">
+            <hr>
+<hr>
+<p>不谈思路，完整教程分享！！</p>
+<h2 id="这个国外论坛的方法，然后整合回来的，省得大家付费或爬墙！"><a href="#这个国外论坛的方法，然后整合回来的，省得大家付费或爬墙！" class="headerlink" title="这个国外论坛的方法，然后整合回来的，省得大家付费或爬墙！"></a>这个国外论坛的方法，然后整合回来的，省得大家付费或爬墙！</h2><p>在B310As-852等型号刷机的时候，有时候刷入错误的usbload.bin会清空路由器的NVRAM信息，导致设备IMEI\SN\SSID\WIFI密码等信息被清空，MAC地址变成BA:AB:BE:34:00:00。恢复出厂功能失效，灯一直在闪的等问题。这都是由于NVRAM信息丢失的缘故。</p>
+<hr>
+<hr>
+<pre><code>按照适合你机器的方法，自行到博客的工具篇下载</code></pre><hr>
+<hr>
+<p>那么接下来教大家几种方法，重新恢复NV信息。</p>
+<hr>
+<hr>
+<h2 id="方法一-低版本直接开调试模式"><a href="#方法一-低版本直接开调试模式" class="headerlink" title="方法一   低版本直接开调试模式"></a>方法一   低版本直接开调试模式</h2><hr>
+<p><strong>方法1需要的工具。</strong></p>
+<hr>
+<h3 id="1。PUTTY-exe"><a href="#1。PUTTY-exe" class="headerlink" title="1。PUTTY.exe"></a>1。PUTTY.exe</h3><h3 id="2。curl-exe"><a href="#2。curl-exe" class="headerlink" title="2。curl.exe"></a>2。curl.exe</h3><h3 id="3。进模式-bat-（要与curl-exe需在同一文件夹）"><a href="#3。进模式-bat-（要与curl-exe需在同一文件夹）" class="headerlink" title="3。进模式.bat （要与curl.exe需在同一文件夹）"></a>3。进模式.bat （要与curl.exe需在同一文件夹）</h3><h3 id="4。进模式-xml-（要与curl-exe需在同一文件夹）"><a href="#4。进模式-xml-（要与curl-exe需在同一文件夹）" class="headerlink" title="4。进模式.xml （要与curl.exe需在同一文件夹）"></a>4。进模式.xml （要与curl.exe需在同一文件夹）</h3><pre><code>请确保自己的机子是21.316.X.X.X，高于316的无法进入telnet的。
+（此方法不适合高版本的机器）</code></pre><p>低版本这种方法适用于免拆。</p>
+<p>比如B310as-852的全网通版本这两个是可以的：21.316.01.101.59/21.316.01.102.59</p>
+<hr>
+<p>1。<strong>双击 “进模式.bat”</strong>，会显示下图的结果。如果不显示或者是提示无法连接，那表示你的版本不支持，请换低版本。</p>
+<p><img src="/2020/03/06/%E5%8D%8E%E4%B8%BAB%E7%B3%BB%E5%88%97nv%E4%BF%A1%E6%81%AFIMEI%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5B310%E4%B8%BA%E4%BE%8B%EF%BC%89/%E6%A8%A1%E5%BC%8F.jpg" alt="模式图片"></p>
+<p>2.按任意键关闭窗口后，<strong>打开putty</strong>，输入路由器ip <strong>192.168.8.1</strong>（以你的机器的管理页面为准，华为大部分是这个），</p>
+<p>  选择<strong>telnet</strong>，然后直接点<strong>open</strong>。</p>
+<p><img src="/2020/03/06/%E5%8D%8E%E4%B8%BAB%E7%B3%BB%E5%88%97nv%E4%BF%A1%E6%81%AFIMEI%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5B310%E4%B8%BA%E4%BE%8B%EF%BC%89/putty2.jpg" alt="putty图片"> </p>
+<hr>
+<p>3.打开后，分别输入两次大写的<strong>ATI</strong>，有些putty会自动重复显示成AATTII，那是正常的。<br>putty会显示你的设备信息。接下来就可以根据文章最后一部分的命令重写NV信息了。</p>
+<p><img src="/2020/03/06/%E5%8D%8E%E4%B8%BAB%E7%B3%BB%E5%88%97nv%E4%BF%A1%E6%81%AFIMEI%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5B310%E4%B8%BA%E4%BE%8B%EF%BC%89/telnet.jpg" alt="命令图片"> </p>
+<hr>
+<hr>
+<h2 id="方法二-刷机成功后还有端口"><a href="#方法二-刷机成功后还有端口" class="headerlink" title="方法二   刷机成功后还有端口"></a>方法二   刷机成功后还有端口</h2><hr>
+<p><strong>方法2需要的工具</strong></p>
+<hr>
+<h3 id="1。PUTTY-exe或者DC-unlocker也可以，连接正确的com口即可"><a href="#1。PUTTY-exe或者DC-unlocker也可以，连接正确的com口即可" class="headerlink" title="1。PUTTY.exe或者DC-unlocker也可以，连接正确的com口即可"></a>1。PUTTY.exe或者DC-unlocker也可以，连接正确的com口即可</h3><hr>
+<pre><code>无法降级时可以拆机，可以在刷完机后，两个端口还在的情况下修复。</code></pre><hr>
+<h2 id><a href="#" class="headerlink" title=" "></a><img src="/2020/03/06/%E5%8D%8E%E4%B8%BAB%E7%B3%BB%E5%88%97nv%E4%BF%A1%E6%81%AFIMEI%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5B310%E4%B8%BA%E4%BE%8B%EF%BC%89/putty.png" alt="putty图片"> </h2><pre><code>putty连接端口的设置如图    </code></pre><p><img src="/2020/03/06/%E5%8D%8E%E4%B8%BAB%E7%B3%BB%E5%88%97nv%E4%BF%A1%E6%81%AFIMEI%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5B310%E4%B8%BA%E4%BE%8B%EF%BC%89/dcunlocker.png" alt="dcunlocer图片"></p>
+<hr>
+<pre><code>dc-unlocker连接端口的设置如图，直接打开，点击放大镜
+
+（图片的命令不是修复命令，请勿输入！！）</code></pre><hr>
+<hr>
+<h2 id="方法三-刷入一个开启了（adb-atc）的高版本"><a href="#方法三-刷入一个开启了（adb-atc）的高版本" class="headerlink" title="方法三    刷入一个开启了（adb/atc）的高版本"></a>方法三    刷入一个开启了（adb/atc）的高版本</h2><hr>
+<h2 id="方法3需要的工具"><a href="#方法3需要的工具" class="headerlink" title="方法3需要的工具"></a><strong>方法3需要的工具</strong></h2><h3 id="1。安卓adb工具"><a href="#1。安卓adb工具" class="headerlink" title="1。安卓adb工具"></a>1。安卓adb工具</h3><hr>
+<p>在adb工具下，用CMD打开窗口，输入 </p>
+<pre><code>adb connect 192.168.8.1:5555</code></pre><p><img src="/2020/03/06/%E5%8D%8E%E4%B8%BAB%E7%B3%BB%E5%88%97nv%E4%BF%A1%E6%81%AFIMEI%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5B310%E4%B8%BA%E4%BE%8B%EF%BC%89/adb.png" alt="adb图片">     </p>
+<pre><code>(192.168.8.1以实际的管理页面为准，华为默认一般是这个) </code></pre><p>adb的用法会比较特别，需要在命令前加atc，如     </p>
+<pre><code>atc at^reset  </code></pre><hr>
+<p>这样即可</p>
+<hr>
+<pre><code>当然有些机器有usb口的，可以尝试usb连接电脑，然后用dc-unlocker转换成调试模式。</code></pre><hr>
+<hr>
+<h2 id="需要用到的命令"><a href="#需要用到的命令" class="headerlink" title="需要用到的命令"></a>需要用到的命令</h2><hr>
+<p>以下修复命令，根据自己的缺失信息，自己选择相应的命令修复。</p>
+<hr>
+<hr>
+<pre><code>AT^PHYNUM=IMEI,你的机器IMEI       一般机器底部会有
+
+AT^SN=你的机器SN                  一般机器底部会有
+
+AT^PHYNUM=MAC,ABCDEFGHIJ          注意输入的时候不需要冒号 “：”
+
+AT^SSID=0,&quot;HUAWEI-B310-F91B&quot;      看自己的路由器底部！！
+
+AT^SSID=1,&quot;HUAWEI-B310-F91B-1&quot;
+
+AT^SSID=2,&quot;HUAWEI-B310-F91B-2&quot;
+
+AT^SSID=3,&quot;HUAWEI-B310-F91B-3&quot;
+
+AT^WIKEY=0,&quot;密码自己可换输，路由器底部为默认&quot; 
+
+AT^WIKEY=1,&quot;密码自己可换输，路由器底部为默认&quot;
+
+AT^WIKEY=2,&quot;密码自己可换输，路由器底部为默认&quot;
+
+AT^WIKEY=3,&quot;密码自己可换输，路由器底部为默认&quot;</code></pre><p>接下来这个一定要用的，这是保存与覆盖NV信息的命令。</p>
+<pre><code>AT^INFORBU</code></pre><p>接下来用这个命令重启路由器</p>
+<pre><code>AT^RESET</code></pre><hr>
+<hr>
+<p>教程结束，直接断开连接，进管理页面即可查看修复情况！！</p>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
 </div>
                 
 
@@ -284,7 +485,7 @@ AT^WIKEY=0,&quot;密码随便写&quot;</code></pre><p>缺什么补什么，每�
                     </p>
                     <a href="/categories">
                         <p class="title has-text-weight-normal">
-                            4
+                            5
                         </p>
                     </a>
                 </div>
@@ -296,7 +497,7 @@ AT^WIKEY=0,&quot;密码随便写&quot;</code></pre><p>缺什么补什么，每�
                     </p>
                     <a href="/tags">
                         <p class="title has-text-weight-normal">
-                            4
+                            3
                         </p>
                     </a>
                 </div>
@@ -360,12 +561,20 @@ AT^WIKEY=0,&quot;密码随便写&quot;</code></pre><p>缺什么补什么，每�
             </h3>
             <ul class="menu-list">
             <li>
+        <a class="level is-marginless" href="/categories/%E4%B8%AD%E5%85%B4NV%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B/">
+            <span class="level-start">
+                <span class="level-item">中兴NV修复教程</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">1</span>
+            </span>
+        </a></li><li>
         <a class="level is-marginless" href="/categories/%E4%B8%AD%E5%85%B4%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/">
             <span class="level-start">
                 <span class="level-item">中兴刷机教程</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">5</span>
+                <span class="level-item tag">6</span>
             </span>
         </a></li><li>
         <a class="level is-marginless" href="/categories/%E5%88%B7%E6%9C%BA%E5%B7%A5%E5%85%B7/">
@@ -389,7 +598,7 @@ AT^WIKEY=0,&quot;密码随便写&quot;</code></pre><p>缺什么补什么，每�
                 <span class="level-item">华为刷机教程</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">11</span>
+                <span class="level-item tag">9</span>
             </span>
         </a></li>
             </ul>
@@ -402,7 +611,7 @@ AT^WIKEY=0,&quot;密码随便写&quot;</code></pre><p>缺什么补什么，每�
         <h3 class="menu-label">
             标签云
         </h3>
-        <a href="/tags/NV%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B/" style="font-size: 10px;">NV修复教程</a> <a href="/tags/%E5%88%B7%E6%9C%BA%E5%B7%A5%E5%85%B7/" style="font-size: 15px;">刷机工具</a> <a href="/tags/%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/" style="font-size: 20px;">刷机教程</a> <a href="/tags/%E5%8D%8E%E4%B8%BANV%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B/" style="font-size: 10px;">华为NV修复教程</a>
+        <a href="/tags/NV%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B/" style="font-size: 15px;">NV修复教程</a> <a href="/tags/%E5%88%B7%E6%9C%BA%E5%B7%A5%E5%85%B7/" style="font-size: 10px;">刷机工具</a> <a href="/tags/%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/" style="font-size: 20px;">刷机教程</a>
     </div>
 </div>
     
@@ -414,18 +623,18 @@ AT^WIKEY=0,&quot;密码随便写&quot;</code></pre><p>缺什么补什么，每�
         
         <article class="media">
             
-            <a href="/2020/03/07/%E9%80%9A%E7%94%A8%20-%20%E5%89%AF%E6%9C%AC%20(16)%20-%20%E5%89%AF%E6%9C%AC/" class="media-left">
+            <a href="/2020/03/07/%E4%B8%AD%E5%85%B4mf91s%E7%B3%BB%E5%88%97%E5%BC%80%E5%90%AFftp%E5%8A%9F%E8%83%BD%E6%95%99%E7%A8%8B/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="华为荣耀盒子pro固件hitv-m1降级教程">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="中兴mf91s系列开启ftp功能教程">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-07T07:10:04.717Z">2020-03-07</time></div>
-                    <a href="/2020/03/07/%E9%80%9A%E7%94%A8%20-%20%E5%89%AF%E6%9C%AC%20(16)%20-%20%E5%89%AF%E6%9C%AC/" class="title has-link-black-ter is-size-6 has-text-weight-normal">华为荣耀盒子pro固件hitv-m1降级教程</a>
+                    <a href="/2020/03/07/%E4%B8%AD%E5%85%B4mf91s%E7%B3%BB%E5%88%97%E5%BC%80%E5%90%AFftp%E5%8A%9F%E8%83%BD%E6%95%99%E7%A8%8B/" class="title has-link-black-ter is-size-6 has-text-weight-normal">中兴mf91s系列开启ftp功能教程</a>
                     <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/%E5%8D%8E%E4%B8%BA%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/">华为刷机教程</a>
+                        <a class="has-link-grey -link" href="/categories/%E4%B8%AD%E5%85%B4%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/">中兴刷机教程</a>
                     </p>
                 </div>
             </div>
@@ -433,18 +642,18 @@ AT^WIKEY=0,&quot;密码随便写&quot;</code></pre><p>缺什么补什么，每�
         
         <article class="media">
             
-            <a href="/2020/03/07/%E9%80%9A%E7%94%A8%20-%20%E5%89%AF%E6%9C%AC%20(15)%20-%20%E5%89%AF%E6%9C%AC/" class="media-left">
+            <a href="/2020/03/07/%E4%B8%AD%E5%85%B4MDM9615%E7%B1%BB%E6%9C%BA%E5%99%A8%E6%81%A2%E5%A4%8D%E6%95%99%E7%A8%8Bnv%E6%81%A2%E5%A4%8D%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5mf91s%E4%B8%BA%E4%BE%8B%EF%BC%89/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="华为荣耀盒子pro固件hitv-m1降级教程">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="中兴MDM9615类机器恢复教程nv恢复教程（以mf91s为例）">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-07T07:10:04.180Z">2020-03-07</time></div>
-                    <a href="/2020/03/07/%E9%80%9A%E7%94%A8%20-%20%E5%89%AF%E6%9C%AC%20(15)%20-%20%E5%89%AF%E6%9C%AC/" class="title has-link-black-ter is-size-6 has-text-weight-normal">华为荣耀盒子pro固件hitv-m1降级教程</a>
+                    <a href="/2020/03/07/%E4%B8%AD%E5%85%B4MDM9615%E7%B1%BB%E6%9C%BA%E5%99%A8%E6%81%A2%E5%A4%8D%E6%95%99%E7%A8%8Bnv%E6%81%A2%E5%A4%8D%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5mf91s%E4%B8%BA%E4%BE%8B%EF%BC%89/" class="title has-link-black-ter is-size-6 has-text-weight-normal">中兴MDM9615类机器恢复教程nv恢复教程（以mf91s为例）</a>
                     <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/%E5%8D%8E%E4%B8%BA%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/">华为刷机教程</a>
+                        <a class="has-link-grey -link" href="/categories/%E4%B8%AD%E5%85%B4NV%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B/">中兴NV修复教程</a>
                     </p>
                 </div>
             </div>
@@ -545,7 +754,7 @@ AT^WIKEY=0,&quot;密码随便写&quot;</code></pre><p>缺什么补什么，每�
                 <div class="control">
                     <a class="tags has-addons" href="/tags/NV%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B/">
                         <span class="tag">NV修复教程</span>
-                        <span class="tag is-grey">1</span>
+                        <span class="tag is-grey">3</span>
                     </a>
                 </div>
                 
@@ -559,14 +768,7 @@ AT^WIKEY=0,&quot;密码随便写&quot;</code></pre><p>缺什么补什么，每�
                 <div class="control">
                     <a class="tags has-addons" href="/tags/%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/">
                         <span class="tag">刷机教程</span>
-                        <span class="tag is-grey">16</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/%E5%8D%8E%E4%B8%BANV%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B/">
-                        <span class="tag">华为NV修复教程</span>
-                        <span class="tag is-grey">1</span>
+                        <span class="tag is-grey">15</span>
                     </a>
                 </div>
                 
