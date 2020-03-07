@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html  lang="zh">
+<head>
+    <meta charset="utf-8" />
+
+<meta name="generator" content="Hexo 4.2.0" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+<title>中兴MF253-TTL刷机（大板）救砖教程 - 风流云</title>
+
+
+    <meta name="description" content="首先说一下，MF253S的ttl只能刷大板，也就是主板，不能刷可以拆卸的那个4G模块。  第一步：准备工作 1。拆机，把机器拆开，这里就不详细说了。（要拆掉底部2个螺丝以及内部4个螺丝）  2。工具 到博客工具篇自己下载工具1：putty  工具2：tftp 3。固件自行准备，需要刷机包解压出来的部分文件。根据自己的机器相应刷机可。一般刷 cpe侧root_uImage就足够了。其他两个用于救">
+<meta property="og:type" content="article">
+<meta property="og:title" content="中兴MF253-TTL刷机（大板）救砖教程">
+<meta property="og:url" content="http://yoursite.com/2020/03/06/%E4%B8%AD%E5%85%B4MF253-TTL%E5%88%B7%E6%9C%BA%EF%BC%88%E5%A4%A7%E6%9D%BF%EF%BC%89%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B/index.html">
+<meta property="og:site_name" content="风流云">
+<meta property="og:description" content="首先说一下，MF253S的ttl只能刷大板，也就是主板，不能刷可以拆卸的那个4G模块。  第一步：准备工作 1。拆机，把机器拆开，这里就不详细说了。（要拆掉底部2个螺丝以及内部4个螺丝）  2。工具 到博客工具篇自己下载工具1：putty  工具2：tftp 3。固件自行准备，需要刷机包解压出来的部分文件。根据自己的机器相应刷机可。一般刷 cpe侧root_uImage就足够了。其他两个用于救">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://yoursite.com/images/og_image.png">
+<meta property="article:published_time" content="2020-03-06T14:40:01.751Z">
+<meta property="article:modified_time" content="2020-03-07T05:47:51.707Z">
+<meta property="article:author" content="风流云">
+<meta property="article:tag" content="刷机教程">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/images/og_image.png">
+
+
+
+
+
+
+
+<link rel="icon" href="/images/battery_low.gif">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css">
+
+
+    
+    
+<style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+
+    
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+
+    
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+    
+    
+    
+    
+<link rel="stylesheet" href="/css/back-to-top.css">
+
+    
+    
+    
+    
+    
+    
+    
+    <link rel="stylesheet" href="/css/progressbar.css">
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+    
+    
+    
+
+
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/">
+            
+                <img src="/images/battery_charge.gif" alt="中兴MF253-TTL刷机（大板）救砖教程" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item"
+                href="/">主页</a>
+                
+                <a class="navbar-item"
+                href="/archives">文章目录</a>
+                
+                <a class="navbar-item"
+                href="/categories">分类</a>
+                
+                <a class="navbar-item"
+                href="/tags">标签</a>
+                
+                <a class="navbar-item"
+                href="/about">关于我</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                
+                <a class="navbar-item search" title="搜索" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main">
+<div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-03-06T14:40:01.751Z">2020-03-06</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/%E4%B8%AD%E5%85%B4%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/">中兴刷机教程</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    6 分钟 读完 (大约 966 个字)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                中兴MF253-TTL刷机（大板）救砖教程
+            
+        </h1>
+        <div class="content">
+            <hr>
+<hr>
+<p>首先说一下，MF253S的ttl<strong>只能刷大板</strong>，也就是主板，不能刷可以拆卸的那个4G模块。</p>
+<hr>
+<h2 id="第一步：准备工作"><a href="#第一步：准备工作" class="headerlink" title="第一步：准备工作"></a><strong>第一步：准备工作</strong></h2><hr>
+<h4 id="1。拆机，把机器拆开，这里就不详细说了。"><a href="#1。拆机，把机器拆开，这里就不详细说了。" class="headerlink" title="1。拆机，把机器拆开，这里就不详细说了。"></a>1。拆机，把机器拆开，这里就不详细说了。</h4><p>（要拆掉底部2个螺丝以及内部4个螺丝）</p>
+<hr>
+<h4 id="2。工具-到博客工具篇自己下载"><a href="#2。工具-到博客工具篇自己下载" class="headerlink" title="2。工具 到博客工具篇自己下载"></a>2。工具 到博客工具篇自己下载</h4><pre><code>工具1：putty
+
+工具2：tftp</code></pre><hr>
+<h4 id="3。固件自行准备，需要刷机包解压出来的部分文件。"><a href="#3。固件自行准备，需要刷机包解压出来的部分文件。" class="headerlink" title="3。固件自行准备，需要刷机包解压出来的部分文件。"></a>3。固件自行准备，需要刷机包解压出来的部分文件。</h4><p>根据自己的机器相应刷机可。一般刷 cpe侧root_uImage就足够了。其他两个用于救砖，</p>
+<pre><code>1。cpe侧的root_uImage
+
+2。引导文件uboot.img
+
+3。整个编程器固件flash.bin</code></pre><hr>
+<h2 id="第二步：连接机器"><a href="#第二步：连接机器" class="headerlink" title="第二步：连接机器"></a><strong>第二步：连接机器</strong></h2><hr>
+<h4 id="1。用TTL转USB的工具，（"><a href="#1。用TTL转USB的工具，（" class="headerlink" title="1。用TTL转USB的工具，（"></a>1。用TTL转USB的工具，（</h4><p>淘宝上一堆，自行参看购买），连接上面的点。tx和rx自行互换到合适即可。暂时不要连接电脑。</p>
+<p><img src="/2020/03/06/%E4%B8%AD%E5%85%B4MF253-TTL%E5%88%B7%E6%9C%BA%EF%BC%88%E5%A4%A7%E6%9D%BF%EF%BC%89%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B/ttl.jpg" alt="ttl图片"> </p>
+<hr>
+<h4 id="2。插上设备电源开机，接着再插ttl转接到电脑。"><a href="#2。插上设备电源开机，接着再插ttl转接到电脑。" class="headerlink" title="2。插上设备电源开机，接着再插ttl转接到电脑。"></a>2。插上设备电源开机，接着再插ttl转接到电脑。</h4><p>（未开机前，电脑不要插ttl转接，有电的话，机器不开机跑代码）</p>
+<hr>
+<h4 id="3。在电脑设备管理器上，查看一下你的工具端口。"><a href="#3。在电脑设备管理器上，查看一下你的工具端口。" class="headerlink" title="3。在电脑设备管理器上，查看一下你的工具端口。"></a>3。在电脑设备管理器上，查看一下你的工具端口。</h4><p>然后打开<strong>putty</strong>软件，按照下图设置，填写相应的端口，速度一定要<strong>57600</strong>，不然都是乱码。</p>
+<p><img src="/2020/03/06/%E4%B8%AD%E5%85%B4MF253-TTL%E5%88%B7%E6%9C%BA%EF%BC%88%E5%A4%A7%E6%9D%BF%EF%BC%89%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B/putty.jpg" alt="putty图片"> </p>
+<hr>
+<hr>
+<h2 id="第三步-切换模式，进行tftp刷机"><a href="#第三步-切换模式，进行tftp刷机" class="headerlink" title="第三步 切换模式，进行tftp刷机"></a><strong>第三步 切换模式，进行tftp刷机</strong></h2><hr>
+<h4 id="1。打开putty后，机器会跑出很多代码，暂时不用理，等机器自动跑完一定的代码。"><a href="#1。打开putty后，机器会跑出很多代码，暂时不用理，等机器自动跑完一定的代码。" class="headerlink" title="1。打开putty后，机器会跑出很多代码，暂时不用理，等机器自动跑完一定的代码。"></a>1。打开putty后，机器会跑出很多代码，暂时不用理，等机器自动跑完一定的代码。</h4><p>接着按“CTRL”+“C”，也就是我们常用的复制快捷键，这是linux 的暂停打断功能键。接着输入 </p>
+<pre><code>reboot </code></pre><p>按回车，让机器重启。</p>
+<hr>
+<h4 id="2。-机器重启后，会马上跑出一堆代码，当你见到下图的有1-2-3-4-7-9这样的选项的界面时，"><a href="#2。-机器重启后，会马上跑出一堆代码，当你见到下图的有1-2-3-4-7-9这样的选项的界面时，" class="headerlink" title="2。 机器重启后，会马上跑出一堆代码，当你见到下图的有1/2/3/4/7/9这样的选项的界面时，"></a>2。 机器重启后，会马上跑出一堆代码，当你见到下图的有1/2/3/4/7/9这样的选项的界面时，</h4><p>   马上按<strong>2</strong>或者你想要刷的模式，</p>
+<p>   如 <strong>9</strong> 。</p>
+<p>   <strong>按一次，不要按太多次，不然又要重新来。</strong></p>
+<p><img src="/2020/03/06/%E4%B8%AD%E5%85%B4MF253-TTL%E5%88%B7%E6%9C%BA%EF%BC%88%E5%A4%A7%E6%9D%BF%EF%BC%89%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B/%E6%A8%A1%E5%BC%8F.jpg" alt="模式图片"> </p>
+<hr>
+<h4 id="3。-接着输入-“Y”确认进入刷写模式。"><a href="#3。-接着输入-“Y”确认进入刷写模式。" class="headerlink" title="3。 接着输入 “Y”确认进入刷写模式。"></a>3。 接着输入 “Y”确认进入刷写模式。</h4><p><img src="/2020/03/06/%E4%B8%AD%E5%85%B4MF253-TTL%E5%88%B7%E6%9C%BA%EF%BC%88%E5%A4%A7%E6%9D%BF%EF%BC%89%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B/%E6%A8%A1%E5%BC%8F2.jpg" alt="模式图片"> </p>
+<p>（图是刷编程器的“9”的模式为例。刷写功能自己按需选择，不要乱照搬图中）</p>
+<hr>
+<h4 id="4。根据上图的提示，"><a href="#4。根据上图的提示，" class="headerlink" title="4。根据上图的提示，"></a>4。根据上图的提示，</h4><p>把自己本地连接的ip换成</p>
+<pre><code>192.168.0.22</code></pre><p>子掩码 </p>
+<pre><code>255.255.255.0</code></pre><p>网关<br>     192.168.0.1 </p>
+<p><img src="/2020/03/06/%E4%B8%AD%E5%85%B4MF253-TTL%E5%88%B7%E6%9C%BA%EF%BC%88%E5%A4%A7%E6%9D%BF%EF%BC%89%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B/ipv4.png" alt="ip设置图片"> </p>
+<hr>
+<h4 id="5。打开tftp，设置好相应的信息，选好要刷的对应文件（putty也会有上图相应的提示网址和文件名），如图。"><a href="#5。打开tftp，设置好相应的信息，选好要刷的对应文件（putty也会有上图相应的提示网址和文件名），如图。" class="headerlink" title="5。打开tftp，设置好相应的信息，选好要刷的对应文件（putty也会有上图相应的提示网址和文件名），如图。"></a>5。打开tftp，设置好相应的信息，选好要刷的对应文件（putty也会有上图相应的提示网址和文件名），如图。</h4><p><img src="/2020/03/06/%E4%B8%AD%E5%85%B4MF253-TTL%E5%88%B7%E6%9C%BA%EF%BC%88%E5%A4%A7%E6%9D%BF%EF%BC%89%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B/tftp.jpg" alt="模式图片"> </p>
+<hr>
+<h4 id="6。接着回到putty，看清楚提示，按回车键即可。然后会自动刷写，无需其他操作。"><a href="#6。接着回到putty，看清楚提示，按回车键即可。然后会自动刷写，无需其他操作。" class="headerlink" title="6。接着回到putty，看清楚提示，按回车键即可。然后会自动刷写，无需其他操作。"></a>6。接着回到putty，看清楚提示，按回车键即可。然后会自动刷写，无需其他操作。</h4><hr>
+<hr>
+<h2 id="其他问题："><a href="#其他问题：" class="headerlink" title="其他问题："></a><strong>其他问题：</strong></h2><hr>
+<h4 id="1。putty连接乱码？"><a href="#1。putty连接乱码？" class="headerlink" title="1。putty连接乱码？"></a>1。putty连接乱码？</h4><pre><code>波特率没填对或者tx/rx接反了。</code></pre><hr>
+<h4 id="2。ttl连接机器，不跑代码？"><a href="#2。ttl连接机器，不跑代码？" class="headerlink" title="2。ttl连接机器，不跑代码？"></a>2。ttl连接机器，不跑代码？</h4><pre><code>一定要先开机，再连接TTL。</code></pre><hr>
+<h4 id="3。选择好模式刷机后，界面一直提示arp或者其他？"><a href="#3。选择好模式刷机后，界面一直提示arp或者其他？" class="headerlink" title="3。选择好模式刷机后，界面一直提示arp或者其他？"></a>3。选择好模式刷机后，界面一直提示arp或者其他？</h4><pre><code>确定好网络的IP设置按照putty的提示，文件也是。</code></pre><h4 id="4。选不了模式？看不到模式的界面？"><a href="#4。选不了模式？看不到模式的界面？" class="headerlink" title="4。选不了模式？看不到模式的界面？"></a>4。选不了模式？看不到模式的界面？</h4><pre><code>有些机器选模式的界面有时是1秒就过了，
+这是由于机器的故障问题不同，所以有时候是拼手速，
+或者用命令重启，就看到了也要马上按。</code></pre>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/tags/%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/" rel="tag">刷机教程</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+<div class="card">
+    <div class="card-content">
+        <h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3>
+        <div class="buttons is-centered">
+            
+                
+<a class="button is-success donate">
+    <span class="icon is-small">
+        <i class="fab fa-weixin"></i>
+    </span>
+    <span>微信</span>
+    <div class="qrcode"><img src="/images/wechatpay.png" alt="微信"></div>
+</a>
+
+                
+        </div>
+    </div>
+</div>
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/2020/03/06/%E4%B8%AD%E5%85%B4MF253s-minipci%E5%88%B7%E6%9C%BA%EF%BC%88%E5%B0%8F%E6%9D%BF4G%E6%A8%A1%E5%9D%97%EF%BC%89%E5%88%B7%E6%9C%BA%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">中兴MF253s-minipci刷机（小板4G模块）救砖教程</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/2020/03/06/%E5%8D%8E%E4%B8%BAB310-B315%E7%AD%89%E6%9C%BA%E5%99%A8%E5%85%8D%E6%8B%86%E6%9C%BA%E7%84%8A%E6%8E%A5%E5%88%B7%E6%9C%BA%E6%96%B9%E6%B3%95%E6%95%99%E7%A8%8B/">
+                <span class="level-item">华为B310/B315等机器免拆机/免焊接刷机方法教程</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+                
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-1 column-left ">
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <nav class="level">
+            <div class="level-item has-text-centered" style="flex-shrink: 1">
+                <div>
+                    
+                    <figure class="image is-128x128 has-mb-6">
+                        <img class="" src="/images/flower.jpg" alt="风流云">
+                    </figure>
+                    
+                    <p class="is-size-4 is-block">
+                        风流云
+                    </p>
+                    
+                    
+                    <p class="is-size-6 is-block">
+                        微信：QYYD5G
+                    </p>
+                    
+                    
+                    <p class="is-size-6 is-flex is-flex-center has-text-grey">
+                        <i class="fas fa-map-marker-alt has-mr-7"></i>
+                        <span>China,Guangdong</span>
+                    </p>
+                    
+                </div>
+            </div>
+        </nav>
+        <nav class="level is-mobile">
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        文章
+                    </p>
+                    <a href="/archives">
+                        <p class="title has-text-weight-normal">
+                            20
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        分类
+                    </p>
+                    <a href="/categories">
+                        <p class="title has-text-weight-normal">
+                            4
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        标签
+                    </p>
+                    <a href="/tags">
+                        <p class="title has-text-weight-normal">
+                            4
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="level">
+            <a class="level-item button is-link is-rounded" href="https://github.com/ppoffice" target="_blank" rel="noopener">
+                关注我</a>
+        </div>
+        
+        
+        
+    </div>
+</div>
+    
+        
+    
+        <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+        <h3 class="menu-label">
+            链接
+        </h3>
+        <ul class="menu-list">
+        
+            <li>
+                <a class="level is-mobile" href="http://www.qyyd5g.work/2020/03/06/%E5%8D%8E%E4%B8%BA4G%E8%B7%AF%E7%94%B1%E5%99%A8balong%E8%8A%AF%E7%89%87%E5%88%B7%E6%9C%BA%E7%AD%89%E5%B7%A5%E5%85%B7%E5%88%86%E4%BA%AB/" target="_blank" rel="noopener">
+                    <span class="level-left">
+                        <span class="level-item">华为刷机工具下载</span>
+                    </span>
+                    <span class="level-right">
+                        <span class="level-item tag">www.qyyd5g.work</span>
+                    </span>
+                </a>
+            </li>
+        
+            <li>
+                <a class="level is-mobile" href="http://www.qyyd5g.work/2020/03/06/%E4%B8%AD%E5%85%B44G%E8%B7%AF%E7%94%B1%E5%88%B7%E6%9C%BA%E5%B7%A5%E5%85%B7%E5%88%86%E4%BA%AB" target="_blank" rel="noopener">
+                    <span class="level-left">
+                        <span class="level-item">中兴刷机工具下载</span>
+                    </span>
+                    <span class="level-right">
+                        <span class="level-item tag">www.qyyd5g.work</span>
+                    </span>
+                </a>
+            </li>
+        
+        </ul>
+        </div>
+    </div>
+</div>
+
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                分类
+            </h3>
+            <ul class="menu-list">
+            <li>
+        <a class="level is-marginless" href="/categories/%E4%B8%AD%E5%85%B4%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/">
+            <span class="level-start">
+                <span class="level-item">中兴刷机教程</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">5</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/%E5%88%B7%E6%9C%BA%E5%B7%A5%E5%85%B7/">
+            <span class="level-start">
+                <span class="level-item">刷机工具</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">2</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/%E5%8D%8E%E4%B8%BANV%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B/">
+            <span class="level-start">
+                <span class="level-item">华为NV修复教程</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">2</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/%E5%8D%8E%E4%B8%BA%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/">
+            <span class="level-start">
+                <span class="level-item">华为刷机教程</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">11</span>
+            </span>
+        </a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+    
+        <div class="card widget">
+    <div class="card-content">
+        <h3 class="menu-label">
+            标签云
+        </h3>
+        <a href="/tags/NV%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B/" style="font-size: 10px;">NV修复教程</a> <a href="/tags/%E5%88%B7%E6%9C%BA%E5%B7%A5%E5%85%B7/" style="font-size: 15px;">刷机工具</a> <a href="/tags/%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/" style="font-size: 20px;">刷机教程</a> <a href="/tags/%E5%8D%8E%E4%B8%BANV%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B/" style="font-size: 10px;">华为NV修复教程</a>
+    </div>
+</div>
+    
+        <div class="card widget">
+    <div class="card-content">
+        <h3 class="menu-label">
+            最新文章
+        </h3>
+        
+        <article class="media">
+            
+            <a href="/2020/03/07/%E9%80%9A%E7%94%A8%20-%20%E5%89%AF%E6%9C%AC%20(16)%20-%20%E5%89%AF%E6%9C%AC/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="华为荣耀盒子pro固件hitv-m1降级教程">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-07T07:10:04.717Z">2020-03-07</time></div>
+                    <a href="/2020/03/07/%E9%80%9A%E7%94%A8%20-%20%E5%89%AF%E6%9C%AC%20(16)%20-%20%E5%89%AF%E6%9C%AC/" class="title has-link-black-ter is-size-6 has-text-weight-normal">华为荣耀盒子pro固件hitv-m1降级教程</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E5%8D%8E%E4%B8%BA%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/">华为刷机教程</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2020/03/07/%E9%80%9A%E7%94%A8%20-%20%E5%89%AF%E6%9C%AC%20(15)%20-%20%E5%89%AF%E6%9C%AC/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="华为荣耀盒子pro固件hitv-m1降级教程">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-07T07:10:04.180Z">2020-03-07</time></div>
+                    <a href="/2020/03/07/%E9%80%9A%E7%94%A8%20-%20%E5%89%AF%E6%9C%AC%20(15)%20-%20%E5%89%AF%E6%9C%AC/" class="title has-link-black-ter is-size-6 has-text-weight-normal">华为荣耀盒子pro固件hitv-m1降级教程</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E5%8D%8E%E4%B8%BA%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/">华为刷机教程</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2020/03/06/%E4%B8%AD%E5%85%B4MF91S%E5%88%B7%E6%9C%BA%E6%95%91%E7%A0%96%E4%B8%8E%E8%A7%A3%E9%94%81%E8%81%94%E9%80%9A%E7%BD%91%E7%BB%9C%E6%95%99%E7%A8%8B%E6%96%B9%E6%B3%95/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="中兴MDM9615类机器刷机救砖与MF91S解锁联通网络教程">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-06T14:40:03.003Z">2020-03-06</time></div>
+                    <a href="/2020/03/06/%E4%B8%AD%E5%85%B4MF91S%E5%88%B7%E6%9C%BA%E6%95%91%E7%A0%96%E4%B8%8E%E8%A7%A3%E9%94%81%E8%81%94%E9%80%9A%E7%BD%91%E7%BB%9C%E6%95%99%E7%A8%8B%E6%96%B9%E6%B3%95/" class="title has-link-black-ter is-size-6 has-text-weight-normal">中兴MDM9615类机器刷机救砖与MF91S解锁联通网络教程</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E4%B8%AD%E5%85%B4%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/">中兴刷机教程</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2020/03/06/%E4%B8%AD%E5%85%B4MF29S2%E6%99%AE%E9%80%9A%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="中兴MF29S2普通刷机教程">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-06T14:40:02.703Z">2020-03-06</time></div>
+                    <a href="/2020/03/06/%E4%B8%AD%E5%85%B4MF29S2%E6%99%AE%E9%80%9A%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/" class="title has-link-black-ter is-size-6 has-text-weight-normal">中兴MF29S2普通刷机教程</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E4%B8%AD%E5%85%B4%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/">中兴刷机教程</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2020/03/06/%E4%B8%AD%E5%85%B4CPE-MF253s%E6%99%AE%E9%80%9A%E5%88%B7%E6%9C%BA%E5%8D%87%E7%BA%A7%E6%95%99%E7%A8%8B/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="中兴CPE-MF253s普通刷机升级教程">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-06T14:40:02.416Z">2020-03-06</time></div>
+                    <a href="/2020/03/06/%E4%B8%AD%E5%85%B4CPE-MF253s%E6%99%AE%E9%80%9A%E5%88%B7%E6%9C%BA%E5%8D%87%E7%BA%A7%E6%95%99%E7%A8%8B/" class="title has-link-black-ter is-size-6 has-text-weight-normal">中兴CPE-MF253s普通刷机升级教程</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E4%B8%AD%E5%85%B4%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/">中兴刷机教程</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+    </div>
+</div>
+    
+        <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+        <h3 class="menu-label">
+            归档
+        </h3>
+        <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2020/03/">
+                <span class="level-start">
+                    <span class="level-item">三月 2020</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">20</span>
+                </span>
+            </a>
+        </li>
+        
+        </ul>
+        </div>
+    </div>
+</div>
+    
+        <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                标签
+            </h3>
+            <div class="field is-grouped is-grouped-multiline">
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/NV%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B/">
+                        <span class="tag">NV修复教程</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/%E5%88%B7%E6%9C%BA%E5%B7%A5%E5%85%B7/">
+                        <span class="tag">刷机工具</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/">
+                        <span class="tag">刷机教程</span>
+                        <span class="tag is-grey">16</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/%E5%8D%8E%E4%B8%BANV%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B/">
+                        <span class="tag">华为NV修复教程</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+        <div class="column-right-shadow is-hidden-widescreen ">
+        
+        </div>
+    
+</div>
+
+                
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/">
+                
+                    <img src="/images/battery_charge.gif" alt="中兴MF253-TTL刷机（大板）救砖教程" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2020 风流云&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> & <a
+                        href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("zh-CN");</script>
+
+
+<script>
+var IcarusThemeSettings = {
+    site: {
+        url: 'http://yoursite.com',
+        external_link: {"enable":true,"exclude":[]}
+    },
+    article: {
+        highlight: {
+            clipboard: true,
+            fold: 'unfolded'
+        }
+    }
+};
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+
+
+
+
+
+<script src="/js/animation.js"></script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+<script src="/js/gallery.js" defer></script>
+
+
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'flex'
+        });
+    });
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    MathJax.Hub.Config({
+        'HTML-CSS': {
+            matchFontHeight: false
+        },
+        SVG: {
+            matchFontHeight: false
+        },
+        CommonHTML: {
+            matchFontHeight: false
+        },
+        tex2jax: {
+            inlineMath: [
+                ['$','$'],
+                ['\\(','\\)']
+            ]
+        }
+    });
+});
+</script>
+
+
+<a id="back-to-top" title="回到顶端" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+<script src="/js/back-to-top.js" defer></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/js/main.js" defer></script>
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="想要查找什么..." />
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: '文章',
+                PAGES: '页面',
+                CATEGORIES: '分类',
+                TAGS: '标签',
+                UNTITLED: '(无标题)',
+            },
+            CONTENT_URL: '/content.json',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script src="/js/insight.js" defer></script>
+<link rel="stylesheet" href="/css/search.css">
+<link rel="stylesheet" href="/css/insight.css">
+    
+</body>
+</html>
