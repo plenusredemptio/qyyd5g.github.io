@@ -128,17 +128,17 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-03-06T14:40:01.471Z">2020-03-06</time>
+                <time class="level-item has-text-grey" datetime="2020-03-07T19:18:47.976Z">2020-03-08</time>
                 
                 <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/%E5%8D%8E%E4%B8%BA%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/">华为刷机教程</a>
+                <a class="has-link-grey -link" href="/categories/%E5%8D%8E%E4%B8%BAB%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/">华为B系列固件</a>
                 </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    6 分钟 读完 (大约 827 个字)
+                    1 分钟 读完 (大约 176 个字)
                 </span>
                 
                 
@@ -147,55 +147,44 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                <a class="has-link-black-ter" href="/%E5%8D%8E%E4%B8%BAB310-B315%E7%AD%89%E6%9C%BA%E5%99%A8%E5%85%8D%E6%8B%86%E6%9C%BA%E7%84%8A%E6%8E%A5%E5%88%B7%E6%9C%BA%E6%96%B9%E6%B3%95%E6%95%99%E7%A8%8B/">华为B310/B315等机器免拆机/免焊接刷机方法教程</a>
+                <a class="has-link-black-ter" href="/%E5%8D%8E%E4%B8%BAB310s-925(%E7%8E%B0%E5%AD%98)%E5%9B%BA%E4%BB%B6%E6%B1%87%E6%80%BB%20/">华为B310s-925（现存）固件汇总</a>
             
         </h1>
         <div class="content">
             <hr>
 <hr>
-<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a><strong>准备工作</strong></h2><hr>
-<h3 id="1。PUTTY-exe"><a href="#1。PUTTY-exe" class="headerlink" title="1。PUTTY.exe"></a>1。PUTTY.exe</h3><h3 id="2。curl-exe"><a href="#2。curl-exe" class="headerlink" title="2。curl.exe"></a>2。curl.exe</h3><h3 id="3。进模式-bat-（要与curl-exe需在同一文件夹）"><a href="#3。进模式-bat-（要与curl-exe需在同一文件夹）" class="headerlink" title="3。进模式.bat （要与curl.exe需在同一文件夹）"></a>3。进模式.bat （要与curl.exe需在同一文件夹）</h3><h3 id="4。进模式-xml-（要与curl-exe需在同一文件夹）"><a href="#4。进模式-xml-（要与curl-exe需在同一文件夹）" class="headerlink" title="4。进模式.xml （要与curl.exe需在同一文件夹）"></a>4。进模式.xml （要与curl.exe需在同一文件夹）</h3><h3 id="5。multicast-upgrade-tool-exe"><a href="#5。multicast-upgrade-tool-exe" class="headerlink" title="5。multicast_upgrade_tool.exe"></a>5。multicast_upgrade_tool.exe</h3><pre><code>请确保自己的机子是21.316.X.X.X，高于316的无法进入telnet的。
-（此方法不适合高版本的机器）</code></pre><p>低版本这种方法适用于免拆。</p>
-<p>比如B310as-852的全网通版本这两个是可以的：21.316.01.101.59/21.316.01.102.59</p>
-<hr>
-<pre><code>固件自行准备</code></pre><hr>
-<hr>
-<h2 id="第一步-进刷机模式"><a href="#第一步-进刷机模式" class="headerlink" title="第一步  进刷机模式"></a><strong>第一步  进刷机模式</strong></h2><hr>
-<p>1。<strong>双击 “进模式.bat”</strong>，会显示下图的结果。如果不显示或者是提示无法连接，那表示你的版本不支持，请换低版本。</p>
-<p><img src="/%E5%8D%8E%E4%B8%BAB310-B315%E7%AD%89%E6%9C%BA%E5%99%A8%E5%85%8D%E6%8B%86%E6%9C%BA%E7%84%8A%E6%8E%A5%E5%88%B7%E6%9C%BA%E6%96%B9%E6%B3%95%E6%95%99%E7%A8%8B/%E6%A8%A1%E5%BC%8F.jpg" alt="模式图片"></p>
-<p>2.按任意键关闭窗口后，<strong>打开putty</strong>，输入路由器ip <strong>192.168.8.1</strong>（以你的机器的管理页面为准，华为大部分是这个），</p>
-<p>  选择<strong>telnet</strong>，然后直接点<strong>open</strong>。</p>
-<p><img src="/%E5%8D%8E%E4%B8%BAB310-B315%E7%AD%89%E6%9C%BA%E5%99%A8%E5%85%8D%E6%8B%86%E6%9C%BA%E7%84%8A%E6%8E%A5%E5%88%B7%E6%9C%BA%E6%96%B9%E6%B3%95%E6%95%99%E7%A8%8B/putty2.jpg" alt="putty图片"> </p>
-<hr>
-<p>3.打开后，分别输入两次大写的<br>      ATI</p>
-<p><img src="/%E5%8D%8E%E4%B8%BAB310-B315%E7%AD%89%E6%9C%BA%E5%99%A8%E5%85%8D%E6%8B%86%E6%9C%BA%E7%84%8A%E6%8E%A5%E5%88%B7%E6%9C%BA%E6%96%B9%E6%B3%95%E6%95%99%E7%A8%8B/telnet.jpg" alt="命令图片"> </p>
-<pre><code>（图片仅供参考，输入需要的命令为准）</code></pre><p>有些putty会自动重复显示成AATTII，那是正常的。putty会显示你的设备信息。接下来输入命令 </p>
-<pre><code>AT^SFM=1 
+<h2 id="尾-号-297"><a href="#尾-号-297" class="headerlink" title="尾    号: 297"></a>尾    号: 297</h2><p>支持语言:  英语<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-925_UPDATE_21.327.01.02.297.BIN
 
-AT^RESET</code></pre><p>这两个命令后，分别显示OK，路由器就会进入刷机模式，只亮电源灯。</p>
+B310s-925_UPDATE_21.327.01.03.297.BIN
+
+B310s-925_UPDATE_21.333.01.00.297.BIN</code></pre><hr>
+<h2 id="尾-号-1226"><a href="#尾-号-1226" class="headerlink" title="尾    号: 1226"></a>尾    号: 1226</h2><p>支持语言:  英语<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-925_UPDATE_21.321.03.01.1226.BIN
+
+B310s-925_UPDATE_21.329.01.03.1226.BIN
+
+B310s-925_UPDATE_21.329.01.30.1226.BIN
+
+B310s-925_UPDATE_21.329.01.04.1226.BIN
+
+B310s-925_UPDATE_21.333.01.31.1226.BIN
+
+B310s-925_UPDATE_21.333.01.32.1226.BIN</code></pre><hr>
+<h2 id="尾-号-1439"><a href="#尾-号-1439" class="headerlink" title="尾    号: 1439"></a>尾    号: 1439</h2><p>支持语言:  英语<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-925_UPDATE_21.333.01.00.1439.BIN</code></pre><hr>
+<h2 id="尾-号-1457"><a href="#尾-号-1457" class="headerlink" title="尾    号: 1457"></a>尾    号: 1457</h2><p>支持语言:  英语/柬埔寨<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-925_UPDATE_21.329.01.01.1457.BIN
+
+B310s-925_UPDATE_21.329.01.02.1457.BIN</code></pre><hr>
+<h2 id="尾-号-1484"><a href="#尾-号-1484" class="headerlink" title="尾    号: 1484"></a>尾    号: 1484</h2><p>支持语言:  英语<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-925_UPDATE_21.329.01.01.1484.BIN
+
+B310s-925_UPDATE_21.329.01.02.1484.BIN
+
+B310s-925_UPDATE_21.333.01.00.1484.BIN</code></pre><hr>
 <hr>
-<hr>
-<h2 id="第二步-打开软件刷机"><a href="#第二步-打开软件刷机" class="headerlink" title="第二步  打开软件刷机"></a><strong>第二步  打开软件刷机</strong></h2><hr>
-<p>关闭putty后，最好把本地的ipv4改成192.168.8.100，子掩码255.255.225.0，网关 192.168.8.1.</p>
-<hr>
-<p>接着打开<strong>multicast_upgrade_tool.exe</strong>。</p>
-<pre><code>首次打开会让你选择解压软件，如winrar。
-请根据要求找到你已经安装过的解压软件，
-比如我的是winrar.exe。
-别说你电脑连压缩软件都没安装。</code></pre><hr>
-<p>软件打开后，选择语言为中文，会方便一点，选择相应的网卡。</p>
-<p><img src="/%E5%8D%8E%E4%B8%BAB310-B315%E7%AD%89%E6%9C%BA%E5%99%A8%E5%85%8D%E6%8B%86%E6%9C%BA%E7%84%8A%E6%8E%A5%E5%88%B7%E6%9C%BA%E6%96%B9%E6%B3%95%E6%95%99%E7%A8%8B/%E5%88%B7%E6%9C%BA%E5%B7%A5%E5%85%B7.png" alt="刷机图片"> </p>
-<hr>
-<p>因为之前设置过，选择好<strong>192.168.8.100</strong>那个网卡选项，也可以把强制升级的选项✔勾上，</p>
-<p>接着<strong>选择你要刷的固件</strong>，点击<strong>开始</strong>。</p>
-<p>请耐心等待固件刷写，下面的进度条一般走两次，不同的机器可能不同。</p>
-<hr>
-<p>观察固件刷写过程，机器的灯会从蓝灯-蓝灯-绿灯这样的变化，</p>
-<pre><code>如果绿灯常亮那就表示已经成功了，</code></pre><hr>
-<p>拔掉电源再插上电源，等路由器重新开机到正常界面。</p>
-<hr>
-<h2 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a><strong>写在最后</strong></h2><p>这种方法可以跨版本刷机，B310As-852可以刷国外的B310S-22/518/927之类的。B315也可以刷其他国外的多语言。</p>
-<p>如果刷了高版本的固件又无法用华为界面自带的“本地更新”刷回原版本，请先降级到现在型号的21.316.xx.xx.xx的版本才能使用此方法强制刷回你想要的版本。</p>
+<p><strong>如需此固件，请微信联系 QYYD5G</strong></p>
 
         </div>
         
@@ -218,17 +207,17 @@ AT^RESET</code></pre><p>这两个命令后，分别显示OK，路由器就会进
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-03-06T14:40:01.175Z">2020-03-06</time>
+                <time class="level-item has-text-grey" datetime="2020-03-07T19:18:47.631Z">2020-03-08</time>
                 
                 <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/%E5%8D%8E%E4%B8%BA%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/">华为刷机教程</a>
+                <a class="has-link-grey -link" href="/categories/%E5%8D%8E%E4%B8%BAB%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/">华为B系列固件</a>
                 </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    4 分钟 读完 (大约 615 个字)
+                    5 分钟 读完 (大约 727 个字)
                 </span>
                 
                 
@@ -237,59 +226,92 @@ AT^RESET</code></pre><p>这两个命令后，分别显示OK，路由器就会进
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                <a class="has-link-black-ter" href="/%E5%8D%8E%E4%B8%BAE5573s-852-853%E5%88%B7%E6%9C%BA%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B/">华为E5573s-852-853刷机救砖教程</a>
+                <a class="has-link-black-ter" href="/%E5%8D%8E%E4%B8%BAB310s-518(%E7%8E%B0%E5%AD%98)%E5%9B%BA%E4%BB%B6%E6%B1%87%E6%80%BB/">华为B310s-518（现存）固件汇总</a>
             
         </h1>
         <div class="content">
             <hr>
 <hr>
-<h2 id="一-准备工作"><a href="#一-准备工作" class="headerlink" title="一.准备工作"></a>一.准备工作</h2><hr>
-<p><strong>先到博客的工具篇下载以下工具。</strong></p>
-<h3 id="1-balong-flash-exe"><a href="#1-balong-flash-exe" class="headerlink" title="1.balong_flash.exe"></a>1.balong_flash.exe</h3><h3 id="2-Balong-USB-Downloader-1-0-1-10-exe"><a href="#2-Balong-USB-Downloader-1-0-1-10-exe" class="headerlink" title="2.Balong_USB_Downloader_1.0.1.10.exe"></a>2.Balong_USB_Downloader_1.0.1.10.exe</h3><h3 id="3-FC-Serial-Driver-Setup-exe"><a href="#3-FC-Serial-Driver-Setup-exe" class="headerlink" title="3.FC_Serial_Driver_Setup.exe"></a>3.FC_Serial_Driver_Setup.exe</h3><h3 id="4-Huawei-datacard-Driver"><a href="#4-Huawei-datacard-Driver" class="headerlink" title="4.Huawei datacard Driver"></a>4.Huawei datacard Driver</h3><h4 id="5-WIN8-10不认usb驱动的注册表（win7以下的不用）"><a href="#5-WIN8-10不认usb驱动的注册表（win7以下的不用）" class="headerlink" title="5.WIN8/10不认usb驱动的注册表（win7以下的不用）"></a>5.WIN8/10不认usb驱动的注册表（win7以下的不用）</h4><hr>
-<p>准备刷机固件和引导文件。</p>
-<p>1.E5573s_UPDATE_21.333.01.00.00_WEBUI_17.100.20.01.59_MRE5.ZIP</p>
-<p>2.usblsafe-5573s.bin</p>
+<h2 id="尾-号-46"><a href="#尾-号-46" class="headerlink" title="尾    号: 46"></a>尾    号: 46</h2><p>支持语言:  英语/阿根廷<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-518_UPDATE_21.323.03.01.46.BIN
+
+B310s-518_UPDATE_21.333.01.00.46.BIN
+
+B310s-518_UPDATE_21.333.01.01.46.BIN</code></pre><hr>
+<h2 id="尾-号-110"><a href="#尾-号-110" class="headerlink" title="尾    号: 110"></a>尾    号: 110</h2><p>支持语言:  英语/阿根廷<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-518_UPDATE_21.333.01.00.110.BIN</code></pre><hr>
+<h2 id="尾-号-150"><a href="#尾-号-150" class="headerlink" title="尾    号: 150"></a>尾    号: 150</h2><p>支持语言:  英语/巴西<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-518_UPDATE_21.333.01.00.150.BIN</code></pre><hr>
+<h2 id="尾-号-198"><a href="#尾-号-198" class="headerlink" title="尾    号: 198"></a>尾    号: 198</h2><p>支持语言:  英语/阿根廷<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-518_UPDATE_21.327.01.00.198.BIN</code></pre><hr>
+<h2 id="尾-号-202"><a href="#尾-号-202" class="headerlink" title="尾    号: 202"></a>尾    号: 202</h2><p>支持语言:  英语/阿根廷<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-518_UPDATE_21.333.01.00.202.BIN</code></pre><hr>
+<h2 id="尾-号-251"><a href="#尾-号-251" class="headerlink" title="尾    号: 251"></a>尾    号: 251</h2><p>支持语言:  英语<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-518_UPDATE_21.328.01.00.251.BIN</code></pre><hr>
+<h2 id="尾-号-252"><a href="#尾-号-252" class="headerlink" title="尾    号: 252"></a>尾    号: 252</h2><p>支持语言:  英语/阿根廷<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-518_UPDATE_21.333.01.00.252.BIN</code></pre><hr>
+<h2 id="尾-号-255"><a href="#尾-号-255" class="headerlink" title="尾    号: 255"></a>尾    号: 255</h2><p>支持语言:  英语/阿根廷<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-518_UPDATE_21.316.01.00.255.BIN
+
+B310s-518_UPDATE_21.329.01.00.255.BIN
+
+B310s-518_UPDATE_21.333.01.00.255.BIN</code></pre><hr>
+<h2 id="尾-号-266"><a href="#尾-号-266" class="headerlink" title="尾    号: 266"></a>尾    号: 266</h2><p>支持语言:  英语/阿根廷<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-518_UPDATE_21.329.01.01.266.BIN
+
+B310s-518_UPDATE_21.329.01.02.266.BIN</code></pre><hr>
+<h2 id="尾-号-303"><a href="#尾-号-303" class="headerlink" title="尾    号: 303"></a>尾    号: 303</h2><p>支持语言:  英语/阿根廷/葡萄牙<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-518_UPDATE_21.333.01.00.303.BIN
+
+B310s-518_UPDATE_21.333.01.00.303.BIN</code></pre><hr>
+<h2 id="尾-号-319"><a href="#尾-号-319" class="headerlink" title="尾    号: 319"></a>尾    号: 319</h2><p>支持语言:  英语/阿根廷<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-518_UPDATE_21.333.01.00.319.BIN</code></pre><hr>
+<h2 id="尾-号-916"><a href="#尾-号-916" class="headerlink" title="尾    号: 916"></a>尾    号: 916</h2><p>支持语言:  英语/阿根廷<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-518_UPDATE_21.333.01.00.916.BIN</code></pre><hr>
+<h2 id="尾-号-995"><a href="#尾-号-995" class="headerlink" title="尾    号: 995"></a>尾    号: 995</h2><p>支持语言:  英语/中文/俄语/西班牙/意大利/葡萄牙/阿根廷/阿拉伯<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-518_UPDATE_21.313.03.00.995.BIN
+
+B310s-518_UPDATE_21.333.01.00.995.BIN</code></pre><hr>
+<h2 id="尾-号-1039"><a href="#尾-号-1039" class="headerlink" title="尾    号: 1039"></a>尾    号: 1039</h2><p>支持语言:  英语/阿根廷<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-518_UPDATE_21.333.01.00.1039.BIN</code></pre><hr>
+<h2 id="尾-号-1057"><a href="#尾-号-1057" class="headerlink" title="尾    号: 1057"></a>尾    号: 1057</h2><p>支持语言:  英语/阿根廷<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-518_UPDATE_21.323.03.00.1057.BIN</code></pre><hr>
+<h2 id="尾-号-1074"><a href="#尾-号-1074" class="headerlink" title="尾    号: 1074"></a>尾    号: 1074</h2><p>支持语言:  英语/阿根廷<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-518_UPDATE_21.333.01.00.1074.BIN
+
+B310s-518_UPDATE_21.333.01.40.1074.BIN</code></pre><hr>
+<h2 id="尾-号-1300"><a href="#尾-号-1300" class="headerlink" title="尾    号: 1300"></a>尾    号: 1300</h2><p>支持语言:  英语/阿根廷<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-518_UPDATE_21.333.01.00.1300.BIN     </code></pre><hr>
+<h2 id="尾-号-1301"><a href="#尾-号-1301" class="headerlink" title="尾    号: 1301"></a>尾    号: 1301</h2><p>支持语言:  英语/阿根廷<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-518_UPDATE_21.333.01.00.1301.BIN</code></pre><hr>
+<h2 id="尾-号-1039-1"><a href="#尾-号-1039-1" class="headerlink" title="尾    号: 1039"></a>尾    号: 1039</h2><p>支持语言:  英语/阿根廷<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-518_UPDATE_21.333.01.00.916.BIN</code></pre><hr>
+<h2 id="尾-号-1395"><a href="#尾-号-1395" class="headerlink" title="尾    号: 1395"></a>尾    号: 1395</h2><p>支持语言:  英语/阿根廷<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-518_UPDATE_21.328.01.22.1395.BIN
+
+B310s-518_UPDATE_21.329.01.11.1395.BIN
+
+B310s-518_UPDATE_21.329.01.12.1395.BIN
+
+B310s-518_UPDATE_21.329.01.13.1395.BIN
+
+B310s-518_UPDATE_21.333.01.00.1395.BIN</code></pre><hr>
+<h2 id="尾-号-1492"><a href="#尾-号-1492" class="headerlink" title="尾    号: 1492"></a>尾    号: 1492</h2><p>支持语言:  英语<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-518_UPDATE_21.329.01.00.1492.BIN
+
+B310s-518_UPDATE_21.329.01.01.1492.BIN
+
+B310s-518_UPDATE_21.333.01.00.1492.BIN</code></pre><hr>
+<h2 id="尾-号-1493"><a href="#尾-号-1493" class="headerlink" title="尾    号: 1493"></a>尾    号: 1493</h2><p>支持语言:  英语/阿根廷<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-518_UPDATE_21.333.01.00.1493.BIN
+
+B310s-518_UPDATE_21.333.01.01.1493.BIN</code></pre><hr>
+<h2 id="尾-号-1494"><a href="#尾-号-1494" class="headerlink" title="尾    号: 1494"></a>尾    号: 1494</h2><p>支持语言:  英语<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-518_UPDATE_21.329.01.00.1494.BIN</code></pre><hr>
+<h2 id="尾-号-1518"><a href="#尾-号-1518" class="headerlink" title="尾    号: 1518"></a>尾    号: 1518</h2><p>支持语言:  英语<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-518_UPDATE_21.333.01.00.1518.BIN</code></pre><hr>
 <hr>
-<hr>
-<h2 id="第一步-短接"><a href="#第一步-短接" class="headerlink" title="第一步.短接"></a>第一步.短接</h2><hr>
-<p>用镊子夹着图中的金属点和屏蔽罩。</p>
-<p><img src="/%E5%8D%8E%E4%B8%BAE5573s-852-853%E5%88%B7%E6%9C%BA%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B/%E7%9F%AD%E6%8E%A5.png" alt="短接图片"></p>
-<p>接着电脑会出现一个设备，没安装驱动无法识别。</p>
-<p>那么就安装驱动。下面两个都是驱动，都安装了，会比较省事。</p>
-<hr>
-<p>FC_Serial_Driver_Setup.exe</p>
-<p>Huawei datacard Driver</p>
-<hr>
-<p>如果你是win8/win10系统，还需要加载一下注册表。</p>
-<p>下载WIN8/10不认usb驱动的注册表文件，解压，双击 WIN10不认usb注册表.reg即可，如果端口运转还是不正常，需要重启电脑一次。</p>
-<hr>
-<p>这时电脑就会识别出一个端口了。</p>
-<p><img src="/%E5%8D%8E%E4%B8%BAE5573s-852-853%E5%88%B7%E6%9C%BA%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B/%E5%8D%95%E7%AB%AF%E5%8F%A3.jpg" alt="单端口图片"></p>
-<hr>
-<hr>
-<h2 id="第二步-刷入引导"><a href="#第二步-刷入引导" class="headerlink" title="第二步.刷入引导"></a>第二步.刷入引导</h2><hr>
-<p>打开<strong>Balong_USB_Downloader_1.0.1.10.exe</strong>，在这个工具选择相应端口和文件刷入。</p>
-<p><img src="/%E5%8D%8E%E4%B8%BAE5573s-852-853%E5%88%B7%E6%9C%BA%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B/%E5%8A%A0%E8%BD%BDusbloader.jpg" alt="usbloader图片"></p>
-<pre><code>（图片仅供参考，以实际刷机为主）</code></pre><hr>
-<p>做完这一步后，电脑会<strong>出现2个端口</strong>。</p>
-<p><img src="/%E5%8D%8E%E4%B8%BAE5573s-852-853%E5%88%B7%E6%9C%BA%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B/%E5%8F%8C%E7%AB%AF%E5%8F%A3.png" alt="双端口图片"></p>
-<hr>
-<hr>
-<h2 id="第三步-刷机"><a href="#第三步-刷机" class="headerlink" title="第三步.刷机"></a>第三步.刷机</h2><hr>
-<p>直接把E5573s_UPDATE_21.333.01.00.00_WEBUI_17.100.20.01.59_MRE5.ZIP <strong>拖到balong_flash.exe</strong>。下图仅供参考。</p>
-<p><img src="/%E5%8D%8E%E4%B8%BAE5573s-852-853%E5%88%B7%E6%9C%BA%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B/%E6%8B%96%E5%8A%A8%E5%88%B7%E6%9C%BA.jpg" alt="刷机图片"></p>
-<hr>
-<p>会CMD的可以在刷机文件的目录下，使用cmd命令。</p>
-<p>（win7按住shift和右键，选择在此处打开命令（shell））</p>
-<p>可以直接打开输入命令： balong_flash.exe E5573s_UPDATE_21.333.01.00.00_WEBUI_17.100.20.01.59_MRE5.ZIP </p>
-<hr>
-<p>像这样的进程就是正在刷入固件了。 </p>
-<p><img src="/%E5%8D%8E%E4%B8%BAE5573s-852-853%E5%88%B7%E6%9C%BA%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B/%E5%88%B7%E6%9C%BA.png" alt="刷机中图片"></p>
-<pre><code>（图片直接用E5577做演示，仅供参考，以实际刷机为主）</code></pre><hr>
-<pre><code>注意：balong_flash.exe不需要双击打开他，也不能双击打开！！别傻傻以为工具坏了</code></pre><hr>
-<hr>
-<h2 id="第四步-重新开机或修复"><a href="#第四步-重新开机或修复" class="headerlink" title="第四步.重新开机或修复"></a>第四步.重新开机或修复</h2><hr>
-<p>刷完后，机器会自动重启，但是还是需要扣掉电池，重新开机一次。</p>
+<p><strong>如需此固件，请微信联系 QYYD5G</strong></p>
 
         </div>
         
@@ -312,17 +334,17 @@ AT^RESET</code></pre><p>这两个命令后，分别显示OK，路由器就会进
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-03-06T14:40:00.921Z">2020-03-06</time>
+                <time class="level-item has-text-grey" datetime="2020-03-07T19:18:47.161Z">2020-03-08</time>
                 
                 <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/%E5%8D%8E%E4%B8%BA%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/">华为刷机教程</a>
+                <a class="has-link-grey -link" href="/categories/%E5%8D%8E%E4%B8%BAB%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/">华为B系列固件</a>
                 </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    4 分钟 读完 (大约 627 个字)
+                    9 分钟 读完 (大约 1406 个字)
                 </span>
                 
                 
@@ -331,222 +353,204 @@ AT^RESET</code></pre><p>这两个命令后，分别显示OK，路由器就会进
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                <a class="has-link-black-ter" href="/%E5%8D%8E%E4%B8%BAE%E7%B3%BB%E5%88%97%E5%8D%A1%E6%89%98%E4%B8%8A%E7%BD%91%E5%8D%A1%E5%85%8D%E6%8B%86-%E5%8D%87%E7%BA%A7%E9%99%8D%E7%BA%A7-%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5E8372h%E4%B8%BA%E4%BE%8B%EF%BC%89/">华为E系列卡托上网卡免拆-升级降级-教程（以E8372h为例）</a>
+                <a class="has-link-black-ter" href="/%E5%8D%8E%E4%B8%BAB310s-22(%E7%8E%B0%E5%AD%98)%E5%9B%BA%E4%BB%B6%E6%B1%87%E6%80%BB/">华为B310s-22（现存）固件汇总</a>
             
         </h1>
         <div class="content">
             <hr>
 <hr>
-<p>本教程适用于卡托，usb上网卡那种，如果你的是带电池的mifi，想升级或者降级，</p>
-<p>建议请在博客中看这个《华为E系列mifi免拆-升级/降级-教程（以E5885为例）》</p>
-<hr>
-<h2 id="第一步：准备工作。"><a href="#第一步：准备工作。" class="headerlink" title="第一步：准备工作。"></a>第一步：准备工作。</h2><hr>
-<h4 id="工具（先到工具篇自行下载）："><a href="#工具（先到工具篇自行下载）：" class="headerlink" title="工具（先到工具篇自行下载）："></a>工具（先到工具篇自行下载）：</h4><p> 1.balong_flash.exe。</p>
-<p> 2.产线驱动_2.78.11.00.rar（此驱动只能用于刷机，不用时，需要卸载，否则不能插电脑上网）</p>
-<p> 3.dc-unlocker2client_1277.rar</p>
-<p> 4.WIN8/10不认usb注册表。</p>
-<hr>
-<h4 id="固件（自行准备）："><a href="#固件（自行准备）：" class="headerlink" title="固件（自行准备）："></a>固件（自行准备）：</h4><p>E8372h-155_UPDATE_21.329.62.01.233_WEBUI_21.100.42.00.233.ZIP</p>
-<hr>
-<h2 id="第二步：安装驱动-进刷机模式"><a href="#第二步：安装驱动-进刷机模式" class="headerlink" title="第二步：安装驱动,进刷机模式"></a>第二步：安装驱动,进刷机模式</h2><hr>
-<h4 id="1-安装产线驱动，然后把设备插入电脑，电脑显示两个端口。"><a href="#1-安装产线驱动，然后把设备插入电脑，电脑显示两个端口。" class="headerlink" title="1.安装产线驱动，然后把设备插入电脑，电脑显示两个端口。"></a>1.安装产线驱动，然后把设备插入电脑，电脑显示两个端口。</h4><p><img src="/%E5%8D%8E%E4%B8%BAE%E7%B3%BB%E5%88%97%E5%8D%A1%E6%89%98%E4%B8%8A%E7%BD%91%E5%8D%A1%E5%85%8D%E6%8B%86-%E5%8D%87%E7%BA%A7%E9%99%8D%E7%BA%A7-%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5E8372h%E4%B8%BA%E4%BE%8B%EF%BC%89/%E5%8F%8C%E7%AB%AF%E5%8F%A3.png" alt="安装驱动"></p>
-<h4 id="2-打开dc-unlocker。点击放大镜，"><a href="#2-打开dc-unlocker。点击放大镜，" class="headerlink" title="2.打开dc-unlocker。点击放大镜，"></a>2.打开dc-unlocker。点击放大镜，</h4><p>   然后会自动显示你的设备信息，</p>
-<p>   在下方的空白处，输入： <strong>AT^GODLOAD</strong> （小写字母也可以）然后回车。</p>
-<p>   设备会变成闪烁的灯，进入到下载模式。</p>
-<p><img src="/%E5%8D%8E%E4%B8%BAE%E7%B3%BB%E5%88%97%E5%8D%A1%E6%89%98%E4%B8%8A%E7%BD%91%E5%8D%A1%E5%85%8D%E6%8B%86-%E5%8D%87%E7%BA%A7%E9%99%8D%E7%BA%A7-%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5E8372h%E4%B8%BA%E4%BE%8B%EF%BC%89/dcunlocker.png" alt="dc-unlocer命令"></p>
-<p>（win8/win10需要安装“WIN8/10不认usb注册表”，而且可能还需要重启电脑一次。 ）<br>（建议win7及以下系统刷机！）</p>
-<hr>
-<h2 id="第三步：刷机"><a href="#第三步：刷机" class="headerlink" title="第三步：刷机"></a>第三步：刷机</h2><hr>
-<h4 id="1-鼠标按住固件，把固件拖动到balong-flash-exe，如下图。"><a href="#1-鼠标按住固件，把固件拖动到balong-flash-exe，如下图。" class="headerlink" title="1.鼠标按住固件，把固件拖动到balong_flash.exe，如下图。"></a>1.鼠标按住固件，把固件拖动到balong_flash.exe，如下图。</h4><p> <img src="/%E5%8D%8E%E4%B8%BAE%E7%B3%BB%E5%88%97%E5%8D%A1%E6%89%98%E4%B8%8A%E7%BD%91%E5%8D%A1%E5%85%8D%E6%8B%86-%E5%8D%87%E7%BA%A7%E9%99%8D%E7%BA%A7-%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5E8372h%E4%B8%BA%E4%BE%8B%EF%BC%89/%E6%8B%96%E5%8A%A8%E5%88%B7%E6%9C%BA.jpg" alt="刷机"></p>
-<p>  不行的，请在固件的文件夹内，使用cmd命令 balong_flash.exe 固件名</p>
-<p> 如：<br>  <strong>balong_flash.exe  E8372h- 155_UPDATE_21.329.62.01.233_WEBUI_21.100.42.00.233.ZIP</strong></p>
-<p>（建议win7系统，在刷机文件夹内按住“shift”+右键，选择“在此处打开命令  窗口”）<br>    请不要在windows的“开始”调出cmd，不然自己要cd到文件夹路径）</p>
-<hr>
-<h4 id="2-显示如下界面过后，等待固件全部刷完，按任意键退出刷机。"><a href="#2-显示如下界面过后，等待固件全部刷完，按任意键退出刷机。" class="headerlink" title="2.显示如下界面过后，等待固件全部刷完，按任意键退出刷机。"></a>2.显示如下界面过后，等待固件全部刷完，按任意键退出刷机。</h4><p> <img src="/%E5%8D%8E%E4%B8%BAE%E7%B3%BB%E5%88%97%E5%8D%A1%E6%89%98%E4%B8%8A%E7%BD%91%E5%8D%A1%E5%85%8D%E6%8B%86-%E5%8D%87%E7%BA%A7%E9%99%8D%E7%BA%A7-%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5E8372h%E4%B8%BA%E4%BE%8B%EF%BC%89/%E5%88%B7%E6%9C%BA%E8%BF%9B%E5%BA%A6.jpg" alt="刷机结束"></p>
-<pre><code>（此图仅供参看，具体以实际刷机为主）</code></pre><hr>
-<h4 id="3-拔掉usb上网卡，重新插上即可正常使用。"><a href="#3-拔掉usb上网卡，重新插上即可正常使用。" class="headerlink" title="3.拔掉usb上网卡，重新插上即可正常使用。"></a>3.拔掉usb上网卡，重新插上即可正常使用。</h4>
-        </div>
-        
-        
-        
-    </div>
-</div>
+<h2 id="尾-号-0"><a href="#尾-号-0" class="headerlink" title="尾    号: 0"></a>尾    号: 0</h2><p>支持语言:  英语/中文<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-22_UPDATE_21.311.03.00.00.BIN
 
+B310s-22_UPDATE_21.321.03.00.00.BIN
 
+B310s-22_UPDATE_21.321.03.90.00.BIN
 
+B310s-22_UPDATE_21.328.03.00.00.BIN
 
+B310s-22_UPDATE_21.329.01.00.00.BIN
 
+B310s-22_UPDATE_21.329.05.00.00.BIN
 
+B310s-22_UPDATE_21.333.01.00.00.BIN</code></pre><hr>
+<h2 id="尾-号-9"><a href="#尾-号-9" class="headerlink" title="尾    号: 9"></a>尾    号: 9</h2><p>支持语言:  英语/葡萄牙<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-22_UPDATE_21.316.01.01.09.BIN
 
+B310s-22_UPDATE_21.333.01.00.09.BIN</code></pre><hr>
+<h2 id="尾-号-26"><a href="#尾-号-26" class="headerlink" title="尾    号: 26"></a>尾    号: 26</h2><p>支持语言:  英语/丹麦<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-22_UPDATE_21.318.01.00.26.BIN
 
-    
-<div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-03-06T14:40:00.651Z">2020-03-06</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/%E5%8D%8E%E4%B8%BA%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/">华为刷机教程</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    7 分钟 读完 (大约 1051 个字)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/%E5%8D%8E%E4%B8%BAB310-B315%E7%AD%89%E8%B7%AF%E7%94%B1%E5%99%A8%E5%88%B7%E6%9C%BA%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B%EF%BC%88%E5%8F%AA%E4%BA%AE%E7%94%B5%E6%BA%90%E7%81%AF%E7%B1%BB%E5%90%84%E7%A7%8D%E5%8F%98%E7%A0%96%E7%B1%BB%EF%BC%89/">华为B310B315等路由器刷机救砖教程（只亮电源灯类各种变砖类）</a>
-            
-        </h1>
-        <div class="content">
-            <hr>
-<hr>
-<p>如果你看不到教程的图片，请直接下载本页面的离线教程<br>下载地址：<a href="https://www.lanzous.com/i66ffda" rel="external nofollow noreferrer">https://www.lanzous.com/i66ffda</a></p>
-<hr>
-<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><h3 id="B310型号的设备，请先拆机焊接相应的USB。如下图焊接。"><a href="#B310型号的设备，请先拆机焊接相应的USB。如下图焊接。" class="headerlink" title="B310型号的设备，请先拆机焊接相应的USB。如下图焊接。"></a>B310型号的设备，请先拆机焊接相应的USB。如下图焊接。</h3><p>   <img src="/%E5%8D%8E%E4%B8%BAB310-B315%E7%AD%89%E8%B7%AF%E7%94%B1%E5%99%A8%E5%88%B7%E6%9C%BA%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B%EF%BC%88%E5%8F%AA%E4%BA%AE%E7%94%B5%E6%BA%90%E7%81%AF%E7%B1%BB%E5%90%84%E7%A7%8D%E5%8F%98%E7%A0%96%E7%B1%BB%EF%BC%89/B310%E7%84%8A%E6%8E%A5.jpg" alt="焊接图片"></p>
-<hr>
-<h3 id="B315的设备，请直接使用双工头usb线，插到usb口即可"><a href="#B315的设备，请直接使用双工头usb线，插到usb口即可" class="headerlink" title="B315的设备，请直接使用双工头usb线，插到usb口即可"></a>B315的设备，请直接使用双工头usb线，插到usb口即可</h3><p>   <img src="/%E5%8D%8E%E4%B8%BAB310-B315%E7%AD%89%E8%B7%AF%E7%94%B1%E5%99%A8%E5%88%B7%E6%9C%BA%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B%EF%BC%88%E5%8F%AA%E4%BA%AE%E7%94%B5%E6%BA%90%E7%81%AF%E7%B1%BB%E5%90%84%E7%A7%8D%E5%8F%98%E7%A0%96%E7%B1%BB%EF%BC%89/%E5%8F%8C%E5%B7%A5%E5%A4%B4usb.jpg" alt="双工头图片"></p>
-<hr>
-<h3 id="2-准备好工具如下（自行到工具篇下载）："><a href="#2-准备好工具如下（自行到工具篇下载）：" class="headerlink" title="2.准备好工具如下（自行到工具篇下载）："></a>2.准备好工具如下（自行到工具篇下载）：</h3><p>**  1.balong_flash.exe 用于刷入（原版）固件**<br>**  2.Balong_USB_Downloader_1.0.1.10.exe**<br>**  3.usblsafe_b315-b310.bin**<br>**  4.FC_Serial_Driver_Setup.exe**<br>**  5.HUAWEI_DataCard_Driver**</p>
-<p>**  6.（WIN8/10）不认usb驱动注册表（WIN8/10必须安装）**</p>
-<hr>
-<p><strong>固件自行准备</strong></p>
-<hr>
-<h2 id="第一步-进模式"><a href="#第一步-进模式" class="headerlink" title="第一步 进模式"></a>第一步 进模式</h2><hr>
-<h4 id="1-拔电源，用镊子或者螺丝刀，短接下图的两个触点，再插入电源。"><a href="#1-拔电源，用镊子或者螺丝刀，短接下图的两个触点，再插入电源。" class="headerlink" title="1.拔电源，用镊子或者螺丝刀，短接下图的两个触点，再插入电源。"></a>1.拔电源，用镊子或者螺丝刀，短接下图的两个触点，再插入电源。</h4><p><img src="/%E5%8D%8E%E4%B8%BAB310-B315%E7%AD%89%E8%B7%AF%E7%94%B1%E5%99%A8%E5%88%B7%E6%9C%BA%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B%EF%BC%88%E5%8F%AA%E4%BA%AE%E7%94%B5%E6%BA%90%E7%81%AF%E7%B1%BB%E5%90%84%E7%A7%8D%E5%8F%98%E7%A0%96%E7%B1%BB%EF%BC%89/%E7%9F%AD%E6%8E%A5%E7%82%B9.jpg" alt="短接图片"></p>
-<p>   一定要确认短接成功才可以，不然你看后面的教程也没用！！！</p>
-<hr>
-<p>  判断短接是否成功</p>
-<p>   短接成功后，路由器所有灯全灭，</p>
-<p>   短接不成功，有任何一个灯亮着，请再次拔电源短接。</p>
-<hr>
-<p>   短接成功后可以拿走镊子。</p>
-<hr>
-<h4 id="2-插上usb线，安装驱动HUAWEI-DataCard-Driver和FC-Serial-Driver-Setup-exe。安装成功后，电脑会出现如下端口。"><a href="#2-插上usb线，安装驱动HUAWEI-DataCard-Driver和FC-Serial-Driver-Setup-exe。安装成功后，电脑会出现如下端口。" class="headerlink" title="2.插上usb线，安装驱动HUAWEI_DataCard_Driver和FC_Serial_Driver_Setup.exe。安装成功后，电脑会出现如下端口。"></a>2.插上usb线，安装驱动HUAWEI_DataCard_Driver和FC_Serial_Driver_Setup.exe。安装成功后，电脑会出现如下端口。</h4><p>  <img src="/%E5%8D%8E%E4%B8%BAB310-B315%E7%AD%89%E8%B7%AF%E7%94%B1%E5%99%A8%E5%88%B7%E6%9C%BA%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B%EF%BC%88%E5%8F%AA%E4%BA%AE%E7%94%B5%E6%BA%90%E7%81%AF%E7%B1%BB%E5%90%84%E7%A7%8D%E5%8F%98%E7%A0%96%E7%B1%BB%EF%BC%89/%E5%8D%95%E7%AB%AF%E5%8F%A3.jpg" alt="端口图片"></p>
-<p>如果是win8/win10，请再电脑注册表加入相应的注册信息才能识别。为了方便，请把下载“（WIN8/10）不认usb驱动注册表”并且双击后注册到电脑里，</p>
-<hr>
-<h2 id="第二步-刷入引导与固件"><a href="#第二步-刷入引导与固件" class="headerlink" title="第二步 刷入引导与固件"></a>第二步 刷入引导与固件</h2><hr>
-<h4 id="1-小白刷usbloader：打开Balong-USB-Downloader-1-0-1-10-exe"><a href="#1-小白刷usbloader：打开Balong-USB-Downloader-1-0-1-10-exe" class="headerlink" title="1.小白刷usbloader：打开Balong_USB_Downloader_1.0.1.10.exe"></a>1.小白刷usbloader：打开Balong_USB_Downloader_1.0.1.10.exe</h4><p> <img src="/%E5%8D%8E%E4%B8%BAB310-B315%E7%AD%89%E8%B7%AF%E7%94%B1%E5%99%A8%E5%88%B7%E6%9C%BA%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B%EF%BC%88%E5%8F%AA%E4%BA%AE%E7%94%B5%E6%BA%90%E7%81%AF%E7%B1%BB%E5%90%84%E7%A7%8D%E5%8F%98%E7%A0%96%E7%B1%BB%EF%BC%89/%E5%8A%A0%E8%BD%BDusbloader.jpg" alt="加载usbloader图片"></p>
-<pre><code>请确保一定要带usblsafe的字眼的文件。否则会损坏NVRAM信息。丢失一堆信息的。
+B310s-22_UPDATE_21.329.01.00.26.BIN</code></pre><hr>
+<h2 id="尾-号-32"><a href="#尾-号-32" class="headerlink" title="尾    号: 32"></a>尾    号: 32</h2><p>支持语言:  英语/罗马尼亚/匈牙利<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-22_UPDATE_21.316.01.00.32.BIN
 
+B310s-22_UPDATE_21.321.03.03.32.BIN
 
-注意此工具不是刷固件的，只能刷带usbloader或者usblsafe的引导文件。自己看图</code></pre><p>  等待结束后，按任意键结束，此时电脑又会识别出两个新的端口。</p>
-<hr>
-<h4 id="2-接着或者像我直接把文件拖到balong-flash-exe也是一样的"><a href="#2-接着或者像我直接把文件拖到balong-flash-exe也是一样的" class="headerlink" title="2. 接着或者像我直接把文件拖到balong_flash.exe也是一样的"></a>2. 接着或者像我直接把文件拖到balong_flash.exe也是一样的</h4><p>   <img src="/%E5%8D%8E%E4%B8%BAB310-B315%E7%AD%89%E8%B7%AF%E7%94%B1%E5%99%A8%E5%88%B7%E6%9C%BA%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B%EF%BC%88%E5%8F%AA%E4%BA%AE%E7%94%B5%E6%BA%90%E7%81%AF%E7%B1%BB%E5%90%84%E7%A7%8D%E5%8F%98%E7%A0%96%E7%B1%BB%EF%BC%89/%E6%8B%96%E5%8A%A8%E5%88%B7%E6%9C%BA.jpg" alt="拖动刷机图片"></p>
-<pre><code>（图片只是示意，不用在乎机型和固件，懒得再截图了）</code></pre><hr>
-<p>   不行的，确认好驱动和设备是否正常运转，不然就用cmd命令刷固件！！</p>
-<p>   ** balong_flash.exe -g5 B310As-852_UPDATE_21.316.01.102.59(全网).BIN **</p>
-<p>  就会自动刷入刷机包，等待100%全结束后。</p>
-<hr>
-<pre><code>注意：balong_flash.exe 不是双击打开，也不用打开。工具直接把固件直接拖到balong_flash.exe，而是不打开任何程序，也不需要打开任何程序。</code></pre><p>  <img src="/%E5%8D%8E%E4%B8%BAB310-B315%E7%AD%89%E8%B7%AF%E7%94%B1%E5%99%A8%E5%88%B7%E6%9C%BA%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B%EF%BC%88%E5%8F%AA%E4%BA%AE%E7%94%B5%E6%BA%90%E7%81%AF%E7%B1%BB%E5%90%84%E7%A7%8D%E5%8F%98%E7%A0%96%E7%B1%BB%EF%BC%89/%E5%88%B7%E6%9C%BA%E8%BF%9B%E5%BA%A6.jpg" alt="加载usbloader图片"></p>
-<pre><code>接着按任意键退出。此时路由器会重启，此时可以拔电源与usb，再接上电源，等待开机。
+B310s-22_UPDATE_21.333.01.00.32.BIN</code></pre><hr>
+<h2 id="尾-号-33"><a href="#尾-号-33" class="headerlink" title="尾    号: 33"></a>尾    号: 33</h2><p>支持语言:  英语/西班牙<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-22_UPDATE_21.316.01.00.33.BIN
 
-如果看到usb接口一直插入的消息，那么也请拔掉usb以及电源，再插入电源等待开机。</code></pre><h4 id="如果上面的刷机成功，但开机还是只亮电源灯，说明机器损坏了，需要先修复，请先短接，用cmd命令-balong-usbload-exe-c-fix-bin-修复机器，再按照上面的教程再走一次，基本就能开机了。"><a href="#如果上面的刷机成功，但开机还是只亮电源灯，说明机器损坏了，需要先修复，请先短接，用cmd命令-balong-usbload-exe-c-fix-bin-修复机器，再按照上面的教程再走一次，基本就能开机了。" class="headerlink" title="如果上面的刷机成功，但开机还是只亮电源灯，说明机器损坏了，需要先修复，请先短接，用cmd命令 balong_usbload.exe -c fix.bin 修复机器，再按照上面的教程再走一次，基本就能开机了。"></a>如果上面的刷机成功，但开机还是只亮电源灯，说明机器损坏了，需要先修复，请先短接，用cmd命令 balong_usbload.exe -c fix.bin 修复机器，再按照上面的教程再走一次，基本就能开机了。</h4>
-        </div>
-        
-        
-        
-    </div>
-</div>
+B310s-22_UPDATE_21.316.01.02.33.BIN
 
+B310s-22_UPDATE_21.316.01.03.33.BIN
 
+B310s-22_UPDATE_21.316.01.04.33.BIN
 
+B310s-22_UPDATE_21.329.01.00.33.BIN
 
+B310s-22_UPDATE_21.329.01.01.33.BIN</code></pre><hr>
+<h2 id="尾-号-37"><a href="#尾-号-37" class="headerlink" title="尾    号: 37"></a>尾    号: 37</h2><p>支持语言:  英语<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-22_UPDATE_21.321.03.02.37.BIN</code></pre><hr>
+<h2 id="尾-号-55"><a href="#尾-号-55" class="headerlink" title="尾    号: 55"></a>尾    号: 55</h2><p>支持语言:  英语/德语/波兰/捷克/匈牙利/克罗埃西亚/塞尔维亚语/斯洛伐克<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-22_UPDATE_21.311.05.02.55.BIN
 
+B310s-22_UPDATE_21.311.06.03.55.BIN
 
+B310s-22_UPDATE_21.329.01.01.55.BIN</code></pre><hr>
+<h2 id="尾-号-85"><a href="#尾-号-85" class="headerlink" title="尾    号: 85"></a>尾    号: 85</h2><p>支持语言:  英语/斯洛伐克<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-22_UPDATE_21.313.06.00.85.BIN
 
+B310s-22_UPDATE_21.333.01.00.85.BIN</code></pre><hr>
+<h2 id="尾-号-135"><a href="#尾-号-135" class="headerlink" title="尾    号: 135"></a>尾    号: 135</h2><p>支持语言:  英语/法语/阿拉伯<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-22_UPDATE_21.333.01.00.135.BIN</code></pre><hr>
+<h2 id="尾-号-141"><a href="#尾-号-141" class="headerlink" title="尾    号: 141"></a>尾    号: 141</h2><p>支持语言:  英语/罗马尼亚<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-22_UPDATE_21.313.03.00.141.BIN
 
-    
-<div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-03-06T14:40:00.382Z">2020-03-06</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/%E5%8D%8E%E4%B8%BANV%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B/">华为NV修复教程</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    6 分钟 读完 (大约 856 个字)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/%E5%8D%8E%E4%B8%BAE%E7%B3%BB%E5%88%97nv%E4%BF%A1%E6%81%AFIMEI%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5E8372%E4%B8%BA%E4%BE%8B%EF%BC%89/">华为E系列nv信息IMEI修复教程（以E8372为例）</a>
-            
-        </h1>
-        <div class="content">
-            <hr>
-<hr>
-<p>像华为E8372h-155的这些E系列的设备，如果乱用usbloader.bin来刷机，会丢失IMEI/SN/MAC/SSID/WIFI密码甚至是webui version，</p>
-<p>如下图：</p>
-<p><img src="/%E5%8D%8E%E4%B8%BAE%E7%B3%BB%E5%88%97nv%E4%BF%A1%E6%81%AFIMEI%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5E8372%E4%B8%BA%E4%BE%8B%EF%BC%89/%E9%94%99%E8%AF%AF.jpg" alt="丢失nv信息图片"></p>
-<p>接下来就给大家分享一下普通的NV信息修复方法和比较困难的webui版本修复方法。</p>
-<hr>
-<hr>
-<h2 id="一-修复基本的nv信息"><a href="#一-修复基本的nv信息" class="headerlink" title="一.   修复基本的nv信息"></a>一.   修复基本的nv信息</h2><hr>
-<p><strong>修复需要双端口的模式。</strong></p>
-<p><img src="/%E5%8D%8E%E4%B8%BAE%E7%B3%BB%E5%88%97nv%E4%BF%A1%E6%81%AFIMEI%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5E8372%E4%B8%BA%E4%BE%8B%EF%BC%89/%E5%8F%8C%E7%AB%AF%E5%8F%A3.png" alt="双端口图片"></p>
-<p>方法1：当你降级或者救砖后，设备自动重启后，两个端口还在。</p>
-<p>方法2：安装产线驱动（此驱动无法使用usb上网，不用的时候需要卸载），会有两个端口。</p>
-<p>方法3：部分型号可直接打开dc-unlocker，点击放大镜。</p>
-<p>。。。。。</p>
-<p>这三种常用的就够了</p>
-<hr>
-<p>接着打开dc-unlocker，点击放大镜。</p>
-<p><img src="/%E5%8D%8E%E4%B8%BAE%E7%B3%BB%E5%88%97nv%E4%BF%A1%E6%81%AFIMEI%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5E8372%E4%B8%BA%E4%BE%8B%EF%BC%89/dcunlocker.png" alt="dcunlocker图片"></p>
-<pre><code>（图中命令不是修复命令，请勿输入，具体看下面）</code></pre><p><strong>用下面的参考命令结合自己的设备信息，重写信息即可。</strong></p>
-<hr>
-<p><strong>参考命令</strong></p>
-<pre><code>AT^PHYNUM=IMEI,你的imei
+B310s-22_UPDATE_21.323.03.00.141.BIN
 
-AT^SN=你的sn
+B310s-22_UPDATE_21.329.01.00.141.BIN</code></pre><hr>
+<h2 id="尾-号-162"><a href="#尾-号-162" class="headerlink" title="尾    号: 162"></a>尾    号: 162</h2><p>支持语言:  英语/法语/阿拉伯<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-22_UPDATE_21.329.01.00.162.BIN</code></pre><hr>
+<h2 id="尾-号-208"><a href="#尾-号-208" class="headerlink" title="尾    号: 208"></a>尾    号: 208</h2><p>支持语言:  丹麦<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-22_UPDATE_21.329.01.00.208.BIN</code></pre><hr>
+<h2 id="尾-号-264"><a href="#尾-号-264" class="headerlink" title="尾    号: 264"></a>尾    号: 264</h2><p>支持语言:  英语/波兰<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-22_UPDATE_21.333.01.00.264.BIN</code></pre><hr>
+<h2 id="尾-号-295"><a href="#尾-号-295" class="headerlink" title="尾    号: 295"></a>尾    号: 295</h2><p>支持语言:  英语/克罗埃西亚<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-22_UPDATE_21.329.01.00.295.BIN</code></pre><hr>
+<h2 id="尾-号-314"><a href="#尾-号-314" class="headerlink" title="尾    号: 314"></a>尾    号: 314</h2><p>支持语言:  英语/法语/西班牙/荷兰/阿拉伯<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-22_UPDATE_21.311.03.27.314.BIN
 
-AT^PHYNUM=MACWLAN,ABCDEFGHIJ (像ABC....这种，不带任何符号)
+B310s-22_UPDATE_21.311.03.28.314.BIN
 
-AT^SSID=0,&quot;HUAWEI-后面的随便&quot;
+B310s-22_UPDATE_21.311.06.05.314.BIN
 
-AT^WIKEY=0,&quot;密码随便写&quot;</code></pre><p>缺什么补什么，每输一次，显示ok就完成这一项修复。</p>
+B310s-22_UPDATE_21.318.01.02.314.BIN
+
+B310s-22_UPDATE_21.318.01.61.314.BIN
+
+B310s-22_UPDATE_21.318.01.62.314.BIN
+
+B310s-22_UPDATE_21.321.03.30.314.BIN
+
+B310s-22_UPDATE_21.327.01.00.314.BIN
+
+B310s-22_UPDATE_21.329.01.00.314.BIN
+
+B310s-22_UPDATE_21.329.01.01.314.BIN
+
+B310s-22_UPDATE_21.329.01.20.314.BIN
+
+B310s-22_UPDATE_21.329.01.80.314.BIN
+
+B310s-22_UPDATE_21.329.01.81.314.BIN
+
+B310s-22_UPDATE_21.329.01.DM3.314.BIN</code></pre><hr>
+<h2 id="尾-号-408"><a href="#尾-号-408" class="headerlink" title="尾    号: 408"></a>尾    号: 408</h2><p>支持语言:  英语<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-22_UPDATE_21.318.01.00.408.BIN</code></pre><hr>
+<h2 id="尾-号-409"><a href="#尾-号-409" class="headerlink" title="尾    号: 409"></a>尾    号: 409</h2><p>支持语言:  英语/法语/荷兰<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-22_UPDATE_21.316.01.01.409.BIN
+
+B310s-22_UPDATE_21.316.01.02.409.BIN</code></pre><hr>
+<h2 id="尾-号-429"><a href="#尾-号-429" class="headerlink" title="尾    号: 429"></a>尾    号: 429</h2><p>支持语言:  英语<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-22_UPDATE_21.333.01.00.429.BIN
+
+B310s-22_UPDATE_21.333.01.00.429.BIN</code></pre><hr>
+<h2 id="尾-号-647"><a href="#尾-号-647" class="headerlink" title="尾    号: 647"></a>尾    号: 647</h2><p>支持语言:<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-22_UPDATE_21.316.01.00.647.BIN</code></pre><hr>
+<h2 id="尾-号-649"><a href="#尾-号-649" class="headerlink" title="尾    号: 649"></a>尾    号: 649</h2><p>支持语言: 英语/法语/阿拉伯<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-22_UPDATE_21.329.01.02.649.BIN
+
+B310s-22_UPDATE_21.329.01.03.649.BIN</code></pre><hr>
+<h2 id="尾-号-679"><a href="#尾-号-679" class="headerlink" title="尾    号: 679"></a>尾    号: 679</h2><p>支持语言:  英语/法语<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-22_UPDATE_21.333.01.00.679.BIN</code></pre><hr>
+<h2 id="尾-号-738"><a href="#尾-号-738" class="headerlink" title="尾    号: 738"></a>尾    号: 738</h2><p>支持语言:  英语/保加利亚<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-22_UPDATE_21.321.03.00.738.BIN
+
+B310s-22_UPDATE_21.323.03.00.738.BIN
+
+B310s-22_UPDATE_21.323.03.01.738.BIN</code></pre><hr>
+<h2 id="尾-号-833"><a href="#尾-号-833" class="headerlink" title="尾    号: 833"></a>尾    号: 833</h2><p>支持语言:  英语<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-22_UPDATE_21.329.01.00.833.BIN</code></pre><hr>
+<h2 id="尾-号-849"><a href="#尾-号-849" class="headerlink" title="尾    号: 849"></a>尾    号: 849</h2><p>支持语言:<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-22_UPDATE_21.321.03.00.849.BIN</code></pre><hr>
+<h2 id="尾-号-983"><a href="#尾-号-983" class="headerlink" title="尾    号: 983"></a>尾    号: 983</h2><p>支持语言:  英语/俄语<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-22_UPDATE_21.329.01.00.983.BIN</code></pre><hr>
+<h2 id="尾-号-1029"><a href="#尾-号-1029" class="headerlink" title="尾    号: 1029"></a>尾    号: 1029</h2><p>支持语言:  英语/阿拉伯<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-22_UPDATE_21.333.01.00.1029.BIN</code></pre><hr>
+<h2 id="尾-号-1042"><a href="#尾-号-1042" class="headerlink" title="尾    号: 1042"></a>尾    号: 1042</h2><p>支持语言:  英语/阿根廷<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-22_UPDATE_21.321.03.01.1042.BIN
+
+B310s-22_UPDATE_21.333.01.00.1042.BIN
+
+B310s-22_UPDATE_21.333.01.01.1042.BIN</code></pre><hr>
+<h2 id="尾-号-1126"><a href="#尾-号-1126" class="headerlink" title="尾    号: 1126"></a>尾    号: 1126</h2><p>支持语言:  英语<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-22_UPDATE_21.329.01.00.1126.BIN
+
+B310s-22_UPDATE_21.329.01.01.1126.BIN
+
+B310s-22_UPDATE_21.333.01.00.1126.BIN</code></pre><hr>
+<h2 id="尾-号-1128"><a href="#尾-号-1128" class="headerlink" title="尾    号: 1128"></a>尾    号: 1128</h2><p>支持语言:  英语<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-22_UPDATE_21.333.01.00.1128.BIN</code></pre><hr>
+<h2 id="尾-号-1141"><a href="#尾-号-1141" class="headerlink" title="尾    号: 1141"></a>尾    号: 1141</h2><p>支持语言:  英语/法语<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-22_UPDATE_21.333.01.00.1141.BIN</code></pre><hr>
+<h2 id="尾-号-1195"><a href="#尾-号-1195" class="headerlink" title="尾    号: 1195"></a>尾    号: 1195</h2><p>支持语言:  英语/法语/阿拉伯<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-22_UPDATE_21.329.01.00.1195.BIN</code></pre><hr>
+<h2 id="尾-号-1214"><a href="#尾-号-1214" class="headerlink" title="尾    号: 1214"></a>尾    号: 1214</h2><p>支持语言:  英语/葡萄牙<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-22_UPDATE_21.318.01.01.1214.BIN
+
+B310s-22_UPDATE_21.313.03.00.1214.BIN
+
+B310s-22_UPDATE_21.323.03.01.1214.BIN</code></pre><hr>
+<h2 id="尾-号-1265"><a href="#尾-号-1265" class="headerlink" title="尾    号: 1265"></a>尾    号: 1265</h2><p>支持语言:  英语/俄语<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-22_UPDATE_21.318.01.00.1265.BIN
+
+B310s-22_UPDATE_21.333.01.00.1265.BIN</code></pre><hr>
+<h2 id="尾-号-1291"><a href="#尾-号-1291" class="headerlink" title="尾    号: 1291"></a>尾    号: 1291</h2><p>支持语言:  捷克<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-22_UPDATE_21.316.01.00.1291.BIN
+
+B310s-22_UPDATE_21.329.01.00.1291.BIN</code></pre><hr>
+<h2 id="尾-号-1366"><a href="#尾-号-1366" class="headerlink" title="尾    号: 1366"></a>尾    号: 1366</h2><p>支持语言:  英语<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-22_UPDATE_21.333.01.00.1366.BIN</code></pre><hr>
+<h2 id="尾-号-1379"><a href="#尾-号-1379" class="headerlink" title="尾    号: 1379"></a>尾    号: 1379</h2><p>支持语言:  英语<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-22_UPDATE_21.318.01.00.1379.BIN</code></pre><hr>
+<h2 id="尾-号-1380"><a href="#尾-号-1380" class="headerlink" title="尾    号: 1380"></a>尾    号: 1380</h2><p>支持语言:  英语/立陶宛<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-22_UPDATE_21.329.01.00.1380.BIN</code></pre><hr>
+<h2 id="尾-号-1382"><a href="#尾-号-1382" class="headerlink" title="尾    号: 1382"></a>尾    号: 1382</h2><p>支持语言:  英语<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-22_UPDATE_21.333.01.00.1382.BIN</code></pre><hr>
+<h2 id="尾-号-1410"><a href="#尾-号-1410" class="headerlink" title="尾    号: 1410"></a>尾    号: 1410</h2><p>支持语言:  英语/法语/中文/阿拉伯/意大利/德语<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-22_UPDATE_21.327.01.04.1410.BIN</code></pre><hr>
+<h2 id="尾-号-1450"><a href="#尾-号-1450" class="headerlink" title="尾    号: 1450"></a>尾    号: 1450</h2><p>支持语言:  英语/法语/葡萄牙/阿拉伯<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-22_UPDATE_21.333.01.00.1450.BIN</code></pre><hr>
+<h2 id="尾-号-1485"><a href="#尾-号-1485" class="headerlink" title="尾    号: 1485"></a>尾    号: 1485</h2><p>支持语言:  英语<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-22_UPDATE_21.329.01.01.1485.BIN
+
+B310s-22_UPDATE_21.329.01.02.1485.BIN
+
+B310s-22_UPDATE_21.329.01.03.1485.BIN
+
+B310s-22_UPDATE_21.333.01.00.1485.BIN
+
+B310s-22_UPDATE_21.333.01.01.1485.BIN</code></pre><hr>
+<h2 id="尾-号-1493"><a href="#尾-号-1493" class="headerlink" title="尾    号: 1493"></a>尾    号: 1493</h2><p>支持语言:  英语<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-22_UPDATE_21.329.01.00.1493.BIN
+
+B310s-22_UPDATE_21.329.01.01.1493.BIN</code></pre><hr>
+<h2 id="尾-号-1494"><a href="#尾-号-1494" class="headerlink" title="尾    号: 1494"></a>尾    号: 1494</h2><p>支持语言:  英语/阿根廷<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-22_UPDATE_21.329.01.01.1494.BIN</code></pre><hr>
+<h2 id="尾-号-1499"><a href="#尾-号-1499" class="headerlink" title="尾    号: 1499"></a>尾    号: 1499</h2><p>支持语言:  英语<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310s-22_UPDATE_21.329.01.00.1499.BIN</code></pre><hr>
 <hr>
-<pre><code>AT^INFORBU</code></pre><p>（保存与覆盖）</p>
-<hr>
-<pre><code>AT^RESET</code></pre><p>（重启）</p>
-<hr>
-<hr>
-<h2 id="二-修复webui版本"><a href="#二-修复webui版本" class="headerlink" title="二.  修复webui版本"></a>二.  修复webui版本</h2><hr>
-<p>部分机型刷机会丢失webui版本信息，华为的WEBUI版本信息也很重要，华为是根据设备信息来升级降级的，如果丢失了或者不对的话都直接报错，导致无法获取最新版本，</p>
-<p>如果你是丢失的，请先修复这个问题，再修复上面的NV信息，因为NV信息很容易就解决，webui修复起来就比较麻烦。</p>
-<p>   像huawei webui version变为了 00.00.00.000.03属于错误的信息</p>
-<p><img src="/%E5%8D%8E%E4%B8%BAE%E7%B3%BB%E5%88%97nv%E4%BF%A1%E6%81%AFIMEI%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5E8372%E4%B8%BA%E4%BE%8B%EF%BC%89/%E9%94%99%E8%AF%AF.jpg" alt="丢失nv信息图片"></p>
-<hr>
-<pre><code>**webui版本信息丢失，（需要usbloader加载，不能用usblsafe，safe无法清除限制）**</code></pre><p>首先必须用usbloader-E8372h-155.bin，像<strong>usbloader</strong>这种引导会清空NV信息，把原来错误的webui信息清除，</p>
-<hr>
-<p>接着进刷机模式，刷入一个固件，</p>
-<hr>
-<p>先不要乱动，设备自动重启，你看看查看两个端口是否还在，还在的话之后马上打开Update_WEBUI_21.100.32.00.233_NE5.exe进行刷机，</p>
-<p>单独刷入webui即可（如果失败可以再试几次，不行就重刷usbloder再来一次）。</p>
-<p><img src="/%E5%8D%8E%E4%B8%BAE%E7%B3%BB%E5%88%97nv%E4%BF%A1%E6%81%AFIMEI%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5E8372%E4%B8%BA%E4%BE%8B%EF%BC%89/%E5%8D%95%E5%88%B7webui.jpg" alt="单刷webui图片"></p>
-<pre><code>简单来说就是刷usbloader，会自动进刷机模式再刷固件，再单独刷一个webui就可以解决的，修复完成后，如下图。</code></pre><p><img src="/%E5%8D%8E%E4%B8%BAE%E7%B3%BB%E5%88%97nv%E4%BF%A1%E6%81%AFIMEI%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5E8372%E4%B8%BA%E4%BE%8B%EF%BC%89/%E5%AE%8C%E6%88%90.jpg" alt="修复完成图片"></p>
+<p><strong>如需此固件，请微信联系 QYYD5G</strong></p>
 
         </div>
         
@@ -569,17 +573,17 @@ AT^WIKEY=0,&quot;密码随便写&quot;</code></pre><p>缺什么补什么，每�
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-03-06T14:40:00.115Z">2020-03-06</time>
+                <time class="level-item has-text-grey" datetime="2020-03-07T19:12:01.052Z">2020-03-08</time>
                 
                 <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/%E5%8D%8E%E4%B8%BA%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/">华为刷机教程</a>
+                <a class="has-link-grey -link" href="/categories/%E5%8D%8E%E4%B8%BAB%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/">华为B系列固件</a>
                 </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    5 分钟 读完 (大约 790 个字)
+                    几秒 读完 (大约 37 个字)
                 </span>
                 
                 
@@ -588,45 +592,18 @@ AT^WIKEY=0,&quot;密码随便写&quot;</code></pre><p>缺什么补什么，每�
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                <a class="has-link-black-ter" href="/%E5%8D%8E%E4%B8%BAE8372h-155%E5%BC%BA%E5%88%B7%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B/">华为E8372h-155强刷救砖教程</a>
+                <a class="has-link-black-ter" href="/%E5%8D%8E%E4%B8%BAB310As-938(%E7%8E%B0%E5%AD%98)%E5%9B%BA%E4%BB%B6%E6%B1%87%E6%80%BB/">华为B310As-938（现存）固件汇总</a>
             
         </h1>
         <div class="content">
             <hr>
 <hr>
-<p>如果本文图片不显示，请下载pdf版教程 <a href="https://www.lanzous.com/i6lobah" rel="external nofollow noreferrer">https://www.lanzous.com/i6lobah</a></p>
+<h2 id="尾-号-1342"><a href="#尾-号-1342" class="headerlink" title="尾    号: 1342"></a>尾    号: 1342</h2><p>支持语言:<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310_UPDATE_11.329.01.00.1342.BIN
+
+B310_UPDATE_11.326.01.00.1342.BIN</code></pre><hr>
 <hr>
-<hr>
-<p>华为E8372h-155与华为E8372h-156应该是E8372系列中特殊的型号，与其他E8372h型号的固件不兼容。所以这些天走了很多误区。</p>
-<hr>
-<h2 id="第一步-准备工具"><a href="#第一步-准备工具" class="headerlink" title="第一步 准备工具"></a>第一步 准备工具</h2><h4 id="1-balong-flash-exe"><a href="#1-balong-flash-exe" class="headerlink" title="1.balong_flash.exe"></a>1.balong_flash.exe</h4><h4 id="2-balong-usbdload-exe-（可用Balong-USB-Downloader-1-0-1-10-exe代替）"><a href="#2-balong-usbdload-exe-（可用Balong-USB-Downloader-1-0-1-10-exe代替）" class="headerlink" title="2.balong_usbdload.exe （可用Balong_USB_Downloader_1.0.1.10.exe代替）"></a>2.balong_usbdload.exe （可用Balong_USB_Downloader_1.0.1.10.exe代替）</h4><h4 id="3-terminal-exe-电脑版终端-或者putty-exe"><a href="#3-terminal-exe-电脑版终端-或者putty-exe" class="headerlink" title="3.terminal.exe(电脑版终端)或者putty.exe"></a>3.terminal.exe(电脑版终端)或者putty.exe</h4><h4 id="4-华为Huawei-Driver和fc驱动"><a href="#4-华为Huawei-Driver和fc驱动" class="headerlink" title="4.华为Huawei Driver和fc驱动"></a>4.华为Huawei Driver和fc驱动</h4><hr>
-<h2 id="以上工具，自行到工具篇下载"><a href="#以上工具，自行到工具篇下载" class="headerlink" title=" ** 以上工具，自行到工具篇下载 ** "></a> ** 以上工具，自行到工具篇下载 ** </h2><h4 id="E8372h-155的固件"><a href="#E8372h-155的固件" class="headerlink" title="E8372h-155的固件"></a>E8372h-155的固件</h4><h4 id="usblsafe-E8372h-155-bin-切勿使用E8372h通用版的，必须要专用的-否则无效"><a href="#usblsafe-E8372h-155-bin-切勿使用E8372h通用版的，必须要专用的-否则无效" class="headerlink" title="usblsafe-E8372h-155.bin (切勿使用E8372h通用版的，必须要专用的,否则无效)"></a>usblsafe-E8372h-155.bin (切勿使用E8372h通用版的，必须要专用的,否则无效)</h4><hr>
-<p>  刷机前请注意，E8372h-155专用的usblsafe.bin是保护nv信息的，如果试图用USBLOADER-E8372.bin会损坏nv，会丢失imei/sn/mac等信息,建议先截图保存，需要刷完后重新写入</p>
-<hr>
-<h2 id="第二步-拆机短接进模式"><a href="#第二步-拆机短接进模式" class="headerlink" title="第二步 拆机短接进模式"></a>第二步 拆机短接进模式</h2><hr>
-<h3 id="1-短接"><a href="#1-短接" class="headerlink" title="1.短接"></a>1.短接</h3><p>用6角螺丝刀拆除螺丝，打开内部，可以看到内部。找到图中左边的焊接点，用一根金属线连接usb头的位置和金属点，插入电脑，电脑会出现新端口，然后拿开金属线或者镊子。</p>
-<p><img src="/%E5%8D%8E%E4%B8%BAE8372h-155%E5%BC%BA%E5%88%B7%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B/%E7%9F%AD%E6%8E%A5.png" alt="短接图片"></p>
-<p>win8以上的系统如果这三个端口从未出现，请在电脑注册表加入相应的注册信息才能识别。下载注册表“WIN8/10不认usb注册表”并且双击后注册到电脑里，安装好驱动后，最好重启一次 。</p>
-<p> 这时会出现华为的一个端口</p>
-<p><img src="/%E5%8D%8E%E4%B8%BAE8372h-155%E5%BC%BA%E5%88%B7%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B/%E5%8D%95%E7%AB%AF%E5%8F%A3.jpg" alt="单端口图片"></p>
-<hr>
-<h3 id="2-刷-usbloader"><a href="#2-刷-usbloader" class="headerlink" title="2.刷 usbloader"></a>2.刷 usbloader</h3><hr>
-<p>打开Balong_USB_Downloader_1.0.1.10.exe，在这个工具选择相应端口和文件刷入。</p>
-<p><img src="/%E5%8D%8E%E4%B8%BAE8372h-155%E5%BC%BA%E5%88%B7%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B/%E5%8A%A0%E8%BD%BDusbloader.jpg" alt="usbloader图片"></p>
-<p>等待设备重启，会出现两个端口。如果未识别就请安装驱动，这就要用到的是华为的fc串行驱动。</p>
-<p><img src="/%E5%8D%8E%E4%B8%BAE8372h-155%E5%BC%BA%E5%88%B7%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B/%E5%8F%8C%E7%AB%AF%E5%8F%A3.png" alt="双端口图片"></p>
-<hr>
-<h2 id="第三步-刷机"><a href="#第三步-刷机" class="headerlink" title="第三步   刷机"></a>第三步   刷机</h2><hr>
-<p>直接鼠标按住固件，把固件拖动到balong_flash.exe，程序会自动刷机。等待刷机结束后设备会再重启一次。如下图。</p>
-<p><img src="/%E5%8D%8E%E4%B8%BAE8372h-155%E5%BC%BA%E5%88%B7%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B/%E6%8B%96%E5%8A%A8%E5%88%B7%E6%9C%BA.jpg" alt="刷机图片"></p>
-<p>会CMD的可以用cmd命令<strong>balong_flash.exe 固件名</strong> 也可以刷入。</p>
-<p><img src="/%E5%8D%8E%E4%B8%BAE8372h-155%E5%BC%BA%E5%88%B7%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B/%E5%88%B7%E6%9C%BA%E8%BF%9B%E5%BA%A6.jpg" alt="结束图片"></p>
-<pre><code>（此图仅供参考，以实际刷机为主）</code></pre><hr>
-<p>刷的时候要注意啦，如果没有出现WEBUI这个，那说明你用的固件是残缺的 ，没有管理页面，能开机，但是不能进管理页面的。</p>
-<hr>
-<p>切记，准备固件最好要看到要有像E8372h-155_UPDATE_21.329.62.01.233_WEBUI_21.100.42.00.233。 带WEBUI这种字样的，才会直接完全刷入。如果刷机时没有，开机后不能进入管理页面的。</p>
-<hr>
-<p>刷完直接重新插拔一次开机 。</p>
+<p><strong>如需此固件，请微信联系 QYYD5G</strong></p>
 
         </div>
         
@@ -649,17 +626,17 @@ AT^WIKEY=0,&quot;密码随便写&quot;</code></pre><p>缺什么补什么，每�
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-03-06T14:39:59.828Z">2020-03-06</time>
+                <time class="level-item has-text-grey" datetime="2020-03-07T17:20:14.842Z">2020-03-08</time>
                 
                 <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/%E5%8D%8E%E4%B8%BA%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/">华为刷机教程</a>
+                <a class="has-link-grey -link" href="/categories/%E5%8D%8E%E4%B8%BAB%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/">华为B系列固件</a>
                 </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    9 分钟 读完 (大约 1294 个字)
+                    2 分钟 读完 (大约 324 个字)
                 </span>
                 
                 
@@ -668,91 +645,56 @@ AT^WIKEY=0,&quot;密码随便写&quot;</code></pre><p>缺什么补什么，每�
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                <a class="has-link-black-ter" href="/%E5%8D%8E%E4%B8%BAE8372h-156%E6%95%91%E7%A0%96%E4%B8%8E(%E8%A7%A3%E9%99%A4%E9%99%90%E5%88%B6)%E6%95%99%E7%A8%8B/">华为E8372h-156救砖与(解除限制)教程</a>
+                <a class="has-link-black-ter" href="/%E5%8D%8E%E4%B8%BAB310As-852(%E7%8E%B0%E5%AD%98)%E5%9B%BA%E4%BB%B6%E6%B1%87%E6%80%BB/">华为B310As-852（现存）固件汇总</a>
             
         </h1>
         <div class="content">
             <hr>
 <hr>
-<p>华为E8372h-156是大众车之类的汽车上的设备，默认是与汽车一起捆绑销售，市场上基本上没得卖。这个型号有几个特征：</p>
-<hr>
-<h4 id="1-插在车上，没有那个usb端封口盖子，并不是丢了盖子。"><a href="#1-插在车上，没有那个usb端封口盖子，并不是丢了盖子。" class="headerlink" title="1.插在车上，没有那个usb端封口盖子，并不是丢了盖子。"></a>1.插在车上，没有那个usb端封口盖子，并不是丢了盖子。</h4><h4 id="2-外观和E8372h-155一模一样，拆机的时候，才会发现内部标签贴着E8372h-156。"><a href="#2-外观和E8372h-155一模一样，拆机的时候，才会发现内部标签贴着E8372h-156。" class="headerlink" title="2.外观和E8372h-155一模一样，拆机的时候，才会发现内部标签贴着E8372h-156。"></a>2.外观和E8372h-155一模一样，拆机的时候，才会发现内部标签贴着E8372h-156。</h4><h4 id="3-E8372h-156系统版本是21-1487"><a href="#3-E8372h-156系统版本是21-1487" class="headerlink" title="3.E8372h-156系统版本是21.* * . * . * * .1487"></a>3.E8372h-156系统版本是21.* * <em>.</em> * <em>.</em> * * .1487</h4><p>  与E8372h-155的系统版本21.* * <em>.</em> * <em>.</em> * *.233<br>  有明显区别。</p>
-<h4 id="4-默认wifi名称和密码无法更改。"><a href="#4-默认wifi名称和密码无法更改。" class="headerlink" title="4.默认wifi名称和密码无法更改。"></a>4.默认wifi名称和密码无法更改。</h4><hr>
-<p>由于这两款是不同的设备，所以固件是不完全兼容的，但是管理页面差不多，可以替换。 </p>
-<hr>
-<p><strong>刷机前，请把机器的相关信息记录起来，如管理页面的版本信息以及机器外壳贴的sn/imei码和wifi密码等等，这个最后修复的时候需要用到。</strong></p>
-<hr>
-<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><hr>
-<h4 id="工具："><a href="#工具：" class="headerlink" title="工具："></a>工具：</h4><p>  1.balong_flash.exe</p>
-<p>  2.Balong_USB_Downloader_1.0.1.10.exe</p>
-<p>  2.dc-unlocker</p>
-<p>  3.华为Huawei datacard Driver和fc驱动</p>
-<p>  4.WIN8/10不认usb注册表</p>
-<p>  <strong>这些工具直接在工具篇有下载链接，自己自行下载</strong></p>
-<hr>
-<h4 id="固件与usb引导"><a href="#固件与usb引导" class="headerlink" title="固件与usb引导"></a>固件与usb引导</h4><p>E8372h-156_update_21.335.01.00.1487_WEBUI_21.100.52.01.03_NE5.bin（修改版）</p>
-<p>usbloader-E8372h-156.bin</p>
-<p>（不知道是网友给的机器存在问题，还是这款机器的特殊原因，使用usblsafe-E8372h-156.bin会无法开机，因此只能使用usbloader-E8372h-156.bin，然后再修复了）</p>
-<hr>
-<hr>
-<h2 id="二-拆机刷机"><a href="#二-拆机刷机" class="headerlink" title="二   拆机刷机"></a>二   拆机刷机</h2><p>此过程跟E8372h-155一模一样，实在看不懂的，可以看这个视频教程：</p>
-<p> <a href="http://www.iqiyi.com/w_19sadd9htl.html" rel="external nofollow noreferrer">http://www.iqiyi.com/w_19sadd9htl.html</a></p>
-<hr>
-<h4 id="1-拆机短接与安装驱动"><a href="#1-拆机短接与安装驱动" class="headerlink" title="1.拆机短接与安装驱动"></a>1.拆机短接与安装驱动</h4><hr>
-<p>用6角螺丝刀拆除螺丝，打开内部，可以看到内部。找到图中左边的焊接点，用一根金属线连接usb头的位置和金属点，插入电脑，电脑会出现新端口，然后拿开金属线或者镊子，（金属线或镊子就可以不用，收工了）。</p>
-<p>  <img src="/%E5%8D%8E%E4%B8%BAE8372h-156%E6%95%91%E7%A0%96%E4%B8%8E(%E8%A7%A3%E9%99%A4%E9%99%90%E5%88%B6)%E6%95%99%E7%A8%8B/%E7%9F%AD%E6%8E%A5.png" alt="短接图片"></p>
-<p> 安装之前提到过的驱动，然后会变成一个端口。如下</p>
-<p>  <img src="/%E5%8D%8E%E4%B8%BAE8372h-156%E6%95%91%E7%A0%96%E4%B8%8E(%E8%A7%A3%E9%99%A4%E9%99%90%E5%88%B6)%E6%95%99%E7%A8%8B/%E5%8D%95%E7%AB%AF%E5%8F%A3.jpg" alt="端口图片"></p>
-<p><strong>win8/win10记得用安装那个注册表，如果是感叹号可能需要重启一次电脑。</strong></p>
-<hr>
-<h4 id="2-刷入引导"><a href="#2-刷入引导" class="headerlink" title="2.刷入引导"></a>2.刷入引导</h4><hr>
-<p>打开Balong_USB_Downloader_1.0.1.10.exe，然后点1.detect，再点第二行的”..”选择文件，再点2.load按钮。</p>
-<p>  <img src="/%E5%8D%8E%E4%B8%BAE8372h-156%E6%95%91%E7%A0%96%E4%B8%8E(%E8%A7%A3%E9%99%A4%E9%99%90%E5%88%B6)%E6%95%99%E7%A8%8B/%E5%8A%A0%E8%BD%BDusbloader.jpg" alt="usbloader图片"></p>
-<p>（期间不要有任何操作，否则工具容易卡顿。）</p>
-<p>当引导刷完后，机器的灯会亮起，并且狂闪。电脑会出现两个新的端口。</p>
-<p><img src="/%E5%8D%8E%E4%B8%BAE8372h-156%E6%95%91%E7%A0%96%E4%B8%8E(%E8%A7%A3%E9%99%A4%E9%99%90%E5%88%B6)%E6%95%99%E7%A8%8B/%E5%8F%8C%E7%AB%AF%E5%8F%A3.png" alt="双端口图片"></p>
-<hr>
-<h4 id="3-刷机"><a href="#3-刷机" class="headerlink" title="3.刷机"></a>3.刷机</h4><hr>
-<p>刷机前，确保电脑上面的两个端口是正常的，没有感叹号之类的。（com口这是每个人的电脑都不同，因为插得usb口不一样，不用在意，不要钻牛角尖）。</p>
-<p>刷机很简单，直接把固件拖到到balong_flash.exe即可，如图，会提示“用balong_flash.exe打开”。</p>
-<p><img src="/%E5%8D%8E%E4%B8%BAE8372h-156%E6%95%91%E7%A0%96%E4%B8%8E(%E8%A7%A3%E9%99%A4%E9%99%90%E5%88%B6)%E6%95%99%E7%A8%8B/%E6%8B%96%E5%8A%A8%E5%88%B7%E6%9C%BA.jpg" alt="刷机图片"></p>
-<p>（balong_flash.exe这东西不需要你点击或者双击它！！！）</p>
-<hr>
-<p>有些人的电脑可能拖动的方法不行，</p>
-<p>那就用cmd命令<strong>balong_flash.exe 固件名</strong></p>
-<p>如：<strong>balong_flash.exe E8372h-156_update_21.335.01.00.1487_WEBUI_21.100.52.01.03_NE5.bin</strong>  然后回车键。</p>
-<hr>
-<p>接着显示如下画面：</p>
-<p><img src="/%E5%8D%8E%E4%B8%BAE8372h-156%E6%95%91%E7%A0%96%E4%B8%8E(%E8%A7%A3%E9%99%A4%E9%99%90%E5%88%B6)%E6%95%99%E7%A8%8B/%E5%88%B7%E6%9C%BA%E8%BF%9B%E5%BA%A6.jpg" alt="刷机结束图片"></p>
-<p>   （此图仅供参考，以实际刷机为准）</p>
-<p>等待刷机完成，机器会亮一个绿灯。</p>
-<hr>
-<hr>
-<h2 id="三-修复机器"><a href="#三-修复机器" class="headerlink" title="三   修复机器"></a>三   修复机器</h2><hr>
-<p>由于是使用usbloader-E8372h-156.bin，会丢失imei那些，需要自己输命令写回来。</p>
-<p>修复的工具比较多，我这里就直接用dc-unlocker了，也比较方便，其他putty或者终端之类的都可以。</p>
-<p>打开dc-unlocker，然后<strong>点击放大镜</strong>。</p>
-<p><img src="/%E5%8D%8E%E4%B8%BAE8372h-156%E6%95%91%E7%A0%96%E4%B8%8E(%E8%A7%A3%E9%99%A4%E9%99%90%E5%88%B6)%E6%95%99%E7%A8%8B/dcunlocker.png" alt="dc-cunlokcer"></p>
-<p>   <strong>（图中命令并非需要，请不要按照图中的命令输入！！）</strong></p>
-<p>在空白的地方输入修复命令，按回车，显示OK即可。</p>
-<hr>
-<p>全部需要输入的命令如下：</p>
-<hr>
-<pre><code>AT^PHYNUM=IMEI, 你的imei
+<h2 id="尾-号-0"><a href="#尾-号-0" class="headerlink" title="尾    号: 0"></a>尾    号: 0</h2><p>支持语言:  英语<br>版本备注:<br>特殊备注: 无法开机<br>固件版本: </p>
+<pre><code>B310as-852_UPDATE_21.210.01.00.00.BIN    </code></pre><hr>
+<h2 id="尾-号-59"><a href="#尾-号-59" class="headerlink" title="尾    号: 59"></a>尾    号: 59</h2><p>支持语言: 中文<br>版本备注: 全网通<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310As-852_UPDATE_21.316.01.00.59.BIN    
 
-AT^SN=你的sn
+B310As-852_UPDATE_21.316.01.101.59.BIN    
 
-AT^PHYNUM=MACWLAN, ABCDEFGHIJ (像这种，不带“：”，自己看系统版本之前记录的MAC)
+B310As-852_UPDATE_21.316.01.102.59.BIN  
 
-AT^SSID=0,&quot;HUAWEI-后面的随便&quot;
+B310As-852_UPDATE_21.318.01.51.59.BIN 
 
-AT^WIKEY=0,&quot;密码随便写8位&quot;</code></pre><p>（缺什么补什么，每输一次，显示ok就可以了）</p>
-<pre><code>AT^INFORBU</code></pre><p>   （保存与覆盖）</p>
-<pre><code>AT^RESET
+B310As-852_UPDATE_21.318.01.52.59.BIN
 
-（重启）</code></pre><hr>
+B310As-852_UPDATE_21.327.01.01.59.BIN    
+
+B310As-852_UPDATE_21.327.01.DM1.59.BIN    
+
+B310As-852_UPDATE_21.333.01.51.59.BIN</code></pre><hr>
+<h2 id="尾-号-750"><a href="#尾-号-750" class="headerlink" title="尾    号: 750"></a>尾    号: 750</h2><p>支持语言: 中文<br>版本备注: 吉林移动<br>特殊备注:<br>固件版本:      </p>
+<pre><code>B310As-852_UPDATE_21.313.06.01.750.BIN
+
+B310As-852_UPDATE_21.321.03.00.750.BIN    
+
+B310As-852_UPDATE_21.321.03.01.750.BIN    
+
+B310As-852_UPDATE_21.333.01.01.750.BIN</code></pre><hr>
+<h2 id="尾-号-759"><a href="#尾-号-759" class="headerlink" title="尾    号: 759"></a>尾    号: 759</h2><p>支持语言: 中文<br>版本备注: 北京移动<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310As-852_UPDATE_21.318.01.00.759.BIN</code></pre><hr>
+<h2 id="尾-号-952"><a href="#尾-号-952" class="headerlink" title="尾    号: 952"></a>尾    号: 952</h2><p>支持语言: 中文<br>版本备注: 云南移动<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310As-852_UPDATE_21.313.06.00.952.BIN    </code></pre><hr>
+<h2 id="尾-号-1325"><a href="#尾-号-1325" class="headerlink" title="尾    号: 1325"></a>尾    号: 1325</h2><p>支持语言: 中文<br>版本备注: 天津移动<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310As-852_UPDATE_21.316.01.00.1325.BIN</code></pre><hr>
+<h2 id="尾-号-1326"><a href="#尾-号-1326" class="headerlink" title="尾    号: 1326"></a>尾    号: 1326</h2><p>支持语言: 中文<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310As-852_UPDATE_21.316.01.00.1326.BIN</code></pre><hr>
+<h2 id="尾-号-1365"><a href="#尾-号-1365" class="headerlink" title="尾    号: 1365"></a>尾    号: 1365</h2><p>支持语言: 英语/阿拉伯<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B310As-852_UPDATE_21.318.01.00.1365.BIN
+
+B310As-852_UPDATE_21.328.01.00.1365.BIN</code></pre><hr>
+<h2 id="尾-号-1369"><a href="#尾-号-1369" class="headerlink" title="尾    号: 1369"></a>尾    号: 1369</h2><p>支持语言: 英语<br>版本备注:<br>特殊备注:<br>固件版本:</p>
+<pre><code>B310As-852_UPDATE_21.333.02.00.1369.BIN    </code></pre><hr>
+<h2 id="尾-号-1498"><a href="#尾-号-1498" class="headerlink" title="尾    号: 1498"></a>尾    号: 1498</h2><p>支持语言: 英语<br>版本备注:<br>特殊备注:<br>固件版本:</p>
+<pre><code>B310As-852_UPDATE_21.329.01.00.1498.BIN    </code></pre><hr>
 <hr>
-<p>然后会自动重启，就可以直接使用机器了。打开192.168.8.1 就可以直接改你自己想要的wifi名和密码了</p>
+<p><strong>如需此固件，请微信联系 QYYD5G</strong></p>
 
         </div>
         
@@ -775,17 +717,17 @@ AT^WIKEY=0,&quot;密码随便写8位&quot;</code></pre><p>（缺什么补什么�
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-03-06T14:39:59.546Z">2020-03-06</time>
+                <time class="level-item has-text-grey" datetime="2020-03-07T17:13:03.105Z">2020-03-08</time>
                 
                 <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/%E5%8D%8E%E4%B8%BA%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/">华为刷机教程</a>
+                <a class="has-link-grey -link" href="/categories/%E5%8D%8E%E4%B8%BAB%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/">华为B系列固件</a>
                 </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    5 分钟 读完 (大约 710 个字)
+                    几秒 读完 (大约 99 个字)
                 </span>
                 
                 
@@ -794,46 +736,36 @@ AT^WIKEY=0,&quot;密码随便写8位&quot;</code></pre><p>（缺什么补什么�
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                <a class="has-link-black-ter" href="/%E5%8D%8E%E4%B8%BAE%E7%B3%BB%E5%88%97mifi%E5%85%8D%E6%8B%86-%E5%8D%87%E7%BA%A7%E9%99%8D%E7%BA%A7-%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5E5885%E4%B8%BA%E4%BE%8B%EF%BC%89/">华为E系列mifi免拆-升级降级-教程（以E5885为例）</a>
+                <a class="has-link-black-ter" href="/%E5%8D%8E%E4%B8%BAB2368(%E7%8E%B0%E5%AD%98)%E5%9B%BA%E4%BB%B6%E6%B1%87%E6%80%BB/">华为B2368（现存）固件汇总</a>
             
         </h1>
         <div class="content">
             <hr>
 <hr>
-<h2 id="第一步：准备工作。"><a href="#第一步：准备工作。" class="headerlink" title="第一步：准备工作。"></a>第一步：准备工作。</h2><hr>
-<h3 id="工具-（先到工具篇自行下载"><a href="#工具-（先到工具篇自行下载" class="headerlink" title="工具:（先到工具篇自行下载)"></a>工具:（先到工具篇自行下载)</h3><p><strong>1。balong_flash.exe。</strong></p>
-<p><strong>2。Huawei datacard Driver</strong></p>
-<p><strong>3。FC_Serial_Driver_Setup.exe。</strong></p>
-<p><strong>4。WIN8/10不认usb驱动注册表（win7不需要安装）</strong></p>
+<h2 id="尾-号"><a href="#尾-号" class="headerlink" title="尾    号:"></a>尾    号:</h2><p>支持语言:  英语<br>版本备注:<br>特殊备注:<br>固件版本: </p>
+<pre><code>B2368_V100R001C00SPC057.bin
+
+B2368_V100R001C00SPC058.bin
+
+B2368_V100R001C00SPC086.bin 
+
+B2368_V100R001C00SPC097.bin  
+
+B2368-Modem_V100R001C00SPC076.bin  
+
+B2368_V100R001C00SPC076.bin
+
+B2368_V100R001C00SPC105.bin 
+
+B2368_UPDATE_23.196.07.80.00sign.bin 
+
+B2368_V100R001C00SPC107.bin
+
+B2368-Modem_V100R001C00SPC107.bin 
+
+B2368_V100R001C00SPC071.bin</code></pre><hr>
 <hr>
-<h3 id="固件（自行准备）："><a href="#固件（自行准备）：" class="headerlink" title="固件（自行准备）："></a>固件（自行准备）：</h3><p><strong>E5885Ls-93a_UPDATE_21.170.63.00.233_WEBUI_21.100.32.02.233_NE5.ZIP</strong></p>
-<hr>
-<pre><code>固件尾号要一样才能用此方法，除了00尾号的，其他的想要跨尾号刷，需要拆机刷。</code></pre><p>就像上面的E5885Ls-93a_UPDATE_21.170.63.00.233_WEBUI_21.100.32.02.233_NE5.ZIP，这个版本的尾号是233。不能免拆刷入其他尾号的。 </p>
-<hr>
-<hr>
-<h2 id="第二步：安装驱动进刷机模式"><a href="#第二步：安装驱动进刷机模式" class="headerlink" title="第二步：安装驱动进刷机模式"></a>第二步：安装驱动进刷机模式</h2><hr>
-<h3 id="1。关机状态下，捅RESET键和电源键，大约两秒，显示屏显示update。。。。然后变成installing。机器变成下载模式。"><a href="#1。关机状态下，捅RESET键和电源键，大约两秒，显示屏显示update。。。。然后变成installing。机器变成下载模式。" class="headerlink" title="1。关机状态下，捅RESET键和电源键，大约两秒，显示屏显示update。。。。然后变成installing。机器变成下载模式。"></a>1。关机状态下，捅RESET键和电源键，大约两秒，显示屏显示update。。。。然后变成installing。机器变成下载模式。</h3><p><img src="/%E5%8D%8E%E4%B8%BAE%E7%B3%BB%E5%88%97mifi%E5%85%8D%E6%8B%86-%E5%8D%87%E7%BA%A7%E9%99%8D%E7%BA%A7-%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5E5885%E4%B8%BA%E4%BE%8B%EF%BC%89/e5885.png" alt="E5885图片"></p>
-<p>  （其他无显示屏的mifi，如下图的E5573s，上述操作后两个灯变绿，并且闪烁，就松开手，usb线连接到电脑。）</p>
-<p><img src="/%E5%8D%8E%E4%B8%BAE%E7%B3%BB%E5%88%97mifi%E5%85%8D%E6%8B%86-%E5%8D%87%E7%BA%A7%E9%99%8D%E7%BA%A7-%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5E5885%E4%B8%BA%E4%BE%8B%EF%BC%89/e5573.png" alt="E5573图片"></p>
-<hr>
-<h3 id="2。插上usb连接电脑。电脑出现端口，安装datacard和FC驱动，会出现两个端口。"><a href="#2。插上usb连接电脑。电脑出现端口，安装datacard和FC驱动，会出现两个端口。" class="headerlink" title="2。插上usb连接电脑。电脑出现端口，安装datacard和FC驱动，会出现两个端口。"></a>2。插上usb连接电脑。电脑出现端口，安装datacard和FC驱动，会出现两个端口。</h3><p><img src="/%E5%8D%8E%E4%B8%BAE%E7%B3%BB%E5%88%97mifi%E5%85%8D%E6%8B%86-%E5%8D%87%E7%BA%A7%E9%99%8D%E7%BA%A7-%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5E5885%E4%B8%BA%E4%BE%8B%EF%BC%89/%E5%8F%8C%E7%AB%AF%E5%8F%A3.png" alt="双端口图片"></p>
-<p>（win8/win10需要安装“WIN8/10不认usb注册表”，如果端口驱动不正常运转，可能还需要重启电脑一次。 ）</p>
-<pre><code>（因此建议win7及以下系统刷机！）</code></pre><hr>
-<hr>
-<h2 id="第三步：刷机"><a href="#第三步：刷机" class="headerlink" title="第三步：刷机"></a>第三步：刷机</h2><hr>
-<h3 id="1。鼠标按住固件，把固件拖动到balong-flash-exe，如下图。"><a href="#1。鼠标按住固件，把固件拖动到balong-flash-exe，如下图。" class="headerlink" title="1。鼠标按住固件，把固件拖动到balong_flash.exe，如下图。"></a>1。鼠标按住固件，把固件拖动到balong_flash.exe，如下图。</h3><p><img src="/%E5%8D%8E%E4%B8%BAE%E7%B3%BB%E5%88%97mifi%E5%85%8D%E6%8B%86-%E5%8D%87%E7%BA%A7%E9%99%8D%E7%BA%A7-%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5E5885%E4%B8%BA%E4%BE%8B%EF%BC%89/%E6%8B%96%E5%8A%A8%E5%88%B7%E6%9C%BA.jpg" alt="刷机图片"></p>
-<hr>
-<p>不行的，请在固件的文件夹内，使用cmd命令 <strong>balong_flash.exe 固件名</strong></p>
-<hr>
-<p> 如：</p>
-<p>  <strong>balong_flash.exe  E5885Ls-93a_UPDATE_21.170.63.00.233_WEBUI_21.100.32.02.233_NE5.ZIP</strong></p>
-<p>（建议win7系统，在刷机文件夹内按住“shift”+右键，选择“在此处打开命令窗口（shell）”）</p>
-<pre><code>请不要在windows的“开始”调出cmd，不然自己要cd到文件夹路径）</code></pre><hr>
-<hr>
-<h3 id="2。有些电脑会提示是否运行，点击确定，运行即可。"><a href="#2。有些电脑会提示是否运行，点击确定，运行即可。" class="headerlink" title="2。有些电脑会提示是否运行，点击确定，运行即可。"></a>2。有些电脑会提示是否运行，点击确定，运行即可。</h3><hr>
-<h3 id="3。显示如下界面，就是在刷机中，等待固件全部刷完，按任意键退出刷机。"><a href="#3。显示如下界面，就是在刷机中，等待固件全部刷完，按任意键退出刷机。" class="headerlink" title="3。显示如下界面，就是在刷机中，等待固件全部刷完，按任意键退出刷机。"></a>3。显示如下界面，就是在刷机中，等待固件全部刷完，按任意键退出刷机。</h3><p><img src="/%E5%8D%8E%E4%B8%BAE%E7%B3%BB%E5%88%97mifi%E5%85%8D%E6%8B%86-%E5%8D%87%E7%BA%A7%E9%99%8D%E7%BA%A7-%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5E5885%E4%B8%BA%E4%BE%8B%EF%BC%89/%E5%88%B7%E6%9C%BA%E4%B8%AD.png" alt="刷机中图片"></p>
-<hr>
-<h3 id="4。拔掉usb，长按电源键，让机器重新启动，即可正常使用"><a href="#4。拔掉usb，长按电源键，让机器重新启动，即可正常使用" class="headerlink" title="4。拔掉usb，长按电源键，让机器重新启动，即可正常使用"></a>4。拔掉usb，长按电源键，让机器重新启动，即可正常使用</h3><pre><code>（像E5573s这类可以扣电池的，可以直接扣电池会快一点）。</code></pre><hr>
+<p><strong>如需此固件，请微信联系 QYYD5G</strong></p>
 
         </div>
         
@@ -856,17 +788,17 @@ AT^WIKEY=0,&quot;密码随便写8位&quot;</code></pre><p>（缺什么补什么�
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-03-06T14:39:59.139Z">2020-03-06</time>
+                <time class="level-item has-text-grey" datetime="2020-03-07T16:08:49.482Z">2020-03-08</time>
                 
                 <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/%E5%8D%8E%E4%B8%BANV%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B/">华为NV修复教程</a>
+                <a class="has-link-grey -link" href="/categories/%E7%89%88%E6%9C%AC%E5%8D%87%E7%BA%A7%E4%BF%A1%E6%81%AF/">版本升级信息</a>
                 </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    8 分钟 读完 (大约 1143 个字)
+                    7 分钟 读完 (大约 1078 个字)
                 </span>
                 
                 
@@ -875,88 +807,75 @@ AT^WIKEY=0,&quot;密码随便写8位&quot;</code></pre><p>（缺什么补什么�
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                <a class="has-link-black-ter" href="/%E5%8D%8E%E4%B8%BAB%E7%B3%BB%E5%88%97nv%E4%BF%A1%E6%81%AFIMEI%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5B310%E4%B8%BA%E4%BE%8B%EF%BC%89/">华为B系列nv信息IMEI修复教程（以B310为例）</a>
+                <a class="has-link-black-ter" href="/%E5%8D%8E%E4%B8%BAE5573s-856%E5%9B%BA%E4%BB%B6%E5%8D%87%E7%BA%A7%E4%BF%A1%E6%81%AF/">华为E5573s-856固件升级信息</a>
             
         </h1>
         <div class="content">
             <hr>
 <hr>
-<p>不谈思路，完整教程分享！！</p>
-<h2 id="这个国外论坛的方法，然后整合回来的，省得大家付费或爬墙！"><a href="#这个国外论坛的方法，然后整合回来的，省得大家付费或爬墙！" class="headerlink" title="这个国外论坛的方法，然后整合回来的，省得大家付费或爬墙！"></a>这个国外论坛的方法，然后整合回来的，省得大家付费或爬墙！</h2><p>在B310As-852等型号刷机的时候，有时候刷入错误的usbload.bin会清空路由器的NVRAM信息，导致设备IMEI\SN\SSID\WIFI密码等信息被清空，MAC地址变成BA:AB:BE:34:00:00。恢复出厂功能失效，灯一直在闪的等问题。这都是由于NVRAM信息丢失的缘故。</p>
-<hr>
-<hr>
-<pre><code>按照适合你机器的方法，自行到博客的工具篇下载</code></pre><hr>
-<hr>
-<p>那么接下来教大家几种方法，重新恢复NV信息。</p>
-<hr>
-<hr>
-<h2 id="方法一-低版本直接开调试模式"><a href="#方法一-低版本直接开调试模式" class="headerlink" title="方法一   低版本直接开调试模式"></a>方法一   低版本直接开调试模式</h2><hr>
-<p><strong>方法1需要的工具。</strong></p>
-<hr>
-<h3 id="1。PUTTY-exe"><a href="#1。PUTTY-exe" class="headerlink" title="1。PUTTY.exe"></a>1。PUTTY.exe</h3><h3 id="2。curl-exe"><a href="#2。curl-exe" class="headerlink" title="2。curl.exe"></a>2。curl.exe</h3><h3 id="3。进模式-bat-（要与curl-exe需在同一文件夹）"><a href="#3。进模式-bat-（要与curl-exe需在同一文件夹）" class="headerlink" title="3。进模式.bat （要与curl.exe需在同一文件夹）"></a>3。进模式.bat （要与curl.exe需在同一文件夹）</h3><h3 id="4。进模式-xml-（要与curl-exe需在同一文件夹）"><a href="#4。进模式-xml-（要与curl-exe需在同一文件夹）" class="headerlink" title="4。进模式.xml （要与curl.exe需在同一文件夹）"></a>4。进模式.xml （要与curl.exe需在同一文件夹）</h3><pre><code>请确保自己的机子是21.316.X.X.X，高于316的无法进入telnet的。
-（此方法不适合高版本的机器）</code></pre><p>低版本这种方法适用于免拆。</p>
-<p>比如B310as-852的全网通版本这两个是可以的：21.316.01.101.59/21.316.01.102.59</p>
-<hr>
-<p>1。<strong>双击 “进模式.bat”</strong>，会显示下图的结果。如果不显示或者是提示无法连接，那表示你的版本不支持，请换低版本。</p>
-<p><img src="/%E5%8D%8E%E4%B8%BAB%E7%B3%BB%E5%88%97nv%E4%BF%A1%E6%81%AFIMEI%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5B310%E4%B8%BA%E4%BE%8B%EF%BC%89/%E6%A8%A1%E5%BC%8F.jpg" alt="模式图片"></p>
-<p>2.按任意键关闭窗口后，<strong>打开putty</strong>，输入路由器ip <strong>192.168.8.1</strong>（以你的机器的管理页面为准，华为大部分是这个），</p>
-<p>  选择<strong>telnet</strong>，然后直接点<strong>open</strong>。</p>
-<p><img src="/%E5%8D%8E%E4%B8%BAB%E7%B3%BB%E5%88%97nv%E4%BF%A1%E6%81%AFIMEI%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5B310%E4%B8%BA%E4%BE%8B%EF%BC%89/putty2.jpg" alt="putty图片"> </p>
-<hr>
-<p>3.打开后，分别输入两次大写的<strong>ATI</strong>，有些putty会自动重复显示成AATTII，那是正常的。<br>putty会显示你的设备信息。接下来就可以根据文章最后一部分的命令重写NV信息了。</p>
-<p><img src="/%E5%8D%8E%E4%B8%BAB%E7%B3%BB%E5%88%97nv%E4%BF%A1%E6%81%AFIMEI%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5B310%E4%B8%BA%E4%BE%8B%EF%BC%89/telnet.jpg" alt="命令图片"> </p>
-<hr>
-<hr>
-<h2 id="方法二-刷机成功后还有端口"><a href="#方法二-刷机成功后还有端口" class="headerlink" title="方法二   刷机成功后还有端口"></a>方法二   刷机成功后还有端口</h2><hr>
-<p><strong>方法2需要的工具</strong></p>
-<hr>
-<h3 id="1。PUTTY-exe或者DC-unlocker也可以，连接正确的com口即可"><a href="#1。PUTTY-exe或者DC-unlocker也可以，连接正确的com口即可" class="headerlink" title="1。PUTTY.exe或者DC-unlocker也可以，连接正确的com口即可"></a>1。PUTTY.exe或者DC-unlocker也可以，连接正确的com口即可</h3><hr>
-<pre><code>无法降级时可以拆机，可以在刷完机后，两个端口还在的情况下修复。</code></pre><hr>
-<h2 id><a href="#" class="headerlink" title=" "></a><img src="/%E5%8D%8E%E4%B8%BAB%E7%B3%BB%E5%88%97nv%E4%BF%A1%E6%81%AFIMEI%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5B310%E4%B8%BA%E4%BE%8B%EF%BC%89/putty.png" alt="putty图片"> </h2><pre><code>putty连接端口的设置如图    </code></pre><p><img src="/%E5%8D%8E%E4%B8%BAB%E7%B3%BB%E5%88%97nv%E4%BF%A1%E6%81%AFIMEI%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5B310%E4%B8%BA%E4%BE%8B%EF%BC%89/dcunlocker.png" alt="dcunlocer图片"></p>
-<hr>
-<pre><code>dc-unlocker连接端口的设置如图，直接打开，点击放大镜
+<p>型号：E5573s-856</p>
+<h3 id="更新版本：21-328-62-00-1344"><a href="#更新版本：21-328-62-00-1344" class="headerlink" title="更新版本：21.328.62.00.1344"></a>更新版本：21.328.62.00.1344</h3><p>文件名：E5573s-856_UPDATE_21.328.62.00.1344_WEBUI_17.100.19.00.1344_MRE5.ZIP</p>
+<p>文件大小：27.9M</p>
+<p>更新说明：</p>
+<pre><code>本次升级对系统性能和稳定性进行了优化，会给您带来更好的体验，推荐您进行升级。 </code></pre><p>【更新注意事项】 如果升级过程中遇到任何问题，请去华为维修服务官网或网点寻求指导帮助。</p>
+<pre><code>此更新提升系统效能和稳定性。请更新您的装置以获取更优秀体验。 </code></pre><p>[更新备注] </p>
+<pre><code>若您在更新期间遇到任何问题，请浏览华为支援网站或联络您身处当地的服务中心寻求协助。
 
-（图片的命令不是修复命令，请勿输入！！）</code></pre><hr>
+This update improves system performance and stability. Please update your device for improved experience. </code></pre><p>[Update notes] </p>
+<pre><code>If you experience any issues during the update, please visit the Huawei Support website or contact your local service center for assistance.</code></pre><hr>
 <hr>
-<h2 id="方法三-刷入一个开启了（adb-atc）的高版本"><a href="#方法三-刷入一个开启了（adb-atc）的高版本" class="headerlink" title="方法三    刷入一个开启了（adb/atc）的高版本"></a>方法三    刷入一个开启了（adb/atc）的高版本</h2><hr>
-<h2 id="方法3需要的工具"><a href="#方法3需要的工具" class="headerlink" title="方法3需要的工具"></a><strong>方法3需要的工具</strong></h2><h3 id="1。安卓adb工具"><a href="#1。安卓adb工具" class="headerlink" title="1。安卓adb工具"></a>1。安卓adb工具</h3><hr>
-<p>在adb工具下，用CMD打开窗口，输入 </p>
-<pre><code>adb connect 192.168.8.1:5555</code></pre><p><img src="/%E5%8D%8E%E4%B8%BAB%E7%B3%BB%E5%88%97nv%E4%BF%A1%E6%81%AFIMEI%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5B310%E4%B8%BA%E4%BE%8B%EF%BC%89/adb.png" alt="adb图片">     </p>
-<pre><code>(192.168.8.1以实际的管理页面为准，华为默认一般是这个) </code></pre><p>adb的用法会比较特别，需要在命令前加atc，如     </p>
-<pre><code>atc at^reset  </code></pre><hr>
-<p>这样即可</p>
+<p>型号：E5573s-856</p>
+<h3 id="更新版本：21-329-63-00-1344"><a href="#更新版本：21-329-63-00-1344" class="headerlink" title="更新版本：21.329.63.00.1344"></a>更新版本：21.329.63.00.1344</h3><p>文件名：E5573s-856_UPDATE_21.329.63.00.1344_WEBUI_17.100.20.00.1344_MRE5.ZIP</p>
+<p>文件大小：27.9M</p>
+<p>[in Chinese：]<br>[In English：]</p>
+<pre><code>本次升级对系统性能和稳定性进行了优化，会给您带来更好的体验，推荐您进行升级。 
+This update improves system performance and stability. Please update your device for improved experience.</code></pre><p>【版本说明】<br>[Release Notes]</p>
+<pre><code>优化网络注册功能。
+update register network feature.</code></pre><p>【更新注意事项】<br>[Update notes]</p>
+<pre><code>如果升级过程中遇到任何问题，请去华为维修服务官网或网点寻求指导帮助。
+
+If you experience any issues during the update, please visit Huawei Support website or contact your local service center for assistance.</code></pre><hr>
 <hr>
-<pre><code>当然有些机器有usb口的，可以尝试usb连接电脑，然后用dc-unlocker转换成调试模式。</code></pre><hr>
+<p>型号：E5573s-856</p>
+<h3 id="更新版本：21-329-63-00-1394"><a href="#更新版本：21-329-63-00-1394" class="headerlink" title="更新版本：21.329.63.00.1394"></a>更新版本：21.329.63.00.1394</h3><p>文件名：E5573s-856_UPDATE_21.329.63.00.1394_WEBUI_17.100.20.00.1394_MRE5.ZIP</p>
+<p>文件大小：26.7M</p>
+<p>更新说明：</p>
+<pre><code>本次升级对系统性能和稳定性进行了优化，会给您带来更好的体验，推荐您进行升级。 </code></pre><p>【更新注意事项】 如果升级过程中遇到任何问题，请去华为维修服务官网或网点寻求指导帮助。</p>
+<pre><code>此更新提升系统效能和稳定性。请更新您的装置以获取更优秀体验。 </code></pre><p>[更新备注] </p>
+<pre><code>若您在更新期间遇到任何问题，请浏览华为支援网站或联络您身处当地的服务中心寻求协助。
+
+This update improves system performance and stability. Please update your device for improved experience. </code></pre><p>[Update notes] </p>
+<pre><code>If you experience any issues during the update, please visit the Huawei Support website or contact your local service center for assistance.</code></pre><hr>
 <hr>
-<h2 id="需要用到的命令"><a href="#需要用到的命令" class="headerlink" title="需要用到的命令"></a>需要用到的命令</h2><hr>
-<p>以下修复命令，根据自己的缺失信息，自己选择相应的命令修复。</p>
+<p>型号：E5573s-856</p>
+<h3 id="更新版本：21-329-63-01-1394"><a href="#更新版本：21-329-63-01-1394" class="headerlink" title="更新版本：21.329.63.01.1394"></a>更新版本：21.329.63.01.1394</h3><p>文件名：E5573s-856_UPDATE_21.329.63.01.1394_WEBUI_17.100.20.01.1394_MRE5.ZIP</p>
+<p>文件大小：28.1M</p>
+<p>更新说明：</p>
+<pre><code>本次升级对系统性能和稳定性进行了优化，会给您带来更好的体验，推荐您进行升级。 </code></pre><p>【更新注意事项】 </p>
+<pre><code>如果升级过程中遇到任何问题，请去华为维修服务官网或网点寻求指导帮助。
+
+此更新提升系统效能和稳定性。请更新您的装置以获取更优秀体验。 </code></pre><p>[更新备注] </p>
+<pre><code>若您在更新期间遇到任何问题，请浏览华为支援网站或联络您身处当地的服务中心寻求协助。
+
+This update improves system performance and stability. Please update your device for improved experience. </code></pre><p>[Update notes] </p>
+<pre><code>If you experience any issues during the update, please visit the Huawei Support website or contact your local service center for assistance.</code></pre><hr>
 <hr>
+<p>型号：E5573s-856</p>
+<h3 id="更新版本：21-329-63-01-1394-1"><a href="#更新版本：21-329-63-01-1394-1" class="headerlink" title="更新版本：21.329.63.01.1394"></a>更新版本：21.329.63.01.1394</h3><p>文件名：E5573s-856_UPDATE_21.329.63.01.1394_WEBUI_17.100.20.01.1394_MRE5.ZIP</p>
+<p>文件大小：28.1M</p>
+<p>更新说明：</p>
+<pre><code>本次升级对系统性能和稳定性进行了优化，会给您带来更好的体验，推荐您进行升级。 
+
+此更新提升系統效能和穩定性。請更新您的裝置以獲取更優秀體驗。 
+
+This update improves system performance and stability. Please update your device for improved experience.</code></pre><p>【更新注意事项】<br>[更新備註]<br>[Update notes]</p>
+<pre><code>如果升级过程中遇到任何问题，请去华为维修服务官网或网点寻求指导帮助。
+
+若您在更新期間遇到任何問題，請瀏覽華為支援網站或聯絡您身處當地的服務中心尋求協助。
+
+If you experience any issues during the update, please visit the Huawei Support website or contact your local service center for assistance.</code></pre><hr>
 <hr>
-<pre><code>AT^PHYNUM=IMEI,你的机器IMEI       一般机器底部会有
-
-AT^SN=你的机器SN                  一般机器底部会有
-
-AT^PHYNUM=MAC,ABCDEFGHIJ          注意输入的时候不需要冒号 “：”
-
-AT^SSID=0,&quot;HUAWEI-B310-F91B&quot;      看自己的路由器底部！！
-
-AT^SSID=1,&quot;HUAWEI-B310-F91B-1&quot;
-
-AT^SSID=2,&quot;HUAWEI-B310-F91B-2&quot;
-
-AT^SSID=3,&quot;HUAWEI-B310-F91B-3&quot;
-
-AT^WIKEY=0,&quot;密码自己可换输，路由器底部为默认&quot; 
-
-AT^WIKEY=1,&quot;密码自己可换输，路由器底部为默认&quot;
-
-AT^WIKEY=2,&quot;密码自己可换输，路由器底部为默认&quot;
-
-AT^WIKEY=3,&quot;密码自己可换输，路由器底部为默认&quot;</code></pre><p>接下来这个一定要用的，这是保存与覆盖NV信息的命令。</p>
-<pre><code>AT^INFORBU</code></pre><p>接下来用这个命令重启路由器</p>
-<pre><code>AT^RESET</code></pre><hr>
-<hr>
-<p>教程结束，直接断开连接，进管理页面即可查看修复情况！！</p>
+<p><strong>需要此固件请微信联系 QYYD5G</strong></p>
 
         </div>
         
@@ -979,17 +898,17 @@ AT^WIKEY=3,&quot;密码自己可换输，路由器底部为默认&quot;</code></
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-03-06T14:39:58.085Z">2020-03-06</time>
+                <time class="level-item has-text-grey" datetime="2020-03-07T13:07:53.273Z">2020-03-07</time>
                 
                 <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/%E5%8D%8E%E4%B8%BA%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/">华为刷机教程</a>
+                <a class="has-link-grey -link" href="/categories/%E7%89%88%E6%9C%AC%E5%8D%87%E7%BA%A7%E4%BF%A1%E6%81%AF/">版本升级信息</a>
                 </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    4 分钟 读完 (大约 646 个字)
+                    2 分钟 读完 (大约 324 个字)
                 </span>
                 
                 
@@ -998,61 +917,381 @@ AT^WIKEY=3,&quot;密码自己可换输，路由器底部为默认&quot;</code></
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                <a class="has-link-black-ter" href="/%E5%8D%8E%E4%B8%BAE5577Bs-937%E5%88%B7%E6%9C%BA%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B/">华为E5577Bs-937刷机救砖教程</a>
+                <a class="has-link-black-ter" href="/%E5%8D%8E%E4%B8%BAH122-373-573%E5%9B%BA%E4%BB%B6%E5%8D%87%E7%BA%A7%E4%BF%A1%E6%81%AF%E5%8D%8E%E4%B8%BA5G_CPE_PRO2/">华为5G_CPE_PRO2华为H132-373/H122-573固件升级信息</a>
             
         </h1>
         <div class="content">
             <hr>
 <hr>
-<h2 id="一-准备工作"><a href="#一-准备工作" class="headerlink" title="一.准备工作"></a>一.准备工作</h2><hr>
-<p><strong>先到博客的工具篇下载以下工具。</strong></p>
-<h3 id="1-balong-flash-exe"><a href="#1-balong-flash-exe" class="headerlink" title="1.balong_flash.exe"></a>1.balong_flash.exe</h3><h3 id="2-Balong-USB-Downloader-1-0-1-10-exe"><a href="#2-Balong-USB-Downloader-1-0-1-10-exe" class="headerlink" title="2.Balong_USB_Downloader_1.0.1.10.exe"></a>2.Balong_USB_Downloader_1.0.1.10.exe</h3><h3 id="3-FC-Serial-Driver-Setup-exe"><a href="#3-FC-Serial-Driver-Setup-exe" class="headerlink" title="3.FC_Serial_Driver_Setup.exe"></a>3.FC_Serial_Driver_Setup.exe</h3><h3 id="4-Huawei-datacard-Driver"><a href="#4-Huawei-datacard-Driver" class="headerlink" title="4.Huawei datacard Driver"></a>4.Huawei datacard Driver</h3><h4 id="5-WIN8-10不认usb驱动的注册表（win7以下的不用）"><a href="#5-WIN8-10不认usb驱动的注册表（win7以下的不用）" class="headerlink" title="5.WIN8/10不认usb驱动的注册表（win7以下的不用）"></a>5.WIN8/10不认usb驱动的注册表（win7以下的不用）</h4><hr>
-<p>准备刷机固件和引导文件。</p>
-<p>1.E5577Bs-937_update_21.328.01.00.233_WEBUI_21.100.36.00.233_NE5.ZIP</p>
-<p>2.usblsafe-e5577bs-937.bin</p>
+<p>型号：H132-373/H122-573</p>
+<h3 id="更新版本：10-0-3-5-H390SP1C00"><a href="#更新版本：10-0-3-5-H390SP1C00" class="headerlink" title="更新版本：10.0.3.5(H390SP1C00)"></a>更新版本：10.0.3.5(H390SP1C00)</h3><p>文件名：H122-373_10.0.3.5(H390SP1C00)_UTPS_10.0.3.1(W2SP18C03)-sec.ZIP</p>
+<p>文件大小：75.9M</p>
+<p>This update improves system performance and stability. Please update your device for improved experience.</p>
+<p>[Update notes]</p>
+<pre><code>1.If you experience any issues during the update, please visit the Huawei Support website or contact your local service center for assistance.
+
+2.This update will not erase your personal data.</code></pre><hr>
 <hr>
+<p>型号：H132-373/H122-573</p>
+<h3 id="更新版本：10-0-3-7-H520SP1C00"><a href="#更新版本：10-0-3-7-H520SP1C00" class="headerlink" title="更新版本：10.0.3.7(H520SP1C00)"></a>更新版本：10.0.3.7(H520SP1C00)</h3><p>文件名：H122-373-573_10.0.3.7(H520SP1C00)-sec.ZIP</p>
+<p>文件大小：67.5M</p>
+<p>This update improves system performance and stability. Please update your device for improved experience.</p>
+<p>[Update notes]</p>
+<pre><code>1.If you experience any issues during the update, please visit the Huawei Support website or contact your local service center for assistance.
+
+2.This update will not erase your personal data.</code></pre><hr>
 <hr>
-<h2 id="第一步-短接"><a href="#第一步-短接" class="headerlink" title="第一步.短接"></a>第一步.短接</h2><hr>
-<p>用镊子夹着图中的金属点和屏蔽罩。</p>
-<p><img src="/%E5%8D%8E%E4%B8%BAE5577Bs-937%E5%88%B7%E6%9C%BA%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B/%E7%9F%AD%E6%8E%A5.png" alt="短接图片"></p>
-<p>接着电脑会出现一个设备，没安装驱动无法识别。</p>
-<p>那么就安装驱动。下面两个都是驱动，都安装了，会比较省事。</p>
+<p>型号：H132-373/H122-573</p>
+<h3 id="更新版本：10-0-3-9-H520SP1C233"><a href="#更新版本：10-0-3-9-H520SP1C233" class="headerlink" title="更新版本：10.0.3.9(H520SP1C233)"></a>更新版本：10.0.3.9(H520SP1C233)</h3><p>文件名：H122-373-573_10.0.3.9(H520SP1C233)_UTPS_10.0.3.1(W2SP5C233)-sec.ZIP</p>
+<p>文件大小：76.7M</p>
+<p>This update improves system performance and stability. Please update your device for improved experience.</p>
+<p>[Update notes]</p>
+<pre><code>1.If you experience any issues during the update, please visit the Huawei Support website or contact your local service center for assistance.
+
+2.This update will not erase your personal data.     </code></pre><hr>
 <hr>
-<p>FC_Serial_Driver_Setup.exe</p>
-<p>Huawei datacard Driver</p>
+<p>型号：H132-373/H122-573</p>
+<h3 id="更新版本：10-0-3-9-H530SP3C233"><a href="#更新版本：10-0-3-9-H530SP3C233" class="headerlink" title="更新版本：10.0.3.9(H530SP3C233)"></a>更新版本：10.0.3.9(H530SP3C233)</h3><p>文件名：H122-373-573_10.0.3.9(H530SP3C233)_UTPS_10.0.3.1(W2SP8C233)-sec.ZIP</p>
+<p>文件大小：76.8M</p>
+<p>This update improves system performance and stability. Please update your device for improved experience.</p>
+<p>[Update notes]</p>
+<pre><code>1.If you experience any issues during the update, please visit the Huawei Support website or contact your local service center for assistance.
+
+2.This update will not erase your personal data.    </code></pre><hr>
 <hr>
-<p>如果你是win8/win10系统，还需要加载一下注册表。</p>
-<p>下载WIN8/10不认usb驱动的注册表文件，解压，双击 WIN10不认usb注册表.reg即可，如果端口运转还是不正常，需要重启电脑一次。</p>
+<p><strong>需要此固件请微信联系 QYYD5G</strong></p>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    
+<div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-03-07T13:06:55.809Z">2020-03-07</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/%E7%89%88%E6%9C%AC%E5%8D%87%E7%BA%A7%E4%BF%A1%E6%81%AF/">版本升级信息</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    6 分钟 读完 (大约 862 个字)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/%E5%8D%8E%E4%B8%BAH312-371%E5%9B%BA%E4%BB%B6%E5%8D%87%E7%BA%A7%E4%BF%A1%E6%81%AF%E5%8D%8E%E4%B8%BA5G-CPE-WIN/">华为5G-CPE-WIN华为H312-371固件升级信息</a>
+            
+        </h1>
+        <div class="content">
+            <hr>
 <hr>
-<p>这时电脑就会识别出一个端口了。</p>
-<p><img src="/%E5%8D%8E%E4%B8%BAE5577Bs-937%E5%88%B7%E6%9C%BA%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B/%E5%8D%95%E7%AB%AF%E5%8F%A3.jpg" alt="单端口图片"></p>
+<p>型号：H312-371</p>
+<h3 id="更新版本：10-0-3-1-H557SP9C00"><a href="#更新版本：10-0-3-1-H557SP9C00" class="headerlink" title="更新版本：10.0.3.1(H557SP9C00)"></a>更新版本：10.0.3.1(H557SP9C00)</h3><p>文件名：H312_371_10.0.3.1(H557SP9C00)_UTPS22.001.20.00.03-sec.ZIP</p>
+<p>文件大小：66.1M</p>
+<pre><code>本次升级对系统性能和稳定性进行了优化，会给您带来更好的体验，推荐您进行升级。
+This update improves system performance and stability. Please update your device for improved experience.</code></pre><p>【更新注意事项】<br>[Update notes]</p>
+<pre><code>1.如果升级过程中遇到任何问题，请去华为维修服务官网或网点寻求指导帮助。
+
+1.If you experience any issues during the update, please visit the Huawei Support website or contact your local service center for assistance.
+
+2.本次更新不会删除任何用户数据。
+
+2.This update will not erase your personal data.    </code></pre><hr>
 <hr>
+<p>型号：H312-371</p>
+<h3 id="更新版本：10-0-3-1-H557SP3C233"><a href="#更新版本：10-0-3-1-H557SP3C233" class="headerlink" title="更新版本：10.0.3.1(H557SP3C233)"></a>更新版本：10.0.3.1(H557SP3C233)</h3><p>文件名：H312_371_10.0.3.1(H557SP3C233)_UTPS22.001.20.00.03-sec.ZIP</p>
+<p>文件大小：66.3M</p>
+<pre><code>本次升级对系统性能和稳定性进行了优化，会给您带来更好的体验，推荐您进行升级。
+This update improves system performance and stability. Please update your device for improved experience.</code></pre><p>【更新注意事项】<br>[Update notes]</p>
+<pre><code>1.如果升级过程中遇到任何问题，请去华为维修服务官网或网点寻求指导帮助。
+
+1.If you experience any issues during the update, please visit the Huawei Support website or contact your local service center for assistance.
+
+2.本次更新不会删除任何用户数据。
+
+2.This update will not erase your personal data.     </code></pre><hr>
 <hr>
-<h2 id="第二步-刷入引导"><a href="#第二步-刷入引导" class="headerlink" title="第二步.刷入引导"></a>第二步.刷入引导</h2><hr>
-<p>打开<strong>Balong_USB_Downloader_1.0.1.10.exe</strong>，在这个工具选择相应端口和文件刷入。</p>
-<p><img src="/%E5%8D%8E%E4%B8%BAE5577Bs-937%E5%88%B7%E6%9C%BA%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B/%E5%8A%A0%E8%BD%BDusbloader.jpg" alt="usbloader图片"></p>
+<p>型号：H312-371</p>
+<h3 id="更新版本：10-0-3-1-H557SP17C00"><a href="#更新版本：10-0-3-1-H557SP17C00" class="headerlink" title="更新版本：10.0.3.1(H557SP17C00)"></a>更新版本：10.0.3.1(H557SP17C00)</h3><p>文件名：H312_371_10.0.3.1(H557SP17C00)_UTPS22.001.20.00.03-sec.ZIP</p>
+<p>文件大小：66.2M</p>
+<pre><code>本次升级对系统性能和稳定性进行了优化，会给您带来更好的体验，推荐您进行升级。
+This update improves system performance and stability. Please update your device for improved experience.</code></pre><p>【更新注意事项】<br>[Update notes]</p>
+<pre><code>1.如果升级过程中遇到任何问题，请去华为维修服务官网或网点寻求指导帮助。
+
+1.If you experience any issues during the update, please visit the Huawei Support website or contact your local service center for assistance.
+
+2.本次更新不会删除任何用户数据。
+
+2.This update will not erase your personal data.    </code></pre><hr>
 <hr>
-<p>做完这一步后，电脑会<strong>出现2个端口</strong>。</p>
-<p><img src="/%E5%8D%8E%E4%B8%BAE5577Bs-937%E5%88%B7%E6%9C%BA%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B/%E5%8F%8C%E7%AB%AF%E5%8F%A3.png" alt="双端口图片"></p>
+<p>型号：H312-371</p>
+<h3 id="更新版本：10-0-3-1-H557SP17C233"><a href="#更新版本：10-0-3-1-H557SP17C233" class="headerlink" title="更新版本：10.0.3.1(H557SP17C233)"></a>更新版本：10.0.3.1(H557SP17C233)</h3><p>文件名：H312_371_10.0.3.1(H557SP17C233)_UTPS22.001.20.00.03-sec.ZIP</p>
+<p>文件大小：66.3M</p>
+<pre><code>本次升级对系统性能和稳定性进行了优化，会给您带来更好的体验，推荐您进行升级。
+This update improves system performance and stability. Please update your device for improved experience.</code></pre><p>【更新注意事项】<br>[Update notes]</p>
+<pre><code>1.如果升级过程中遇到任何问题，请去华为维修服务官网或网点寻求指导帮助。
+
+1.If you experience any issues during the update, please visit the Huawei Support website or contact your local service center for assistance.
+
+2.本次更新不会删除任何用户数据。
+
+2.This update will not erase your personal data.    </code></pre><hr>
 <hr>
+<p>型号：H312-371</p>
+<h3 id="更新版本：10-0-3-1-H557SP15C233"><a href="#更新版本：10-0-3-1-H557SP15C233" class="headerlink" title="更新版本：10.0.3.1(H557SP15C233)"></a>更新版本：10.0.3.1(H557SP15C233)</h3><p>文件名：H312_371_10.0.3.1(H557SP15C233)_UTPS22.001.20.00.03-sec.ZIP</p>
+<p>文件大小：66.3M</p>
+<pre><code>本次升级对系统性能和稳定性进行了优化，会给您带来更好的体验，推荐您进行升级。
+This update improves system performance and stability. Please update your device for improved experience.</code></pre><p>【更新注意事项】<br>[Update notes]</p>
+<pre><code>1.如果升级过程中遇到任何问题，请去华为维修服务官网或网点寻求指导帮助。
+
+1.If you experience any issues during the update, please visit the Huawei Support website or contact your local service center for assistance.
+
+2.本次更新不会删除任何用户数据。
+
+2.This update will not erase your personal data.     </code></pre><hr>
 <hr>
-<h2 id="第三步-刷机"><a href="#第三步-刷机" class="headerlink" title="第三步.刷机"></a>第三步.刷机</h2><hr>
-<p>直接把E5577Bs-937_update_21.328.01.00.233_WEBUI_21.100.36.00.233_NE5.ZIP <strong>拖到balong_flash.exe</strong>。如图。</p>
-<p><img src="/%E5%8D%8E%E4%B8%BAE5577Bs-937%E5%88%B7%E6%9C%BA%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B/%E6%8B%96%E5%8A%A8%E5%88%B7%E6%9C%BA.jpg" alt="刷机图片"></p>
+<p><strong>需要此固件请微信联系 QYYD5G</strong></p>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    
+<div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-03-07T12:50:26.691Z">2020-03-07</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/%E7%89%88%E6%9C%AC%E5%8D%87%E7%BA%A7%E4%BF%A1%E6%81%AF/">版本升级信息</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    13 分钟 读完 (大约 1960 个字)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/%E5%8D%8E%E4%B8%BAE6878%E5%9B%BA%E4%BB%B6%E5%8D%87%E7%BA%A7%E4%BF%A1%E6%81%AF%E5%8D%8E%E4%B8%BA5G%E9%9A%8F%E8%A1%8Cmifi/">华为5G随行mifi华为E6878固件升级信息</a>
+            
+        </h1>
+        <div class="content">
+            <hr>
 <hr>
-<p>会CMD的可以在刷机文件的目录下，使用cmd命令。</p>
-<p>（win7按住shift和右键，选择在此处打开命令（shell））</p>
-<p>可以直接打开输入命令： balong_flash.exe E5577Bs-937_update_21.328.01.00.233_WEBUI_21.100.36.00.233_NE5.ZIP </p>
+<p>型号：E6878</p>
+<h3 id="更新版本：10-0-3-1-H552SP10C233"><a href="#更新版本：10-0-3-1-H552SP10C233" class="headerlink" title="更新版本：10.0.3.1(H552SP10C233)"></a>更新版本：10.0.3.1(H552SP10C233)</h3><p>文件名：E6878_10.0.3.1(H552SP10C233)_UTPS22.001.33.00.03-debug-sec.ZIP</p>
+<p>文件大小：75.1M</p>
+<pre><code>This update improves system performance and stability. Please update your device for improved experience.</code></pre><p>[Update notes]</p>
+<pre><code>1.If you experience any issues during the update, please visit the Huawei Support website or contact your local service center for assistance.
+
+2.This update will not erase your personal data.</code></pre><hr>
 <hr>
-<p>像这样的进程就是正在刷入固件了。 </p>
-<p><img src="/%E5%8D%8E%E4%B8%BAE5577Bs-937%E5%88%B7%E6%9C%BA%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B/%E5%88%B7%E6%9C%BA.png" alt="刷机中图片"></p>
+<p>型号：E6878</p>
+<h3 id="更新版本：10-0-3-1-H556SP2C233"><a href="#更新版本：10-0-3-1-H556SP2C233" class="headerlink" title="更新版本：10.0.3.1(H556SP2C233)"></a>更新版本：10.0.3.1(H556SP2C233)</h3><p>文件名：E6878_10.0.3.1(H556SP2C233)_UTPS22.001.33.00.03-debug-sec.ZIP</p>
+<p>文件大小：75.2M</p>
+<pre><code>This update improves system performance and stability. Please update your device for improved experience.</code></pre><p>[Update notes]</p>
+<pre><code>1.If you experience any issues during the update, please visit the Huawei Support website or contact your local service center for assistance.
+
+2.This update will not erase your personal data.    </code></pre><hr>
 <hr>
-<pre><code>注意：balong_flash.exe不需要双击打开他，也不能双击打开！！别傻傻以为工具坏了</code></pre><hr>
+<p>型号：E6878</p>
+<h3 id="更新版本：10-0-3-1-H552SP3C233"><a href="#更新版本：10-0-3-1-H552SP3C233" class="headerlink" title="更新版本：10.0.3.1(H552SP3C233)"></a>更新版本：10.0.3.1(H552SP3C233)</h3><p>文件名：E6878_10.0.3.1(H552SP3C233)_UTPS22.001.33.00.03-sec.ZIP</p>
+<p>文件大小：67.5M</p>
+<pre><code>This update improves system performance and stability. Please update your device for improved experience.</code></pre><p>[Update notes]</p>
+<pre><code>1.If you experience any issues during the update, please visit the Huawei Support website or contact your local service center for assistance.
+
+2.This update will not erase your personal data.    </code></pre><hr>
 <hr>
-<h2 id="第四步-重新开机或修复"><a href="#第四步-重新开机或修复" class="headerlink" title="第四步.重新开机或修复"></a>第四步.重新开机或修复</h2><hr>
-<p>刷完后，机器会自动重启，但是还是需要扣掉电池，重新开机一次。</p>
+<p>型号：E6878</p>
+<h3 id="更新版本：10-0-3-1-H557SP7C233"><a href="#更新版本：10-0-3-1-H557SP7C233" class="headerlink" title="更新版本：10.0.3.1(H557SP7C233)"></a>更新版本：10.0.3.1(H557SP7C233)</h3><p>文件名：E6878_10.0.3.1(H557SP7C233)_UTPS22.001.34.01.03-debug-sec.ZIP</p>
+<p>文件大小：75.7M</p>
+<pre><code>This update improves system performance and stability. Please update your device for improved experience.</code></pre><p>[Update notes]</p>
+<pre><code>1.If you experience any issues during the update, please visit the Huawei Support website or contact your local service center for assistance.
+
+2.This update will not erase your personal data.</code></pre><hr>
 <hr>
-<p>如果你之前变砖丢失了一些设备信息，如imei/SN/wifi密码之类的，在刷完机，两个端口还在的时候自己用dc-unlocker，根据博客的其他型号的修复方法进行修复（方法是通用的）。</p>
+<p>型号：E6878</p>
+<h3 id="更新版本：10-0-3-1-H557SP8C233"><a href="#更新版本：10-0-3-1-H557SP8C233" class="headerlink" title="更新版本：10.0.3.1(H557SP8C233)"></a>更新版本：10.0.3.1(H557SP8C233)</h3><p>文件名：E6878_10.0.3.1(H557SP8C233)_UTPS22.001.34.01.03-debug-sec.ZIP</p>
+<p>文件大小：75.9M</p>
+<pre><code>This update improves system performance and stability. Please update your device for improved experience.</code></pre><p>[Update notes]</p>
+<pre><code>1.If you experience any issues during the update, please visit the Huawei Support website or contact your local service center for assistance.
+
+2.This update will not erase your personal data.         </code></pre><hr>
+<hr>
+<p>型号：E6878</p>
+<h3 id="更新版本：10-0-3-1-H557SP12C233"><a href="#更新版本：10-0-3-1-H557SP12C233" class="headerlink" title="更新版本：10.0.3.1(H557SP12C233)"></a>更新版本：10.0.3.1(H557SP12C233)</h3><p>文件名：E6878_10.0.3.1(H557SP12C233)_UTPS22.001.34.01.03-debug-sec.ZIP</p>
+<p>文件大小：75.8M</p>
+<pre><code>This update improves system performance and stability. Please update your device for improved experience.</code></pre><p>[Update notes]</p>
+<pre><code>1.If you experience any issues during the update, please visit the Huawei Support website or contact your local service center for assistance.
+
+2.This update will not erase your personal data.</code></pre><hr>
+<hr>
+<p>型号：E6878</p>
+<h3 id="更新版本：10-0-3-1-H557SP23C233"><a href="#更新版本：10-0-3-1-H557SP23C233" class="headerlink" title="更新版本：10.0.3.1(H557SP23C233)"></a>更新版本：10.0.3.1(H557SP23C233)</h3><p>文件名：E6878_10.0.3.1(H557SP23C233)_UTPS22.001.34.01.03-sec.ZIP</p>
+<p>文件大小：68.1M</p>
+<pre><code>This update improves system performance and stability. Please update your device for improved experience.</code></pre><p>[Update notes]</p>
+<pre><code>1.If you experience any issues during the update, please visit the Huawei Support website or contact your local service center for assistance.
+
+2.This update will not erase your personal data.    </code></pre><hr>
+<hr>
+<p>型号：E6878</p>
+<h3 id="更新版本：10-0-3-1-H557SP28C233"><a href="#更新版本：10-0-3-1-H557SP28C233" class="headerlink" title="更新版本：10.0.3.1(H557SP28C233)"></a>更新版本：10.0.3.1(H557SP28C233)</h3><p>文件名：E6878_10.0.3.1(H557SP28C233)_UTPS22.001.34.01.03-debug-sec.ZIP</p>
+<p>文件大小：75.7M</p>
+<pre><code>This update improves system performance and stability. Please update your device for improved experience.</code></pre><p>[Update notes]</p>
+<pre><code>1.If you experience any issues during the update, please visit the Huawei Support website or contact your local service center for assistance.
+
+2.This update will not erase your personal data.</code></pre><hr>
+<hr>
+<p>型号：E6878</p>
+<h3 id="更新版本：10-0-3-1-H557SP40C233"><a href="#更新版本：10-0-3-1-H557SP40C233" class="headerlink" title="更新版本：10.0.3.1(H557SP40C233)"></a>更新版本：10.0.3.1(H557SP40C233)</h3><p>文件名：E6878_10.0.3.1(H557SP40C233)_UTPS22.001.34.01.03-debug-sec.ZIP</p>
+<p>文件大小：75.7M</p>
+<pre><code>This update improves system performance and stability. Please update your device for improved experience.</code></pre><p>[Update notes]</p>
+<pre><code>1.If you experience any issues during the update, please visit the Huawei Support website or contact your local service center for assistance.
+
+2.This update will not erase your personal data.    </code></pre><hr>
+<hr>
+<p>型号：E6878</p>
+<h3 id="更新版本：10-0-3-1-H563SP4C233"><a href="#更新版本：10-0-3-1-H563SP4C233" class="headerlink" title="更新版本：10.0.3.1(H563SP4C233)"></a>更新版本：10.0.3.1(H563SP4C233)</h3><p>文件名：E6878_10.0.3.1(H563SP4C233)_UTPS22.001.34.01.03-debug-sec.ZIP</p>
+<p>文件大小：75.9M</p>
+<pre><code>本次升级对系统性能和稳定性进行了优化，会给您带来更好的体验，推荐您进行升级。
+This update improves system performance and stability. Please update your device for improved experience.</code></pre><p>【更新注意事项】<br>[Update notes]</p>
+<pre><code>1.如果升级过程中遇到任何问题，请去华为维修服务官网或网点寻求指导帮助。
+
+1.If you experience any issues during the update, please visit the Huawei Support website or contact your local service center for assistance.
+
+2.本次更新不会删除任何用户数据。
+
+2.This update will not erase your personal data.</code></pre><hr>
+<hr>
+<p>型号：E6878</p>
+<h3 id="更新版本：10-0-3-1-H563SP5C233"><a href="#更新版本：10-0-3-1-H563SP5C233" class="headerlink" title="更新版本：10.0.3.1(H563SP5C233)"></a>更新版本：10.0.3.1(H563SP5C233)</h3><p>文件名：E6878_10.0.3.1(H563SP5C233)_UTPS22.001.34.01.03-sec.ZIP</p>
+<p>文件大小：68.3M</p>
+<pre><code>本次升级对系统性能和稳定性进行了优化，会给您带来更好的体验，推荐您进行升级。
+This update improves system performance and stability. Please update your device for improved experience.</code></pre><p>【更新注意事项】<br>[Update notes]</p>
+<pre><code>1.如果升级过程中遇到任何问题，请去华为维修服务官网或网点寻求指导帮助。
+
+1.If you experience any issues during the update, please visit the Huawei Support website or contact your local service center for assistance.
+
+2.本次更新不会删除任何用户数据。
+
+2.This update will not erase your personal data.     </code></pre><hr>
+<hr>
+<p>型号：E6878</p>
+<h3 id="更新版本：10-0-3-1-H557SP40C233-1"><a href="#更新版本：10-0-3-1-H557SP40C233-1" class="headerlink" title="更新版本：10.0.3.1(H557SP40C233)"></a>更新版本：10.0.3.1(H557SP40C233)</h3><p>文件名：E6878_10.0.3.1(H557SP27C233)_UTPS22.001.34.01.03-sec.ZIP</p>
+<p>文件大小：68.1M</p>
+<pre><code>This update improves system performance and stability. Please update your device for improved experience.</code></pre><p>[Update notes]</p>
+<pre><code>1.If you experience any issues during the update, please visit the Huawei Support website or contact your local service center for assistance.
+
+2.This update will not erase your personal data.</code></pre><hr>
+<hr>
+<p>型号：E6878</p>
+<h3 id="更新版本：10-0-3-1-H563SP1C233"><a href="#更新版本：10-0-3-1-H563SP1C233" class="headerlink" title="更新版本：10.0.3.1(H563SP1C233)"></a>更新版本：10.0.3.1(H563SP1C233)</h3><p>文件名：E6878_10.0.3.1(H563SP1C233)_UTPS22.001.34.01.03-sec.ZIP</p>
+<p>文件大小：68.3M</p>
+<pre><code>本次升级对系统性能和稳定性进行了优化，会给您带来更好的体验，推荐您进行升级。
+This update improves system performance and stability. Please update your device for improved experience.</code></pre><p>【更新注意事项】<br>[Update notes]</p>
+<pre><code>1.如果升级过程中遇到任何问题，请去华为维修服务官网或网点寻求指导帮助。
+
+1.If you experience any issues during the update, please visit the Huawei Support website or contact your local service center for assistance.
+
+2.本次更新不会删除任何用户数据。
+
+2.This update will not erase your personal data.         </code></pre><hr>
+<hr>
+<p>型号：E6878</p>
+<h3 id="更新版本：10-0-3-1-H563SP11C233"><a href="#更新版本：10-0-3-1-H563SP11C233" class="headerlink" title="更新版本：10.0.3.1(H563SP11C233)"></a>更新版本：10.0.3.1(H563SP11C233)</h3><p>文件名：E6878_10.0.3.1(H563SP11C233)_UTPS22.001.34.01.03-sec.ZIP</p>
+<p>文件大小：68.3M</p>
+<pre><code>本次升级对系统性能和稳定性进行了优化，会给您带来更好的体验，推荐您进行升级。
+This update improves system performance and stability. Please update your device for improved experience.</code></pre><p>【更新注意事项】<br>[Update notes]</p>
+<pre><code>1.如果升级过程中遇到任何问题，请去华为维修服务官网或网点寻求指导帮助。
+
+1.If you experience any issues during the update, please visit the Huawei Support website or contact your local service center for assistance.
+
+2.本次更新不会删除任何用户数据。
+
+2.This update will not erase your personal data.        </code></pre><hr>
+<hr>
+<p>型号：E6878</p>
+<h3 id="更新版本：10-0-3-1-H563SP13C233"><a href="#更新版本：10-0-3-1-H563SP13C233" class="headerlink" title="更新版本：10.0.3.1(H563SP13C233)"></a>更新版本：10.0.3.1(H563SP13C233)</h3><p>文件名：E6878_10.0.3.1(H563SP13C233)_UTPS22.001.34.01.03-sec.ZIP</p>
+<p>文件大小：68.3M</p>
+<pre><code>本次升级对系统性能和稳定性进行了优化，会给您带来更好的体验，推荐您进行升级。
+This update improves system performance and stability. Please update your device for improved experience.</code></pre><p>【更新注意事项】<br>[Update notes]</p>
+<pre><code>1.如果升级过程中遇到任何问题，请去华为维修服务官网或网点寻求指导帮助。
+
+1.If you experience any issues during the update, please visit the Huawei Support website or contact your local service center for assistance.
+
+2.本次更新不会删除任何用户数据。
+
+2.This update will not erase your personal data.</code></pre><hr>
+<hr>
+<p>型号：E6878</p>
+<h3 id="更新版本：10-0-3-1-H563SP7C233"><a href="#更新版本：10-0-3-1-H563SP7C233" class="headerlink" title="更新版本：10.0.3.1(H563SP7C233)"></a>更新版本：10.0.3.1(H563SP7C233)</h3><p>文件名：E6878_10.0.3.1(H563SP7C233)_UTPS22.001.34.01.03-sec.ZIP</p>
+<p>文件大小：68.3M</p>
+<pre><code>本次升级对系统性能和稳定性进行了优化，会给您带来更好的体验，推荐您进行升级。
+This update improves system performance and stability. Please update your device for improved experience.</code></pre><p>【更新注意事项】<br>[Update notes]</p>
+<pre><code>1.如果升级过程中遇到任何问题，请去华为维修服务官网或网点寻求指导帮助。
+
+1.If you experience any issues during the update, please visit the Huawei Support website or contact your local service center for assistance.
+
+2.本次更新不会删除任何用户数据。
+
+2.This update will not erase your personal data.</code></pre><hr>
+<hr>
+<p>型号：E6878</p>
+<h3 id="更新版本：10-0-3-1-H563SP17C233"><a href="#更新版本：10-0-3-1-H563SP17C233" class="headerlink" title="更新版本：10.0.3.1(H563SP17C233)"></a>更新版本：10.0.3.1(H563SP17C233)</h3><p>文件名：E6878_10.0.3.1(H563SP17C233)_UTPS22.001.34.01.03-sec.ZIP</p>
+<p>文件大小：68.3M</p>
+<pre><code>本次升级对系统性能和稳定性进行了优化，会给您带来更好的体验，推荐您进行升级。
+This update improves system performance and stability. Please update your device for improved experience.</code></pre><p>【更新注意事项】<br>[Update notes]</p>
+<pre><code>1.如果升级过程中遇到任何问题，请去华为维修服务官网或网点寻求指导帮助。
+
+1.If you experience any issues during the update, please visit the Huawei Support website or contact your local service center for assistance.
+
+2.本次更新不会删除任何用户数据。
+
+2.This update will not erase your personal data.     </code></pre><hr>
+<hr>
+<p><strong>需要此固件请微信联系 QYYD5G</strong></p>
 
         </div>
         
@@ -1089,6 +1328,10 @@ AT^WIKEY=3,&quot;密码自己可换输，路由器底部为默认&quot;</code></
             <li><a class="pagination-link is-current" href="/page/15/">15</a></li>
             
             <li><a class="pagination-link has-text-black-ter" href="/page/16/">16</a></li>
+            
+            <li><span class="pagination-ellipsis has-text-black-ter">&hellip;</span></li>
+            
+            <li><a class="pagination-link has-text-black-ter" href="/page/20/">20</a></li>
             
         </ul>
     </nav>
@@ -1138,7 +1381,7 @@ AT^WIKEY=3,&quot;密码自己可换输，路由器底部为默认&quot;</code></
                     </p>
                     <a href="/archives">
                         <p class="title has-text-weight-normal">
-                            153
+                            196
                         </p>
                     </a>
                 </div>
@@ -1150,7 +1393,7 @@ AT^WIKEY=3,&quot;密码自己可换输，路由器底部为默认&quot;</code></
                     </p>
                     <a href="/categories">
                         <p class="title has-text-weight-normal">
-                            9
+                            11
                         </p>
                     </a>
                 </div>
@@ -1162,7 +1405,7 @@ AT^WIKEY=3,&quot;密码自己可换输，路由器底部为默认&quot;</code></
                     </p>
                     <a href="/tags">
                         <p class="title has-text-weight-normal">
-                            8
+                            16
                         </p>
                     </a>
                 </div>
@@ -1282,12 +1525,28 @@ AT^WIKEY=3,&quot;密码自己可换输，路由器底部为默认&quot;</code></
                 <span class="level-item tag">9</span>
             </span>
         </a></li><li>
+        <a class="level is-marginless" href="/categories/%E5%8D%8E%E4%B8%BA%E5%85%B6%E4%BB%96%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/">
+            <span class="level-start">
+                <span class="level-item">华为其他系列固件</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">30</span>
+            </span>
+        </a></li><li>
         <a class="level is-marginless" href="/categories/%E5%8D%8E%E4%B8%BA%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/">
             <span class="level-start">
                 <span class="level-item">华为刷机教程</span>
             </span>
             <span class="level-end">
                 <span class="level-item tag">10</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/%E5%8D%8E%E4%B8%BA%E6%99%BA%E8%83%BD%E5%AE%B6%E5%B1%85%E5%9B%BA%E4%BB%B6/">
+            <span class="level-start">
+                <span class="level-item">华为智能家居固件</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">13</span>
             </span>
         </a></li><li>
         <a class="level is-marginless" href="/categories/%E7%89%88%E6%9C%AC%E5%8D%87%E7%BA%A7%E4%BF%A1%E6%81%AF/">
@@ -1308,7 +1567,7 @@ AT^WIKEY=3,&quot;密码自己可换输，路由器底部为默认&quot;</code></
         <h3 class="menu-label">
             标签云
         </h3>
-        <a href="/tags/NV%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B/" style="font-size: 12.86px;">NV修复教程</a> <a href="/tags/%E4%BF%AE%E6%94%B9%E7%89%88%E5%9B%BA%E4%BB%B6/" style="font-size: 14.29px;">修改版固件</a> <a href="/tags/%E5%88%B7%E6%9C%BA%E5%B7%A5%E5%85%B7/" style="font-size: 11.43px;">刷机工具</a> <a href="/tags/%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/" style="font-size: 15.71px;">刷机教程</a> <a href="/tags/%E5%8D%87%E7%BA%A7%E4%BF%A1%E6%81%AF/" style="font-size: 17.14px;">升级信息</a> <a href="/tags/%E5%8D%8E%E4%B8%BA5G%E8%AE%BE%E5%A4%87%E5%9B%BA%E4%BB%B6/" style="font-size: 10px;">华为5G设备固件</a> <a href="/tags/%E5%8D%8E%E4%B8%BAB%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/" style="font-size: 18.57px;">华为B系列固件</a> <a href="/tags/%E5%8D%8E%E4%B8%BAE%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/" style="font-size: 20px;">华为E系列固件</a>
+        <a href="/tags/NV%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B/" style="font-size: 11.82px;">NV修复教程</a> <a href="/tags/%E4%BF%AE%E6%94%B9%E7%89%88%E5%9B%BA%E4%BB%B6/" style="font-size: 15.45px;">修改版固件</a> <a href="/tags/%E5%88%B7%E6%9C%BA%E5%B7%A5%E5%85%B7/" style="font-size: 10.91px;">刷机工具</a> <a href="/tags/%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/" style="font-size: 17.27px;">刷机教程</a> <a href="/tags/%E5%8D%87%E7%BA%A7%E4%BF%A1%E6%81%AF/" style="font-size: 18.18px;">升级信息</a> <a href="/tags/%E5%8D%8E%E4%B8%BA5G%E8%AE%BE%E5%A4%87%E5%9B%BA%E4%BB%B6/" style="font-size: 13.64px;">华为5G设备固件</a> <a href="/tags/%E5%8D%8E%E4%B8%BAA%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/" style="font-size: 11.82px;">华为A系列固件</a> <a href="/tags/%E5%8D%8E%E4%B8%BAB%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/" style="font-size: 19.09px;">华为B系列固件</a> <a href="/tags/%E5%8D%8E%E4%B8%BAC%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/" style="font-size: 10px;">华为C系列固件</a> <a href="/tags/%E5%8D%8E%E4%B8%BAE%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/" style="font-size: 20px;">华为E系列固件</a> <a href="/tags/%E5%8D%8E%E4%B8%BAM%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/" style="font-size: 16.36px;">华为M系列固件</a> <a href="/tags/%E5%8D%8E%E4%B8%BAP%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/" style="font-size: 10px;">华为P系列固件</a> <a href="/tags/%E5%8D%8E%E4%B8%BAR%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/" style="font-size: 14.55px;">华为R系列固件</a> <a href="/tags/%E5%8D%8E%E4%B8%BAS%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/" style="font-size: 12.73px;">华为S系列固件</a> <a href="/tags/%E5%8D%8E%E4%B8%BAk%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/" style="font-size: 11.82px;">华为k系列固件</a> <a href="/tags/%E5%8D%8E%E4%B8%BA%E6%95%B0%E5%AD%97%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/" style="font-size: 15.45px;">华为数字系列固件</a>
     </div>
 </div>
     
@@ -1320,18 +1579,18 @@ AT^WIKEY=3,&quot;密码自己可换输，路由器底部为默认&quot;</code></
         
         <article class="media">
             
-            <a href="/%E5%8D%8E%E4%B8%BAE8378Ws-210(%E7%8E%B0%E5%AD%98)%E5%9B%BA%E4%BB%B6%E6%B1%87%E6%80%BB/" class="media-left">
+            <a href="/%E5%8D%8E%E4%B8%BA801HW(%E7%8E%B0%E5%AD%98)%E5%9B%BA%E4%BB%B6%E6%B1%87%E6%80%BB/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="华为E8378Ws-210（现存）固件汇总">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="华为801HW（现存）固件汇总">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-13T16:23:44.227Z">2020-03-14</time></div>
-                    <a href="/%E5%8D%8E%E4%B8%BAE8378Ws-210(%E7%8E%B0%E5%AD%98)%E5%9B%BA%E4%BB%B6%E6%B1%87%E6%80%BB/" class="title has-link-black-ter is-size-6 has-text-weight-normal">华为E8378Ws-210（现存）固件汇总</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-14T17:22:05.542Z">2020-03-15</time></div>
+                    <a href="/%E5%8D%8E%E4%B8%BA801HW(%E7%8E%B0%E5%AD%98)%E5%9B%BA%E4%BB%B6%E6%B1%87%E6%80%BB/" class="title has-link-black-ter is-size-6 has-text-weight-normal">华为801HW（现存）固件汇总</a>
                     <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/%E5%8D%8E%E4%B8%BAE%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/">华为E系列固件</a>
+                        <a class="has-link-grey -link" href="/categories/%E5%8D%8E%E4%B8%BA%E5%85%B6%E4%BB%96%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/">华为其他系列固件</a>
                     </p>
                 </div>
             </div>
@@ -1339,18 +1598,18 @@ AT^WIKEY=3,&quot;密码自己可换输，路由器底部为默认&quot;</code></
         
         <article class="media">
             
-            <a href="/%E5%8D%8E%E4%B8%BAE8377s-153(%E7%8E%B0%E5%AD%98)%E5%9B%BA%E4%BB%B6%E6%B1%87%E6%80%BB/" class="media-left">
+            <a href="/%E5%8D%8E%E4%B8%BA604HW(%E7%8E%B0%E5%AD%98)%E5%9B%BA%E4%BB%B6%E6%B1%87%E6%80%BB/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="华为E8377s-153（现存）固件汇总">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="华为604HW（现存）固件汇总">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-13T16:23:43.841Z">2020-03-14</time></div>
-                    <a href="/%E5%8D%8E%E4%B8%BAE8377s-153(%E7%8E%B0%E5%AD%98)%E5%9B%BA%E4%BB%B6%E6%B1%87%E6%80%BB/" class="title has-link-black-ter is-size-6 has-text-weight-normal">华为E8377s-153（现存）固件汇总</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-14T17:22:05.294Z">2020-03-15</time></div>
+                    <a href="/%E5%8D%8E%E4%B8%BA604HW(%E7%8E%B0%E5%AD%98)%E5%9B%BA%E4%BB%B6%E6%B1%87%E6%80%BB/" class="title has-link-black-ter is-size-6 has-text-weight-normal">华为604HW（现存）固件汇总</a>
                     <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/%E5%8D%8E%E4%B8%BAE%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/">华为E系列固件</a>
+                        <a class="has-link-grey -link" href="/categories/%E5%8D%8E%E4%B8%BA%E5%85%B6%E4%BB%96%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/">华为其他系列固件</a>
                     </p>
                 </div>
             </div>
@@ -1358,18 +1617,18 @@ AT^WIKEY=3,&quot;密码自己可换输，路由器底部为默认&quot;</code></
         
         <article class="media">
             
-            <a href="/%E5%8D%8E%E4%B8%BAE8372h-609(%E7%8E%B0%E5%AD%98)%E5%9B%BA%E4%BB%B6%E6%B1%87%E6%80%BB/" class="media-left">
+            <a href="/%E5%8D%8E%E4%B8%BA602HW(%E7%8E%B0%E5%AD%98)%E5%9B%BA%E4%BB%B6%E6%B1%87%E6%80%BB/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="华为E8372h-609（现存）固件汇总">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="华为602HW（现存）固件汇总">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-13T16:23:43.529Z">2020-03-14</time></div>
-                    <a href="/%E5%8D%8E%E4%B8%BAE8372h-609(%E7%8E%B0%E5%AD%98)%E5%9B%BA%E4%BB%B6%E6%B1%87%E6%80%BB/" class="title has-link-black-ter is-size-6 has-text-weight-normal">华为E8372h-609（现存）固件汇总</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-14T17:22:04.974Z">2020-03-15</time></div>
+                    <a href="/%E5%8D%8E%E4%B8%BA602HW(%E7%8E%B0%E5%AD%98)%E5%9B%BA%E4%BB%B6%E6%B1%87%E6%80%BB/" class="title has-link-black-ter is-size-6 has-text-weight-normal">华为602HW（现存）固件汇总</a>
                     <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/%E5%8D%8E%E4%B8%BAE%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/">华为E系列固件</a>
+                        <a class="has-link-grey -link" href="/categories/%E5%8D%8E%E4%B8%BA%E5%85%B6%E4%BB%96%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/">华为其他系列固件</a>
                     </p>
                 </div>
             </div>
@@ -1377,18 +1636,18 @@ AT^WIKEY=3,&quot;密码自己可换输，路由器底部为默认&quot;</code></
         
         <article class="media">
             
-            <a href="/%E5%8D%8E%E4%B8%BAE8372h-510-511-517-607-608-927(%E7%8E%B0%E5%AD%98)%E5%9B%BA%E4%BB%B6%E6%B1%87%E6%80%BB/" class="media-left">
+            <a href="/%E5%8D%8E%E4%B8%BA601HW(%E7%8E%B0%E5%AD%98)%E5%9B%BA%E4%BB%B6%E6%B1%87%E6%80%BB/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="华为E8372h-510/E8372h-511/E8372h-517/E8372h-607/E8372h-608/E8372h-927（现存）固件汇总">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="华为601HW（现存）固件汇总">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-13T16:23:43.248Z">2020-03-14</time></div>
-                    <a href="/%E5%8D%8E%E4%B8%BAE8372h-510-511-517-607-608-927(%E7%8E%B0%E5%AD%98)%E5%9B%BA%E4%BB%B6%E6%B1%87%E6%80%BB/" class="title has-link-black-ter is-size-6 has-text-weight-normal">华为E8372h-510/E8372h-511/E8372h-517/E8372h-607/E8372h-608/E8372h-927（现存）固件汇总</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-14T17:22:04.648Z">2020-03-15</time></div>
+                    <a href="/%E5%8D%8E%E4%B8%BA601HW(%E7%8E%B0%E5%AD%98)%E5%9B%BA%E4%BB%B6%E6%B1%87%E6%80%BB/" class="title has-link-black-ter is-size-6 has-text-weight-normal">华为601HW（现存）固件汇总</a>
                     <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/%E5%8D%8E%E4%B8%BAE%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/">华为E系列固件</a>
+                        <a class="has-link-grey -link" href="/categories/%E5%8D%8E%E4%B8%BA%E5%85%B6%E4%BB%96%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/">华为其他系列固件</a>
                     </p>
                 </div>
             </div>
@@ -1396,18 +1655,18 @@ AT^WIKEY=3,&quot;密码自己可换输，路由器底部为默认&quot;</code></
         
         <article class="media">
             
-            <a href="/%E5%8D%8E%E4%B8%BAE8372h-156(%E7%8E%B0%E5%AD%98)%E5%9B%BA%E4%BB%B6%E6%B1%87%E6%80%BB/" class="media-left">
+            <a href="/%E5%8D%8E%E4%B8%BA506HW-2(%E7%8E%B0%E5%AD%98)%E5%9B%BA%E4%BB%B6%E6%B1%87%E6%80%BB/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="华为E8372h-156(汽车专供) （现存）固件汇总">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="华为506HW-2（现存）固件汇总">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-13T16:23:42.938Z">2020-03-14</time></div>
-                    <a href="/%E5%8D%8E%E4%B8%BAE8372h-156(%E7%8E%B0%E5%AD%98)%E5%9B%BA%E4%BB%B6%E6%B1%87%E6%80%BB/" class="title has-link-black-ter is-size-6 has-text-weight-normal">华为E8372h-156(汽车专供) （现存）固件汇总</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-14T17:17:36.328Z">2020-03-15</time></div>
+                    <a href="/%E5%8D%8E%E4%B8%BA506HW-2(%E7%8E%B0%E5%AD%98)%E5%9B%BA%E4%BB%B6%E6%B1%87%E6%80%BB/" class="title has-link-black-ter is-size-6 has-text-weight-normal">华为506HW-2（现存）固件汇总</a>
                     <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/%E5%8D%8E%E4%B8%BAE%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/">华为E系列固件</a>
+                        <a class="has-link-grey -link" href="/categories/%E5%8D%8E%E4%B8%BA%E5%85%B6%E4%BB%96%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/">华为其他系列固件</a>
                     </p>
                 </div>
             </div>
@@ -1430,7 +1689,7 @@ AT^WIKEY=3,&quot;密码自己可换输，路由器底部为默认&quot;</code></
                     <span class="level-item">三月 2020</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">153</span>
+                    <span class="level-item tag">196</span>
                 </span>
             </a>
         </li>
@@ -1486,7 +1745,14 @@ AT^WIKEY=3,&quot;密码自己可换输，路由器底部为默认&quot;</code></
                 <div class="control">
                     <a class="tags has-addons" href="/tags/%E5%8D%8E%E4%B8%BA5G%E8%AE%BE%E5%A4%87%E5%9B%BA%E4%BB%B6/">
                         <span class="tag">华为5G设备固件</span>
-                        <span class="tag is-grey">1</span>
+                        <span class="tag is-grey">6</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/%E5%8D%8E%E4%B8%BAA%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/">
+                        <span class="tag">华为A系列固件</span>
+                        <span class="tag is-grey">3</span>
                     </a>
                 </div>
                 
@@ -1498,9 +1764,58 @@ AT^WIKEY=3,&quot;密码自己可换输，路由器底部为默认&quot;</code></
                 </div>
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/tags/%E5%8D%8E%E4%B8%BAC%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/">
+                        <span class="tag">华为C系列固件</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/tags/%E5%8D%8E%E4%B8%BAE%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/">
                         <span class="tag">华为E系列固件</span>
                         <span class="tag is-grey">68</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/%E5%8D%8E%E4%B8%BAM%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/">
+                        <span class="tag">华为M系列固件</span>
+                        <span class="tag is-grey">10</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/%E5%8D%8E%E4%B8%BAP%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/">
+                        <span class="tag">华为P系列固件</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/%E5%8D%8E%E4%B8%BAR%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/">
+                        <span class="tag">华为R系列固件</span>
+                        <span class="tag is-grey">7</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/%E5%8D%8E%E4%B8%BAS%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/">
+                        <span class="tag">华为S系列固件</span>
+                        <span class="tag is-grey">4</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/%E5%8D%8E%E4%B8%BAk%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/">
+                        <span class="tag">华为k系列固件</span>
+                        <span class="tag is-grey">3</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/%E5%8D%8E%E4%B8%BA%E6%95%B0%E5%AD%97%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/">
+                        <span class="tag">华为数字系列固件</span>
+                        <span class="tag is-grey">9</span>
                     </a>
                 </div>
                 
