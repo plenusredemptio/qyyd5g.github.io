@@ -128,193 +128,6 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-03-06T14:40:01.751Z">2020-03-06</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/%E4%B8%AD%E5%85%B4%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/">中兴刷机教程</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    6 分钟 读完 (大约 966 个字)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/%E4%B8%AD%E5%85%B4MF253-TTL%E5%88%B7%E6%9C%BA%EF%BC%88%E5%A4%A7%E6%9D%BF%EF%BC%89%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B/">中兴MF253-TTL刷机（大板）救砖教程</a>
-            
-        </h1>
-        <div class="content">
-            <hr>
-<hr>
-<p>首先说一下，MF253S的ttl<strong>只能刷大板</strong>，也就是主板，不能刷可以拆卸的那个4G模块。</p>
-<hr>
-<h2 id="第一步：准备工作"><a href="#第一步：准备工作" class="headerlink" title="第一步：准备工作"></a><strong>第一步：准备工作</strong></h2><hr>
-<h4 id="1。拆机，把机器拆开，这里就不详细说了。"><a href="#1。拆机，把机器拆开，这里就不详细说了。" class="headerlink" title="1。拆机，把机器拆开，这里就不详细说了。"></a>1。拆机，把机器拆开，这里就不详细说了。</h4><p>（要拆掉底部2个螺丝以及内部4个螺丝）</p>
-<hr>
-<h4 id="2。工具-到博客工具篇自己下载"><a href="#2。工具-到博客工具篇自己下载" class="headerlink" title="2。工具 到博客工具篇自己下载"></a>2。工具 到博客工具篇自己下载</h4><pre><code>工具1：putty
-
-工具2：tftp</code></pre><hr>
-<h4 id="3。固件自行准备，需要刷机包解压出来的部分文件。"><a href="#3。固件自行准备，需要刷机包解压出来的部分文件。" class="headerlink" title="3。固件自行准备，需要刷机包解压出来的部分文件。"></a>3。固件自行准备，需要刷机包解压出来的部分文件。</h4><p>根据自己的机器相应刷机可。一般刷 cpe侧root_uImage就足够了。其他两个用于救砖，</p>
-<pre><code>1。cpe侧的root_uImage
-
-2。引导文件uboot.img
-
-3。整个编程器固件flash.bin</code></pre><hr>
-<h2 id="第二步：连接机器"><a href="#第二步：连接机器" class="headerlink" title="第二步：连接机器"></a><strong>第二步：连接机器</strong></h2><hr>
-<h4 id="1。用TTL转USB的工具，（"><a href="#1。用TTL转USB的工具，（" class="headerlink" title="1。用TTL转USB的工具，（"></a>1。用TTL转USB的工具，（</h4><p>淘宝上一堆，自行参看购买），连接上面的点。tx和rx自行互换到合适即可。暂时不要连接电脑。</p>
-<p><img src="/%E4%B8%AD%E5%85%B4MF253-TTL%E5%88%B7%E6%9C%BA%EF%BC%88%E5%A4%A7%E6%9D%BF%EF%BC%89%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B/ttl.jpg" alt="ttl图片"> </p>
-<hr>
-<h4 id="2。插上设备电源开机，接着再插ttl转接到电脑。"><a href="#2。插上设备电源开机，接着再插ttl转接到电脑。" class="headerlink" title="2。插上设备电源开机，接着再插ttl转接到电脑。"></a>2。插上设备电源开机，接着再插ttl转接到电脑。</h4><p>（未开机前，电脑不要插ttl转接，有电的话，机器不开机跑代码）</p>
-<hr>
-<h4 id="3。在电脑设备管理器上，查看一下你的工具端口。"><a href="#3。在电脑设备管理器上，查看一下你的工具端口。" class="headerlink" title="3。在电脑设备管理器上，查看一下你的工具端口。"></a>3。在电脑设备管理器上，查看一下你的工具端口。</h4><p>然后打开<strong>putty</strong>软件，按照下图设置，填写相应的端口，速度一定要<strong>57600</strong>，不然都是乱码。</p>
-<p><img src="/%E4%B8%AD%E5%85%B4MF253-TTL%E5%88%B7%E6%9C%BA%EF%BC%88%E5%A4%A7%E6%9D%BF%EF%BC%89%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B/putty.jpg" alt="putty图片"> </p>
-<hr>
-<hr>
-<h2 id="第三步-切换模式，进行tftp刷机"><a href="#第三步-切换模式，进行tftp刷机" class="headerlink" title="第三步 切换模式，进行tftp刷机"></a><strong>第三步 切换模式，进行tftp刷机</strong></h2><hr>
-<h4 id="1。打开putty后，机器会跑出很多代码，暂时不用理，等机器自动跑完一定的代码。"><a href="#1。打开putty后，机器会跑出很多代码，暂时不用理，等机器自动跑完一定的代码。" class="headerlink" title="1。打开putty后，机器会跑出很多代码，暂时不用理，等机器自动跑完一定的代码。"></a>1。打开putty后，机器会跑出很多代码，暂时不用理，等机器自动跑完一定的代码。</h4><p>接着按“CTRL”+“C”，也就是我们常用的复制快捷键，这是linux 的暂停打断功能键。接着输入 </p>
-<pre><code>reboot </code></pre><p>按回车，让机器重启。</p>
-<hr>
-<h4 id="2。-机器重启后，会马上跑出一堆代码，当你见到下图的有1-2-3-4-7-9这样的选项的界面时，"><a href="#2。-机器重启后，会马上跑出一堆代码，当你见到下图的有1-2-3-4-7-9这样的选项的界面时，" class="headerlink" title="2。 机器重启后，会马上跑出一堆代码，当你见到下图的有1/2/3/4/7/9这样的选项的界面时，"></a>2。 机器重启后，会马上跑出一堆代码，当你见到下图的有1/2/3/4/7/9这样的选项的界面时，</h4><p>   马上按<strong>2</strong>或者你想要刷的模式，</p>
-<p>   如 <strong>9</strong> 。</p>
-<p>   <strong>按一次，不要按太多次，不然又要重新来。</strong></p>
-<p><img src="/%E4%B8%AD%E5%85%B4MF253-TTL%E5%88%B7%E6%9C%BA%EF%BC%88%E5%A4%A7%E6%9D%BF%EF%BC%89%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B/%E6%A8%A1%E5%BC%8F.jpg" alt="模式图片"> </p>
-<hr>
-<h4 id="3。-接着输入-“Y”确认进入刷写模式。"><a href="#3。-接着输入-“Y”确认进入刷写模式。" class="headerlink" title="3。 接着输入 “Y”确认进入刷写模式。"></a>3。 接着输入 “Y”确认进入刷写模式。</h4><p><img src="/%E4%B8%AD%E5%85%B4MF253-TTL%E5%88%B7%E6%9C%BA%EF%BC%88%E5%A4%A7%E6%9D%BF%EF%BC%89%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B/%E6%A8%A1%E5%BC%8F2.jpg" alt="模式图片"> </p>
-<p>（图是刷编程器的“9”的模式为例。刷写功能自己按需选择，不要乱照搬图中）</p>
-<hr>
-<h4 id="4。根据上图的提示，"><a href="#4。根据上图的提示，" class="headerlink" title="4。根据上图的提示，"></a>4。根据上图的提示，</h4><p>把自己本地连接的ip换成</p>
-<pre><code>192.168.0.22</code></pre><p>子掩码 </p>
-<pre><code>255.255.255.0</code></pre><p>网关<br>     192.168.0.1 </p>
-<p><img src="/%E4%B8%AD%E5%85%B4MF253-TTL%E5%88%B7%E6%9C%BA%EF%BC%88%E5%A4%A7%E6%9D%BF%EF%BC%89%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B/ipv4.png" alt="ip设置图片"> </p>
-<hr>
-<h4 id="5。打开tftp，设置好相应的信息，选好要刷的对应文件（putty也会有上图相应的提示网址和文件名），如图。"><a href="#5。打开tftp，设置好相应的信息，选好要刷的对应文件（putty也会有上图相应的提示网址和文件名），如图。" class="headerlink" title="5。打开tftp，设置好相应的信息，选好要刷的对应文件（putty也会有上图相应的提示网址和文件名），如图。"></a>5。打开tftp，设置好相应的信息，选好要刷的对应文件（putty也会有上图相应的提示网址和文件名），如图。</h4><p><img src="/%E4%B8%AD%E5%85%B4MF253-TTL%E5%88%B7%E6%9C%BA%EF%BC%88%E5%A4%A7%E6%9D%BF%EF%BC%89%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B/tftp.jpg" alt="模式图片"> </p>
-<hr>
-<h4 id="6。接着回到putty，看清楚提示，按回车键即可。然后会自动刷写，无需其他操作。"><a href="#6。接着回到putty，看清楚提示，按回车键即可。然后会自动刷写，无需其他操作。" class="headerlink" title="6。接着回到putty，看清楚提示，按回车键即可。然后会自动刷写，无需其他操作。"></a>6。接着回到putty，看清楚提示，按回车键即可。然后会自动刷写，无需其他操作。</h4><hr>
-<hr>
-<h2 id="其他问题："><a href="#其他问题：" class="headerlink" title="其他问题："></a><strong>其他问题：</strong></h2><hr>
-<h4 id="1。putty连接乱码？"><a href="#1。putty连接乱码？" class="headerlink" title="1。putty连接乱码？"></a>1。putty连接乱码？</h4><pre><code>波特率没填对或者tx/rx接反了。</code></pre><hr>
-<h4 id="2。ttl连接机器，不跑代码？"><a href="#2。ttl连接机器，不跑代码？" class="headerlink" title="2。ttl连接机器，不跑代码？"></a>2。ttl连接机器，不跑代码？</h4><pre><code>一定要先开机，再连接TTL。</code></pre><hr>
-<h4 id="3。选择好模式刷机后，界面一直提示arp或者其他？"><a href="#3。选择好模式刷机后，界面一直提示arp或者其他？" class="headerlink" title="3。选择好模式刷机后，界面一直提示arp或者其他？"></a>3。选择好模式刷机后，界面一直提示arp或者其他？</h4><pre><code>确定好网络的IP设置按照putty的提示，文件也是。</code></pre><h4 id="4。选不了模式？看不到模式的界面？"><a href="#4。选不了模式？看不到模式的界面？" class="headerlink" title="4。选不了模式？看不到模式的界面？"></a>4。选不了模式？看不到模式的界面？</h4><pre><code>有些机器选模式的界面有时是1秒就过了，
-这是由于机器的故障问题不同，所以有时候是拼手速，
-或者用命令重启，就看到了也要马上按。</code></pre>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    
-<div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-03-06T14:40:01.471Z">2020-03-06</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/%E5%8D%8E%E4%B8%BA%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/">华为刷机教程</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    6 分钟 读完 (大约 827 个字)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/%E5%8D%8E%E4%B8%BAB310-B315%E7%AD%89%E6%9C%BA%E5%99%A8%E5%85%8D%E6%8B%86%E6%9C%BA%E7%84%8A%E6%8E%A5%E5%88%B7%E6%9C%BA%E6%96%B9%E6%B3%95%E6%95%99%E7%A8%8B/">华为B310/B315等机器免拆机/免焊接刷机方法教程</a>
-            
-        </h1>
-        <div class="content">
-            <hr>
-<hr>
-<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a><strong>准备工作</strong></h2><hr>
-<h3 id="1。PUTTY-exe"><a href="#1。PUTTY-exe" class="headerlink" title="1。PUTTY.exe"></a>1。PUTTY.exe</h3><h3 id="2。curl-exe"><a href="#2。curl-exe" class="headerlink" title="2。curl.exe"></a>2。curl.exe</h3><h3 id="3。进模式-bat-（要与curl-exe需在同一文件夹）"><a href="#3。进模式-bat-（要与curl-exe需在同一文件夹）" class="headerlink" title="3。进模式.bat （要与curl.exe需在同一文件夹）"></a>3。进模式.bat （要与curl.exe需在同一文件夹）</h3><h3 id="4。进模式-xml-（要与curl-exe需在同一文件夹）"><a href="#4。进模式-xml-（要与curl-exe需在同一文件夹）" class="headerlink" title="4。进模式.xml （要与curl.exe需在同一文件夹）"></a>4。进模式.xml （要与curl.exe需在同一文件夹）</h3><h3 id="5。multicast-upgrade-tool-exe"><a href="#5。multicast-upgrade-tool-exe" class="headerlink" title="5。multicast_upgrade_tool.exe"></a>5。multicast_upgrade_tool.exe</h3><pre><code>请确保自己的机子是21.316.X.X.X，高于316的无法进入telnet的。
-（此方法不适合高版本的机器）</code></pre><p>低版本这种方法适用于免拆。</p>
-<p>比如B310as-852的全网通版本这两个是可以的：21.316.01.101.59/21.316.01.102.59</p>
-<hr>
-<pre><code>固件自行准备</code></pre><hr>
-<hr>
-<h2 id="第一步-进刷机模式"><a href="#第一步-进刷机模式" class="headerlink" title="第一步  进刷机模式"></a><strong>第一步  进刷机模式</strong></h2><hr>
-<p>1。<strong>双击 “进模式.bat”</strong>，会显示下图的结果。如果不显示或者是提示无法连接，那表示你的版本不支持，请换低版本。</p>
-<p><img src="/%E5%8D%8E%E4%B8%BAB310-B315%E7%AD%89%E6%9C%BA%E5%99%A8%E5%85%8D%E6%8B%86%E6%9C%BA%E7%84%8A%E6%8E%A5%E5%88%B7%E6%9C%BA%E6%96%B9%E6%B3%95%E6%95%99%E7%A8%8B/%E6%A8%A1%E5%BC%8F.jpg" alt="模式图片"></p>
-<p>2.按任意键关闭窗口后，<strong>打开putty</strong>，输入路由器ip <strong>192.168.8.1</strong>（以你的机器的管理页面为准，华为大部分是这个），</p>
-<p>  选择<strong>telnet</strong>，然后直接点<strong>open</strong>。</p>
-<p><img src="/%E5%8D%8E%E4%B8%BAB310-B315%E7%AD%89%E6%9C%BA%E5%99%A8%E5%85%8D%E6%8B%86%E6%9C%BA%E7%84%8A%E6%8E%A5%E5%88%B7%E6%9C%BA%E6%96%B9%E6%B3%95%E6%95%99%E7%A8%8B/putty2.jpg" alt="putty图片"> </p>
-<hr>
-<p>3.打开后，分别输入两次大写的<br>      ATI</p>
-<p><img src="/%E5%8D%8E%E4%B8%BAB310-B315%E7%AD%89%E6%9C%BA%E5%99%A8%E5%85%8D%E6%8B%86%E6%9C%BA%E7%84%8A%E6%8E%A5%E5%88%B7%E6%9C%BA%E6%96%B9%E6%B3%95%E6%95%99%E7%A8%8B/telnet.jpg" alt="命令图片"> </p>
-<pre><code>（图片仅供参考，输入需要的命令为准）</code></pre><p>有些putty会自动重复显示成AATTII，那是正常的。putty会显示你的设备信息。接下来输入命令 </p>
-<pre><code>AT^SFM=1 
-
-AT^RESET</code></pre><p>这两个命令后，分别显示OK，路由器就会进入刷机模式，只亮电源灯。</p>
-<hr>
-<hr>
-<h2 id="第二步-打开软件刷机"><a href="#第二步-打开软件刷机" class="headerlink" title="第二步  打开软件刷机"></a><strong>第二步  打开软件刷机</strong></h2><hr>
-<p>关闭putty后，最好把本地的ipv4改成192.168.8.100，子掩码255.255.225.0，网关 192.168.8.1.</p>
-<hr>
-<p>接着打开<strong>multicast_upgrade_tool.exe</strong>。</p>
-<pre><code>首次打开会让你选择解压软件，如winrar。
-请根据要求找到你已经安装过的解压软件，
-比如我的是winrar.exe。
-别说你电脑连压缩软件都没安装。</code></pre><hr>
-<p>软件打开后，选择语言为中文，会方便一点，选择相应的网卡。</p>
-<p><img src="/%E5%8D%8E%E4%B8%BAB310-B315%E7%AD%89%E6%9C%BA%E5%99%A8%E5%85%8D%E6%8B%86%E6%9C%BA%E7%84%8A%E6%8E%A5%E5%88%B7%E6%9C%BA%E6%96%B9%E6%B3%95%E6%95%99%E7%A8%8B/%E5%88%B7%E6%9C%BA%E5%B7%A5%E5%85%B7.png" alt="刷机图片"> </p>
-<hr>
-<p>因为之前设置过，选择好<strong>192.168.8.100</strong>那个网卡选项，也可以把强制升级的选项✔勾上，</p>
-<p>接着<strong>选择你要刷的固件</strong>，点击<strong>开始</strong>。</p>
-<p>请耐心等待固件刷写，下面的进度条一般走两次，不同的机器可能不同。</p>
-<hr>
-<p>观察固件刷写过程，机器的灯会从蓝灯-蓝灯-绿灯这样的变化，</p>
-<pre><code>如果绿灯常亮那就表示已经成功了，</code></pre><hr>
-<p>拔掉电源再插上电源，等路由器重新开机到正常界面。</p>
-<hr>
-<h2 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a><strong>写在最后</strong></h2><p>这种方法可以跨版本刷机，B310As-852可以刷国外的B310S-22/518/927之类的。B315也可以刷其他国外的多语言。</p>
-<p>如果刷了高版本的固件又无法用华为界面自带的“本地更新”刷回原版本，请先降级到现在型号的21.316.xx.xx.xx的版本才能使用此方法强制刷回你想要的版本。</p>
-
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    
-<div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
                 <time class="level-item has-text-grey" datetime="2020-03-06T14:40:01.175Z">2020-03-06</time>
                 
                 <div class="level-item">
@@ -1069,6 +882,197 @@ AT^WIKEY=3,&quot;密码自己可换输，路由器底部为默认&quot;</code></
 
 
 
+    
+<div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-03-06T14:39:58.085Z">2020-03-06</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/%E5%8D%8E%E4%B8%BA%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/">华为刷机教程</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    4 分钟 读完 (大约 646 个字)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/%E5%8D%8E%E4%B8%BAE5577Bs-937%E5%88%B7%E6%9C%BA%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B/">华为E5577Bs-937刷机救砖教程</a>
+            
+        </h1>
+        <div class="content">
+            <hr>
+<hr>
+<h2 id="一-准备工作"><a href="#一-准备工作" class="headerlink" title="一.准备工作"></a>一.准备工作</h2><hr>
+<p><strong>先到博客的工具篇下载以下工具。</strong></p>
+<h3 id="1-balong-flash-exe"><a href="#1-balong-flash-exe" class="headerlink" title="1.balong_flash.exe"></a>1.balong_flash.exe</h3><h3 id="2-Balong-USB-Downloader-1-0-1-10-exe"><a href="#2-Balong-USB-Downloader-1-0-1-10-exe" class="headerlink" title="2.Balong_USB_Downloader_1.0.1.10.exe"></a>2.Balong_USB_Downloader_1.0.1.10.exe</h3><h3 id="3-FC-Serial-Driver-Setup-exe"><a href="#3-FC-Serial-Driver-Setup-exe" class="headerlink" title="3.FC_Serial_Driver_Setup.exe"></a>3.FC_Serial_Driver_Setup.exe</h3><h3 id="4-Huawei-datacard-Driver"><a href="#4-Huawei-datacard-Driver" class="headerlink" title="4.Huawei datacard Driver"></a>4.Huawei datacard Driver</h3><h4 id="5-WIN8-10不认usb驱动的注册表（win7以下的不用）"><a href="#5-WIN8-10不认usb驱动的注册表（win7以下的不用）" class="headerlink" title="5.WIN8/10不认usb驱动的注册表（win7以下的不用）"></a>5.WIN8/10不认usb驱动的注册表（win7以下的不用）</h4><hr>
+<p>准备刷机固件和引导文件。</p>
+<p>1.E5577Bs-937_update_21.328.01.00.233_WEBUI_21.100.36.00.233_NE5.ZIP</p>
+<p>2.usblsafe-e5577bs-937.bin</p>
+<hr>
+<hr>
+<h2 id="第一步-短接"><a href="#第一步-短接" class="headerlink" title="第一步.短接"></a>第一步.短接</h2><hr>
+<p>用镊子夹着图中的金属点和屏蔽罩。</p>
+<p><img src="/%E5%8D%8E%E4%B8%BAE5577Bs-937%E5%88%B7%E6%9C%BA%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B/%E7%9F%AD%E6%8E%A5.png" alt="短接图片"></p>
+<p>接着电脑会出现一个设备，没安装驱动无法识别。</p>
+<p>那么就安装驱动。下面两个都是驱动，都安装了，会比较省事。</p>
+<hr>
+<p>FC_Serial_Driver_Setup.exe</p>
+<p>Huawei datacard Driver</p>
+<hr>
+<p>如果你是win8/win10系统，还需要加载一下注册表。</p>
+<p>下载WIN8/10不认usb驱动的注册表文件，解压，双击 WIN10不认usb注册表.reg即可，如果端口运转还是不正常，需要重启电脑一次。</p>
+<hr>
+<p>这时电脑就会识别出一个端口了。</p>
+<p><img src="/%E5%8D%8E%E4%B8%BAE5577Bs-937%E5%88%B7%E6%9C%BA%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B/%E5%8D%95%E7%AB%AF%E5%8F%A3.jpg" alt="单端口图片"></p>
+<hr>
+<hr>
+<h2 id="第二步-刷入引导"><a href="#第二步-刷入引导" class="headerlink" title="第二步.刷入引导"></a>第二步.刷入引导</h2><hr>
+<p>打开<strong>Balong_USB_Downloader_1.0.1.10.exe</strong>，在这个工具选择相应端口和文件刷入。</p>
+<p><img src="/%E5%8D%8E%E4%B8%BAE5577Bs-937%E5%88%B7%E6%9C%BA%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B/%E5%8A%A0%E8%BD%BDusbloader.jpg" alt="usbloader图片"></p>
+<hr>
+<p>做完这一步后，电脑会<strong>出现2个端口</strong>。</p>
+<p><img src="/%E5%8D%8E%E4%B8%BAE5577Bs-937%E5%88%B7%E6%9C%BA%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B/%E5%8F%8C%E7%AB%AF%E5%8F%A3.png" alt="双端口图片"></p>
+<hr>
+<hr>
+<h2 id="第三步-刷机"><a href="#第三步-刷机" class="headerlink" title="第三步.刷机"></a>第三步.刷机</h2><hr>
+<p>直接把E5577Bs-937_update_21.328.01.00.233_WEBUI_21.100.36.00.233_NE5.ZIP <strong>拖到balong_flash.exe</strong>。如图。</p>
+<p><img src="/%E5%8D%8E%E4%B8%BAE5577Bs-937%E5%88%B7%E6%9C%BA%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B/%E6%8B%96%E5%8A%A8%E5%88%B7%E6%9C%BA.jpg" alt="刷机图片"></p>
+<hr>
+<p>会CMD的可以在刷机文件的目录下，使用cmd命令。</p>
+<p>（win7按住shift和右键，选择在此处打开命令（shell））</p>
+<p>可以直接打开输入命令： balong_flash.exe E5577Bs-937_update_21.328.01.00.233_WEBUI_21.100.36.00.233_NE5.ZIP </p>
+<hr>
+<p>像这样的进程就是正在刷入固件了。 </p>
+<p><img src="/%E5%8D%8E%E4%B8%BAE5577Bs-937%E5%88%B7%E6%9C%BA%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B/%E5%88%B7%E6%9C%BA.png" alt="刷机中图片"></p>
+<hr>
+<pre><code>注意：balong_flash.exe不需要双击打开他，也不能双击打开！！别傻傻以为工具坏了</code></pre><hr>
+<hr>
+<h2 id="第四步-重新开机或修复"><a href="#第四步-重新开机或修复" class="headerlink" title="第四步.重新开机或修复"></a>第四步.重新开机或修复</h2><hr>
+<p>刷完后，机器会自动重启，但是还是需要扣掉电池，重新开机一次。</p>
+<hr>
+<p>如果你之前变砖丢失了一些设备信息，如imei/SN/wifi密码之类的，在刷完机，两个端口还在的时候自己用dc-unlocker，根据博客的其他型号的修复方法进行修复（方法是通用的）。</p>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    
+<div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-03-06T14:38:44.077Z">2020-03-06</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/%E5%8D%8E%E4%B8%BA%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/">华为刷机教程</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    4 分钟 读完 (大约 608 个字)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/%E5%8D%8E%E4%B8%BA%E8%8D%A3%E8%80%80%E7%9B%92%E5%AD%90pro%E5%9B%BA%E4%BB%B6hitv-m1%E9%99%8D%E7%BA%A7%E6%95%99%E7%A8%8B/">华为荣耀盒子pro固件hitv-m1降级教程</a>
+            
+        </h1>
+        <div class="content">
+            <hr>
+<hr>
+<p><strong>首先说明，固件是本人首发。这固件没有一定方法是获取不到的。</strong></p>
+<hr>
+<p>之前出售过部分固件，都让他们不要分享，没想到变成了别人获利工具。</p>
+<p>尤其是之前提到过的贵州毕节人。到处宣传自己有固件，也就是拿了我的66和68固件而已。 72/73/81/82/84那些版本都没有！！</p>
+<p>现在还拿去咸鱼那去卖。图还是盗用我博客的图片</p>
+<hr>
+<p>好了，那我们破罐子破摔，现在把一个版本发出来给大家。</p>
+<p>不多废话，这是华为荣耀盒子pro降级固件2.1.1.68</p>
+<p><a href="https://pan.baidu.com/s/15pz038XeahKCDI37ge_Aqw" rel="external nofollow noreferrer">https://pan.baidu.com/s/15pz038XeahKCDI37ge_Aqw</a> 提取：fk3y</p>
+<hr>
+<p><strong>拿完的，并降级成功的，希望你能到咸鱼，谴责这些没信用的人！！</strong></p>
+<hr>
+<p>附上固件的一些检验信息，可以检验文件是否完整：</p>
+<p>大小: 474134300 字节<br>修改时间: 2019年3月3日, 14:07:18<br>MD5: 53DBA42B7B282EF0C36318028DDCB357<br>SHA1: 43A6451593EA42644F223974B61FAB679B6B5E95<br>CRC32: 1C4A63D2</p>
+<hr>
+<hr>
+<h2 id="第一步："><a href="#第一步：" class="headerlink" title="第一步："></a><strong>第一步：</strong></h2><hr>
+<ol>
+<li><p>在u盘新建一个文件夹为：</p>
+<p>  upgrade</p>
+</li>
+</ol>
+<ol start="2">
+<li><p>将固件拷贝到 upgrade的文件夹里，固件必须重命名为：</p>
+<p>  update.bin</p>
+</li>
+</ol>
+<ol start="3">
+<li>接着，将U盘插入到盒子后面的usb接口。</li>
+</ol>
+<hr>
+<hr>
+<h2 id="第二步："><a href="#第二步：" class="headerlink" title="第二步："></a><strong>第二步：</strong></h2><hr>
+<p>1.打开盒子，稍等一会，系统会弹出升级提示，点击确定。</p>
+<p><img src="/%E5%8D%8E%E4%B8%BA%E8%8D%A3%E8%80%80%E7%9B%92%E5%AD%90pro%E5%9B%BA%E4%BB%B6hitv-m1%E9%99%8D%E7%BA%A7%E6%95%99%E7%A8%8B/%E5%BC%B9%E5%87%BA%E5%8D%87%E7%BA%A7%E7%95%8C%E9%9D%A2.jpg" alt="此图为原创，网上均为盗图"></p>
+<p>2.等待关机重启，自动升级</p>
+<h2 id><a href="#" class="headerlink" title></a><img src="/%E5%8D%8E%E4%B8%BA%E8%8D%A3%E8%80%80%E7%9B%92%E5%AD%90pro%E5%9B%BA%E4%BB%B6hitv-m1%E9%99%8D%E7%BA%A7%E6%95%99%E7%A8%8B/%E6%AD%A3%E5%9C%A8%E5%8D%87%E7%BA%A7.jpg" alt="此图为原创，网上均为盗图"></h2><hr>
+<h2 id="第三步："><a href="#第三步：" class="headerlink" title="第三步："></a><strong>第三步：</strong></h2><ol>
+<li>升级后，盒子会自动重启，开机后还会默认弹出升级，请取消，然后断电拔掉U盘即可。</li>
+</ol>
+<hr>
+<hr>
+<h2 id="注意事项："><a href="#注意事项：" class="headerlink" title="注意事项："></a><strong>注意事项：</strong></h2><p>在升级完成或升级异常之前，不要移除U盘。</p>
+<p>升级过程中如果出现断电情况，则尝试再次使用U盘升级。</p>
+<p>升级后成功后拔出U盘。</p>
+<hr>
+<hr>
+<h2 id="升级-降级失败的解决方法："><a href="#升级-降级失败的解决方法：" class="headerlink" title="升级/降级失败的解决方法："></a><strong>升级/降级失败的解决方法：</strong></h2><p>  把U盘/内存卡，格式化成fat32格式的，不要用电脑自带的格式化工具，一定要用第三方工具，或者用手机格式化U盘/内存卡。</p>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
 
     
 <div class="card card-transparent">
@@ -1139,7 +1143,7 @@ AT^WIKEY=3,&quot;密码自己可换输，路由器底部为默认&quot;</code></
                     </p>
                     <a href="/archives">
                         <p class="title has-text-weight-normal">
-                            364
+                            362
                         </p>
                     </a>
                 </div>
@@ -1163,7 +1167,7 @@ AT^WIKEY=3,&quot;密码自己可换输，路由器底部为默认&quot;</code></
                     </p>
                     <a href="/tags">
                         <p class="title has-text-weight-normal">
-                            20
+                            21
                         </p>
                     </a>
                 </div>
@@ -1232,7 +1236,7 @@ AT^WIKEY=3,&quot;密码自己可换输，路由器底部为默认&quot;</code></
                 <span class="level-item">中兴MF系列固件</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">149</span>
+                <span class="level-item tag">148</span>
             </span>
         </a></li><li>
         <a class="level is-marginless" href="/categories/%E4%B8%AD%E5%85%B4NV%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B/">
@@ -1296,7 +1300,7 @@ AT^WIKEY=3,&quot;密码自己可换输，路由器底部为默认&quot;</code></
                 <span class="level-item">华为其他系列固件</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">44</span>
+                <span class="level-item tag">43</span>
             </span>
         </a></li><li>
         <a class="level is-marginless" href="/categories/%E5%8D%8E%E4%B8%BA%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/">
@@ -1333,7 +1337,7 @@ AT^WIKEY=3,&quot;密码自己可换输，路由器底部为默认&quot;</code></
         <h3 class="menu-label">
             标签云
         </h3>
-        <a href="/tags/NV%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B/" style="font-size: 11.54px;">NV修复教程</a> <a href="/tags/%E4%B8%AD%E5%85%B4MF%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/" style="font-size: 20px;">中兴MF系列固件</a> <a href="/tags/%E4%BF%AE%E6%94%B9%E7%89%88%E5%9B%BA%E4%BB%B6/" style="font-size: 14.62px;">修改版固件</a> <a href="/tags/%E5%88%B7%E6%9C%BA%E5%B7%A5%E5%85%B7/" style="font-size: 10.77px;">刷机工具</a> <a href="/tags/%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/" style="font-size: 16.92px;">刷机教程</a> <a href="/tags/%E5%8D%87%E7%BA%A7%E4%BF%A1%E6%81%AF/" style="font-size: 17.69px;">升级信息</a> <a href="/tags/%E5%8D%8E%E4%B8%BA5G%E8%AE%BE%E5%A4%87%E5%9B%BA%E4%BB%B6/" style="font-size: 13.08px;">华为5G设备固件</a> <a href="/tags/%E5%8D%8E%E4%B8%BAA%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/" style="font-size: 11.54px;">华为A系列固件</a> <a href="/tags/%E5%8D%8E%E4%B8%BAB%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/" style="font-size: 18.46px;">华为B系列固件</a> <a href="/tags/%E5%8D%8E%E4%B8%BAC%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/" style="font-size: 10px;">华为C系列固件</a> <a href="/tags/%E5%8D%8E%E4%B8%BAE%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/" style="font-size: 19.23px;">华为E系列固件</a> <a href="/tags/%E5%8D%8E%E4%B8%BAH%E7%B3%BB%E5%88%97/" style="font-size: 10px;">华为H系列</a> <a href="/tags/%E5%8D%8E%E4%B8%BAH%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/" style="font-size: 16.15px;">华为H系列固件</a> <a href="/tags/%E5%8D%8E%E4%B8%BAM%E7%B3%BB%E5%88%97/" style="font-size: 12.31px;">华为M系列</a> <a href="/tags/%E5%8D%8E%E4%B8%BAM%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/" style="font-size: 15.38px;">华为M系列固件</a> <a href="/tags/%E5%8D%8E%E4%B8%BAP%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/" style="font-size: 10px;">华为P系列固件</a> <a href="/tags/%E5%8D%8E%E4%B8%BAR%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/" style="font-size: 13.85px;">华为R系列固件</a> <a href="/tags/%E5%8D%8E%E4%B8%BAS%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/" style="font-size: 12.31px;">华为S系列固件</a> <a href="/tags/%E5%8D%8E%E4%B8%BAk%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/" style="font-size: 11.54px;">华为k系列固件</a> <a href="/tags/%E5%8D%8E%E4%B8%BA%E6%95%B0%E5%AD%97%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/" style="font-size: 14.62px;">华为数字系列固件</a>
+        <a href="/tags/NV%E4%BF%AE%E5%A4%8D%E6%95%99%E7%A8%8B/" style="font-size: 11.67px;">NV修复教程</a> <a href="/tags/%E4%B8%AD%E5%85%B45G%E8%AE%BE%E5%A4%87%E5%9B%BA%E4%BB%B6/" style="font-size: 10px;">中兴5G设备固件</a> <a href="/tags/%E4%B8%AD%E5%85%B4MF%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/" style="font-size: 20px;">中兴MF系列固件</a> <a href="/tags/%E4%BF%AE%E6%94%B9%E7%89%88%E5%9B%BA%E4%BB%B6/" style="font-size: 14.17px;">修改版固件</a> <a href="/tags/%E5%88%B7%E6%9C%BA%E5%B7%A5%E5%85%B7/" style="font-size: 10.83px;">刷机工具</a> <a href="/tags/%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/" style="font-size: 16.67px;">刷机教程</a> <a href="/tags/%E5%8D%87%E7%BA%A7%E4%BF%A1%E6%81%AF/" style="font-size: 17.5px;">升级信息</a> <a href="/tags/%E5%8D%8E%E4%B8%BA5G%E8%AE%BE%E5%A4%87%E5%9B%BA%E4%BB%B6/" style="font-size: 13.33px;">华为5G设备固件</a> <a href="/tags/%E5%8D%8E%E4%B8%BAA%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/" style="font-size: 11.67px;">华为A系列固件</a> <a href="/tags/%E5%8D%8E%E4%B8%BAB%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/" style="font-size: 18.33px;">华为B系列固件</a> <a href="/tags/%E5%8D%8E%E4%B8%BAC%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/" style="font-size: 10px;">华为C系列固件</a> <a href="/tags/%E5%8D%8E%E4%B8%BAE%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/" style="font-size: 19.17px;">华为E系列固件</a> <a href="/tags/%E5%8D%8E%E4%B8%BAH%E7%B3%BB%E5%88%97/" style="font-size: 10px;">华为H系列</a> <a href="/tags/%E5%8D%8E%E4%B8%BAH%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/" style="font-size: 15.83px;">华为H系列固件</a> <a href="/tags/%E5%8D%8E%E4%B8%BAM%E7%B3%BB%E5%88%97/" style="font-size: 12.5px;">华为M系列</a> <a href="/tags/%E5%8D%8E%E4%B8%BAM%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/" style="font-size: 15px;">华为M系列固件</a> <a href="/tags/%E5%8D%8E%E4%B8%BAP%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/" style="font-size: 10px;">华为P系列固件</a> <a href="/tags/%E5%8D%8E%E4%B8%BAR%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/" style="font-size: 13.33px;">华为R系列固件</a> <a href="/tags/%E5%8D%8E%E4%B8%BAS%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/" style="font-size: 12.5px;">华为S系列固件</a> <a href="/tags/%E5%8D%8E%E4%B8%BAk%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/" style="font-size: 11.67px;">华为k系列固件</a> <a href="/tags/%E5%8D%8E%E4%B8%BA%E6%95%B0%E5%AD%97%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/" style="font-size: 14.17px;">华为数字系列固件</a>
     </div>
 </div>
     
@@ -1455,7 +1459,7 @@ AT^WIKEY=3,&quot;密码自己可换输，路由器底部为默认&quot;</code></
                     <span class="level-item">三月 2020</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">364</span>
+                    <span class="level-item tag">362</span>
                 </span>
             </a>
         </li>
@@ -1481,9 +1485,16 @@ AT^WIKEY=3,&quot;密码自己可换输，路由器底部为默认&quot;</code></
                 </div>
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/tags/%E4%B8%AD%E5%85%B45G%E8%AE%BE%E5%A4%87%E5%9B%BA%E4%BB%B6/">
+                        <span class="tag">中兴5G设备固件</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/tags/%E4%B8%AD%E5%85%B4MF%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/">
                         <span class="tag">中兴MF系列固件</span>
-                        <span class="tag is-grey">149</span>
+                        <span class="tag is-grey">147</span>
                     </a>
                 </div>
                 
@@ -1588,7 +1599,7 @@ AT^WIKEY=3,&quot;密码自己可换输，路由器底部为默认&quot;</code></
                 <div class="control">
                     <a class="tags has-addons" href="/tags/%E5%8D%8E%E4%B8%BAR%E7%B3%BB%E5%88%97%E5%9B%BA%E4%BB%B6/">
                         <span class="tag">华为R系列固件</span>
-                        <span class="tag is-grey">7</span>
+                        <span class="tag is-grey">6</span>
                     </a>
                 </div>
                 
