@@ -8,5 +8,3 @@ Allow: /about/
 Disallow: /js/
 Disallow: /css/
 Disallow: /lib/
-
-Sitemap: https://www.qyyd5g.top/sitemap.xml
