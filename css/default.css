@@ -10688,7 +10688,7 @@ fieldset[disabled] .select select:hover {
   color: #3273dc !important;
 }
 .size-small {
-  font-size: 0.85rem !important;
+  font-size: 0.9rem !important;
 }
 .line-height-inherit {
   line-height: inherit !important;
@@ -10741,7 +10741,7 @@ article.article .article-meta {
   margin-bottom: 0.5rem;
 }
 article.article .content {
-  font-size: 1.1rem;
+  font-size: 1.15rem;
 }
 article.article .content a {
   word-wrap: break-word;
@@ -11222,16 +11222,16 @@ figure.highlight .section {
   border-radius: 4px;
 }
 .donate .qrcode img {
-  max-width: 280px;
+  max-width: 230px;
 }
 .donate:hover .qrcode {
   display: block;
 }
 .donate:first-child:not(:last-child) .qrcode {
-  left: -0.75rem;
+  left: -0.65rem;
 }
 .donate:last-child:not(:first-child) .qrcode {
-  right: -0.75rem;
+  right: -0.65rem;
 }
 #back-to-top {
   position: fixed;
