@@ -11079,7 +11079,7 @@ E5573s_UPDATE_21.333.01.00.00_WEBUI_17.100.20.01.59_MRE5.ZIP</code></pre><hr>
       </tags>
   </entry>
   <entry>
-    <title>华为E5573s-852-853刷机救砖教程</title>
+    <title>华为E5573s-852/E5573s-853刷机救砖教程</title>
     <url>/%E5%8D%8E%E4%B8%BAE5573s-852-853%E5%88%B7%E6%9C%BA%E6%95%91%E7%A0%96%E6%95%99%E7%A8%8B/</url>
     <content><![CDATA[<hr>
 <hr>
@@ -11142,7 +11142,7 @@ E5573s_UPDATE_21.333.01.00.00_WEBUI_17.100.20.01.59_MRE5.ZIP</code></pre><hr>
       </tags>
   </entry>
   <entry>
-    <title>华为E5573s-852-853固件升级信息</title>
+    <title>华为E5573s-852/E5573s-853固件升级信息</title>
     <url>/%E5%8D%8E%E4%B8%BAE5573s-852-853%E5%9B%BA%E4%BB%B6%E5%8D%87%E7%BA%A7%E4%BF%A1%E6%81%AF/</url>
     <content><![CDATA[<hr>
 <hr>
@@ -18018,19 +18018,17 @@ H312_10.0.3.1(H563SP1C983)-sec.BIN</code></pre><hr>
     <content><![CDATA[<hr>
 <hr>
 <p>型号：H132-373/H122-573</p>
-<h3 id="更新版本：10-0-3-5-H390SP1C00"><a href="#更新版本：10-0-3-5-H390SP1C00" class="headerlink" title="更新版本：10.0.3.5(H390SP1C00)"></a>更新版本：10.0.3.5(H390SP1C00)</h3><p>文件名：H122-373_10.0.3.5(H390SP1C00)_UTPS_10.0.3.1(W2SP18C03)-sec.ZIP</p>
-<p>文件大小：75.9M</p>
-<p>This update improves system performance and stability. Please update your device for improved experience.</p>
-<p>[Update notes]</p>
+<h3 id="更新版本：10-0-3-5-H390SP1C00"><a href="#更新版本：10-0-3-5-H390SP1C00" class="headerlink" title="更新版本：10.0.3.5(H390SP1C00)"></a>更新版本：10.0.3.5(H390SP1C00)</h3><p>文件名：</p>
+<pre><code>H122-373_10.0.3.5(H390SP1C00)_UTPS_10.0.3.1(W2SP18C03)-sec.ZIP</code></pre><p>文件大小：75.9M</p>
+<pre><code>This update improves system performance and stability. Please update your device for improved experience.</code></pre><p>[Update notes]</p>
 <pre><code>1.If you experience any issues during the update, please visit the Huawei Support website or contact your local service center for assistance.
 
 2.This update will not erase your personal data.</code></pre><hr>
 <hr>
 <p>型号：H132-373/H122-573</p>
-<h3 id="更新版本：10-0-3-7-H520SP1C00"><a href="#更新版本：10-0-3-7-H520SP1C00" class="headerlink" title="更新版本：10.0.3.7(H520SP1C00)"></a>更新版本：10.0.3.7(H520SP1C00)</h3><p>文件名：H122-373-573_10.0.3.7(H520SP1C00)-sec.ZIP</p>
-<p>文件大小：67.5M</p>
-<p>This update improves system performance and stability. Please update your device for improved experience.</p>
-<p>[Update notes]</p>
+<h3 id="更新版本：10-0-3-7-H520SP1C00"><a href="#更新版本：10-0-3-7-H520SP1C00" class="headerlink" title="更新版本：10.0.3.7(H520SP1C00)"></a>更新版本：10.0.3.7(H520SP1C00)</h3><p>文件名：</p>
+<pre><code>H122-373-573_10.0.3.7(H520SP1C00)-sec.ZIP</code></pre><p>文件大小：67.5M</p>
+<pre><code>This update improves system performance and stability. Please update your device for improved experience.</code></pre><p>[Update notes]</p>
 <pre><code>1.If you experience any issues during the update, please visit the Huawei Support website or contact your local service center for assistance.
 
 2.This update will not erase your personal data.</code></pre><hr>
@@ -18038,29 +18036,36 @@ H312_10.0.3.1(H563SP1C983)-sec.BIN</code></pre><hr>
 <a id="more"></a>
 
 <p>型号：H132-373/H122-573</p>
-<h3 id="更新版本：10-0-3-9-H520SP1C233"><a href="#更新版本：10-0-3-9-H520SP1C233" class="headerlink" title="更新版本：10.0.3.9(H520SP1C233)"></a>更新版本：10.0.3.9(H520SP1C233)</h3><p>文件名：H122-373-573_10.0.3.9(H520SP1C233)_UTPS_10.0.3.1(W2SP5C233)-sec.ZIP</p>
-<p>文件大小：76.7M</p>
-<p>This update improves system performance and stability. Please update your device for improved experience.</p>
-<p>[Update notes]</p>
+<h3 id="更新版本：10-0-3-9-H520SP1C233"><a href="#更新版本：10-0-3-9-H520SP1C233" class="headerlink" title="更新版本：10.0.3.9(H520SP1C233)"></a>更新版本：10.0.3.9(H520SP1C233)</h3><p>文件名：</p>
+<pre><code>H122-373-573_10.0.3.9(H520SP1C233)_UTPS_10.0.3.1(W2SP5C233)-sec.ZIP</code></pre><p>文件大小：76.7M</p>
+<pre><code>This update improves system performance and stability. Please update your device for improved experience.</code></pre><p>[Update notes]</p>
 <pre><code>1.If you experience any issues during the update, please visit the Huawei Support website or contact your local service center for assistance.
 
 2.This update will not erase your personal data.     </code></pre><hr>
 <hr>
 <p>型号：H132-373/H122-573</p>
-<h3 id="更新版本：10-0-3-9-H530SP3C233"><a href="#更新版本：10-0-3-9-H530SP3C233" class="headerlink" title="更新版本：10.0.3.9(H530SP3C233)"></a>更新版本：10.0.3.9(H530SP3C233)</h3><p>文件名：H122-373-573_10.0.3.9(H530SP3C233)_UTPS_10.0.3.1(W2SP8C233)-sec.ZIP</p>
-<p>文件大小：76.8M</p>
+<h3 id="更新版本：10-0-3-9-H530SP3C233"><a href="#更新版本：10-0-3-9-H530SP3C233" class="headerlink" title="更新版本：10.0.3.9(H530SP3C233)"></a>更新版本：10.0.3.9(H530SP3C233)</h3><p>文件名：</p>
+<pre><code>H122-373-573_10.0.3.9(H530SP3C233)_UTPS_10.0.3.1(W2SP8C233)-sec.ZIP</code></pre><p>文件大小：76.8M</p>
 <pre><code>This update improves system performance and stability. Please update your device for improved experience.</code></pre><p>[Update notes]</p>
 <pre><code>1.If you experience any issues during the update, please visit the Huawei Support website or contact your local service center for assistance.
 
 2.This update will not erase your personal data.</code></pre><hr>
 <hr>
 <p>型号：H132-373/H122-573</p>
-<h3 id="更新版本：10-0-5-11-H570SP3C233"><a href="#更新版本：10-0-5-11-H570SP3C233" class="headerlink" title="更新版本：10.0.5.11(H570SP3C233)"></a>更新版本：10.0.5.11(H570SP3C233)</h3><p>文件名：H122-373-573_10.0.5.11(H570SP3C233)_UTPS_10.0.5.1(W2SP4C233)-sec.ZIP</p>
-<p>文件大小：71.8M</p>
+<h3 id="更新版本：10-0-5-11-H570SP3C233"><a href="#更新版本：10-0-5-11-H570SP3C233" class="headerlink" title="更新版本：10.0.5.11(H570SP3C233)"></a>更新版本：10.0.5.11(H570SP3C233)</h3><p>文件名：</p>
+<pre><code>H122-373-573_10.0.5.11(H570SP3C233)_UTPS_10.0.5.1(W2SP4C233)-sec.ZIP</code></pre><p>文件大小：71.8M</p>
 <pre><code>This update improves system performance and stability. Please update your device for improved experience.</code></pre><p>[Update notes]</p>
 <pre><code>1.If you experience any issues during the update, please visit the Huawei Support website or contact your local service center for assistance.
 
 2.This update will not erase your personal data.    </code></pre><hr>
+<hr>
+<p>型号：H132-373/H122-573</p>
+<h3 id="更新版本：10-0-5-1-H610SP1C233"><a href="#更新版本：10-0-5-1-H610SP1C233" class="headerlink" title="更新版本：10.0.5.1(H610SP1C233)"></a>更新版本：10.0.5.1(H610SP1C233)</h3><p>文件名：</p>
+<pre><code>H122-373-573_10.0.5.1(H610SP1C233)_UTPS_10.0.5.1(W2SP9C233)-sec.ZIP</code></pre><p>文件大小：71.7M</p>
+<pre><code>This update improves system performance and stability. Please update your device for improved experience.</code></pre><p>[Update notes]</p>
+<pre><code>1.If you experience any issues during the update, please visit the Huawei Support website or contact your local service center for assistance.
+
+2.This update will not erase your personal data.         </code></pre><hr>
 <hr>
 <p><strong>需要此固件请微信联系 QYYD5G</strong></p>
 ]]></content>
@@ -18083,7 +18088,11 @@ H122-373_10.0.3.5(H390SP1C00)_UTPS_10.0.3.1(W2SP18C03)-sec.ZIP
 
 H122-373-573_10.0.5.1(H600SP1C00)_UTPS_10.0.5.1(W2SP12C03)-sec.ZIP
 
-H122-373-573_10.0.5.1(H600SP3C00)_UTPS_10.0.5.1(W2SP12C03)-sec.ZIP</code></pre><hr>
+H122-373-573_10.0.5.1(H600SP3C00)_UTPS_10.0.5.1(W2SP12C03)-sec.ZIP
+
+H122-373-573_10.0.5.1(H610SP1C00)_UTPS_10.0.5.1(W2SP15C03)-sec.ZIP
+
+H122-373-573_10.0.5.1(H610SP3C00)_UTPS_10.0.5.1(W2SP15C03)-sec.ZIP</code></pre><hr>
 <h2 id="尾-号-233"><a href="#尾-号-233" class="headerlink" title="尾    号: 233"></a>尾    号: 233</h2><p>支持语言:  英语<br>版本备注:<br>特殊备注:<br>固件版本:      </p>
 <pre><code>H122-373-573_10.0.3.9(H520SP1C233)_UTPS_10.0.3.1(W2SP5C233)-sec.ZIP
 
@@ -18091,11 +18100,17 @@ H122-373-573_10.0.3.9(H530SP3C233)_UTPS_10.0.3.1(W2SP8C233)-sec.ZIP
 
 H122-373-573_10.0.5.11(H570SP3C233)_UTPS_10.0.5.1(W2SP4C233)-sec.ZIP
 
-H122-373-573_10.0.5.1(H600SP3C233)_UTPS_10.0.5.1(W2SP8C233)-sec.ZIP</code></pre><hr>
+H122-373-573_10.0.5.1(H600SP3C233)_UTPS_10.0.5.1(W2SP8C233)-sec.ZIP
+
+H122-373-573_10.0.5.1(H610SP1C233)_UTPS_10.0.5.1(W2SP9C233)-sec.ZIP</code></pre><hr>
+<h2 id="尾-号-983"><a href="#尾-号-983" class="headerlink" title="尾    号: 983"></a>尾    号: 983</h2><p>支持语言:  英语<br>版本备注:<br>特殊备注:<br>固件版本:     </p>
+<pre><code>H122-373-573_10.0.5.1(H610SP1C983)_UTPS_10.0.5.1(W2SP1C7201)-sec.ZIP</code></pre><hr>
 <h2 id="尾-号-1217"><a href="#尾-号-1217" class="headerlink" title="尾    号: 1217"></a>尾    号: 1217</h2><p>支持语言:  英语/西班牙/意大利/德语/葡萄牙/荷兰/捷克/罗马/<br>版本备注:<br>特殊备注:<br>固件版本:     </p>
 <a id="more"></a>
 
-<pre><code>H122-373-573_10.0.5.1(H610SP2C1217)_UTPS_10.0.5.1(W2SP2C1217)-sec.ZIP</code></pre><hr>
+<pre><code>H122-373-573_10.0.5.1(H610SP2C1217)_UTPS_10.0.5.1(W2SP2C1217)-sec.ZIP
+
+H122-373-573_10.0.5.1(H610SP70C1217)_UTPS_10.0.5.1(W2SP70C1217)-sec.ZIP</code></pre><hr>
 <hr>
 <p><strong>如需此固件，请微信联系 QYYD5G</strong></p>
 ]]></content>
@@ -18276,7 +18291,9 @@ MIX-H112-372_10.0.1.1(H321SP1C983)-sec.BIN
 
 MIX-H112-372_10.0.1.1(H321SP3C983)-sec.BIN
 
-MIX-H112-372_10.0.1.1(H321SP6C983)-sec.BIN</code></pre><hr>
+MIX-H112-372_10.0.1.1(H321SP6C983)-sec.BIN
+
+MIX-H112-372_10.0.1.1(H321SP8C983)-sec.BIN</code></pre><hr>
 <hr>
 <p><strong>如需此固件，请微信联系 QYYD5G</strong></p>
 ]]></content>
@@ -19368,9 +19385,13 @@ E6878_10.0.3.1(H563SP17C233)_UTPS22.001.34.01.03-sec.ZIP</code></pre><hr>
 <h2 id="尾-号-983"><a href="#尾-号-983" class="headerlink" title="尾    号: 983"></a>尾    号: 983</h2><p>支持语言:  英语<br>版本备注:<br>特殊备注:<br>固件版本:      </p>
 <pre><code>E6878_UPDATE_10.0.3.1(H563SP1C983)_UTPS22.001.34.01.03.ZIP
 
-E6878_UPDATE_10.0.3.1(H563SP2C983)_UTPS22.001.34.01.03.ZIP</code></pre><hr>
+E6878_UPDATE_10.0.3.1(H563SP2C983)_UTPS22.001.34.01.03.ZIP
+
+E6878_UPDATE_10.0.3.1(H563SP5C983)_UTPS22.001.34.01.03.ZIP</code></pre><hr>
 <h2 id="尾-号-1540"><a href="#尾-号-1540" class="headerlink" title="尾    号: 1540"></a>尾    号: 1540</h2><p>支持语言:  英语<br>版本备注:<br>特殊备注:<br>固件版本:      </p>
-<pre><code>E6878_UPDATE_10.0.3.1(H563SP2C1540).ZIP </code></pre><hr>
+<pre><code>E6878_UPDATE_10.0.3.1(H563SP2C1540).ZIP 
+
+E6878_UPDATE_10.0.3.1(H563SP1C1540)_UTPS22.001.34.01.03.ZIP</code></pre><hr>
 <hr>
 <p><strong>如需此固件，请微信联系 QYYD5G</strong></p>
 ]]></content>
