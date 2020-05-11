@@ -18536,70 +18536,6 @@ E8372h-155_UPDATE_21.335.03.02.233_UTPS21.100.52.08.233.ZIP</code></pre><hr>
       </tags>
   </entry>
   <entry>
-    <title>华为E6878华为5G-mifi（现存）固件汇总</title>
-    <url>/%E5%8D%8E%E4%B8%BAE6878(%E7%8E%B0%E5%AD%98)%E5%9B%BA%E4%BB%B6%E6%B1%87%E6%80%BB/</url>
-    <content><![CDATA[<hr>
-<hr>
-<h2 id="尾-号-00"><a href="#尾-号-00" class="headerlink" title="尾    号: 00"></a>尾    号: 00</h2><p>支持语言:  中文/英语<br>版本备注:<br>特殊备注:<br>固件版本: </p>
-<pre><code>E6878_10.0.3.1(H557SP23C00)_UTPS22.001.34.01.03-sec.ZIP
-
-E6878_10.0.3.1(H563SP5C00)_UTPS22.001.34.01.03-sec.ZIP</code></pre><hr>
-<h2 id="尾-号-233"><a href="#尾-号-233" class="headerlink" title="尾    号: 233"></a>尾    号: 233</h2><p>支持语言:  中文/英语<br>版本备注:<br>特殊备注:  debug版本为调试版本，无法正常方法刷入<br>固件版本:      </p>
-<pre><code>E6878_10.0.3.1(H552SP10C233)_UTPS22.001.33.00.03-debug-sec.ZIP
-
-E6878_10.0.3.1(H552SP12C233)_UTPS22.001.33.00.03-debug-sec.ZIP
-
-E6878_10.0.3.1(H556SP2C233)_UTPS22.001.33.00.03-debug-sec.ZIP
-
-E6878_10.0.3.1(H552SP3C233)_UTPS22.001.33.00.03-sec.ZIP
-
-E6878_10.0.3.1(H557SP7C233)_UTPS22.001.34.01.03-debug-sec.ZIP
-
-E6878_10.0.3.1(H557SP8C233)_UTPS22.001.34.01.03-debug-sec.ZIP
-
-E6878_10.0.3.1(H557SP12C233)_UTPS22.001.34.01.03-debug-sec.ZIP
-
-E6878_10.0.3.1(H557SP23C233)_UTPS22.001.34.01.03-sec.ZIP
-
-E6878_10.0.3.1(H557SP28C233)_UTPS22.001.34.01.03-debug-sec.ZIP
-
-E6878_10.0.3.1(H557SP40C233)_UTPS22.001.34.01.03-debug-sec.ZIP</code></pre><a id="more"></a>
-<pre><code>E6878_10.0.3.1(H563SP4C233)_UTPS22.001.34.01.03-debug-sec.ZIP
-
-E6878_10.0.3.1(H563SP5C233)_UTPS22.001.34.01.03-sec.ZIP
-
-E6878_10.0.3.1(H557SP27C233)_UTPS22.001.34.01.03-sec.ZIP
-
-E6878_10.0.3.1(H563SP1C233)_UTPS22.001.34.01.03-sec.ZIP
-
-E6878_10.0.3.1(H563SP11C233)_UTPS22.001.34.01.03-sec.ZIP
-
-E6878_10.0.3.1(H563SP13C233)_UTPS22.001.34.01.03-sec.ZIP
-
-E6878_10.0.3.1(H563SP7C233)_UTPS22.001.34.01.03-sec.ZIP
-
-E6878_10.0.3.1(H563SP17C233)_UTPS22.001.34.01.03-sec.ZIP</code></pre><hr>
-<h2 id="尾-号-983"><a href="#尾-号-983" class="headerlink" title="尾    号: 983"></a>尾    号: 983</h2><p>支持语言:  英语<br>版本备注:<br>特殊备注:<br>固件版本:      </p>
-<pre><code>E6878_UPDATE_10.0.3.1(H563SP1C983)_UTPS22.001.34.01.03.ZIP
-
-E6878_UPDATE_10.0.3.1(H563SP2C983)_UTPS22.001.34.01.03.ZIP
-
-E6878_UPDATE_10.0.3.1(H563SP5C983)_UTPS22.001.34.01.03.ZIP</code></pre><hr>
-<h2 id="尾-号-1540"><a href="#尾-号-1540" class="headerlink" title="尾    号: 1540"></a>尾    号: 1540</h2><p>支持语言:  英语<br>版本备注:<br>特殊备注:<br>固件版本:      </p>
-<pre><code>E6878_UPDATE_10.0.3.1(H563SP2C1540).ZIP 
-
-E6878_UPDATE_10.0.3.1(H563SP1C1540)_UTPS22.001.34.01.03.ZIP</code></pre><hr>
-<hr>
-<p><strong>如需此固件，请微信联系 QYYD5G</strong></p>
-]]></content>
-      <categories>
-        <category>华为E系列固件</category>
-      </categories>
-      <tags>
-        <tag>华为5G设备固件</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>中兴4G路由刷机工具分享</title>
     <url>/%E4%B8%AD%E5%85%B44G%E8%B7%AF%E7%94%B1%E5%88%B7%E6%9C%BA%E5%B7%A5%E5%85%B7%E5%88%86%E4%BA%AB/</url>
     <content><![CDATA[<hr>
@@ -18610,7 +18546,8 @@ E6878_UPDATE_10.0.3.1(H563SP1C1540)_UTPS22.001.34.01.03.ZIP</code></pre><hr>
 <h4 id="高通mdm平台at命令手册-pdf，用于at调试的参考（域格）"><a href="#高通mdm平台at命令手册-pdf，用于at调试的参考（域格）" class="headerlink" title="高通mdm平台at命令手册.pdf，用于at调试的参考（域格）"></a>高通mdm平台at命令手册.pdf，用于at调试的参考（域格）</h4><pre><code>下载地址： www.lanzous.com/i3eh0sh</code></pre><hr>
 <h4 id="中兴MF253S刷机工具"><a href="#中兴MF253S刷机工具" class="headerlink" title="中兴MF253S刷机工具"></a>中兴MF253S刷机工具</h4><pre><code>下载地址：www.lanzous.com/i4l1hkd</code></pre><hr>
 <h4 id="tftp刷机工具"><a href="#tftp刷机工具" class="headerlink" title="tftp刷机工具"></a>tftp刷机工具</h4><pre><code>下载地址：www.lanzous.com/ia0m40b</code></pre><hr>
-<h4 id="ZTE-TSP-Driver-exe，用于中心自主研发的中兴微（welink）芯片的驱动"><a href="#ZTE-TSP-Driver-exe，用于中心自主研发的中兴微（welink）芯片的驱动" class="headerlink" title="ZTE_TSP_Driver.exe，用于中心自主研发的中兴微（welink）芯片的驱动"></a>ZTE_TSP_Driver.exe，用于中心自主研发的中兴微（welink）芯片的驱动</h4><pre><code>下载地址：www.lanzous.com/ia0n4na</code></pre><hr>
+<h4 id="ZTEPCUI-rar，用于中兴微（welink）芯片的拨号软件和刷机驱动，与下一个驱动差不多"><a href="#ZTEPCUI-rar，用于中兴微（welink）芯片的拨号软件和刷机驱动，与下一个驱动差不多" class="headerlink" title="ZTEPCUI.rar，用于中兴微（welink）芯片的拨号软件和刷机驱动，与下一个驱动差不多"></a>ZTEPCUI.rar，用于中兴微（welink）芯片的拨号软件和刷机驱动，与下一个驱动差不多</h4><pre><code>下载地址：lanzous.com/ic36dmb    </code></pre><hr>
+<h4 id="ZTE-TSP-Driver-exe，用于中兴自主研发的中兴微（welink）芯片的驱动"><a href="#ZTE-TSP-Driver-exe，用于中兴自主研发的中兴微（welink）芯片的驱动" class="headerlink" title="ZTE_TSP_Driver.exe，用于中兴自主研发的中兴微（welink）芯片的驱动"></a>ZTE_TSP_Driver.exe，用于中兴自主研发的中兴微（welink）芯片的驱动</h4><pre><code>下载地址：www.lanzous.com/ia0n4na</code></pre><hr>
 <h4 id="ZTE-Develop-Driver-exe-，用于中兴开发人员刷机的工具，大部分机器可用"><a href="#ZTE-Develop-Driver-exe-，用于中兴开发人员刷机的工具，大部分机器可用" class="headerlink" title="ZTE_Develop_Driver.exe ，用于中兴开发人员刷机的工具，大部分机器可用"></a>ZTE_Develop_Driver.exe ，用于中兴开发人员刷机的工具，大部分机器可用</h4><pre><code>下载地址：www.lanzous.com/ia0n57a</code></pre><hr>
 ]]></content>
       <categories>
@@ -18618,6 +18555,498 @@ E6878_UPDATE_10.0.3.1(H563SP1C1540)_UTPS22.001.34.01.03.ZIP</code></pre><hr>
       </categories>
       <tags>
         <tag>刷机工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>华为E6878华为5G-mifi（现存）固件汇总</title>
+    <url>/%E5%8D%8E%E4%B8%BAE6878(%E7%8E%B0%E5%AD%98)%E5%9B%BA%E4%BB%B6%E6%B1%87%E6%80%BB/</url>
+    <content><![CDATA[<hr>
+<hr>
+<table border="0" cellpadding="0" cellspacing="0" width="759" style="border-collapse:
+ collapse;width:570pt">
+<colgroup><col width="49" style="mso-width-source:userset;mso-width-alt:1568;width:37pt">
+ <col width="454" style="mso-width-source:userset;mso-width-alt:14528;width:341pt">
+ <col width="56" style="mso-width-source:userset;mso-width-alt:1792;width:42pt">
+ <col width="135" style="mso-width-source:userset;mso-width-alt:4320;width:101pt">
+ <col width="65" style="mso-width-source:userset;mso-width-alt:2080;width:49pt">
+ </colgroup>
+<tbody>
+
+<tr height="36" style="height:27.0pt">
+<td height="36" class="xl66" width="49" style="height: 27pt; width: 37pt; font-size: 10pt; font-weight: 700; font-family: 等线; border-width: 0.5pt 0.5pt 1pt; border-style: solid; border-color: rgb(91, 155, 213);">尾号</td>
+<td class="xl66" width="454" style="width: 341pt; font-size: 10pt; font-weight: 700; font-family: 等线; border-width: 0.5pt 0.5pt 1pt; border-style: solid; border-color: rgb(91, 155, 213);">固件版本</td>
+<td class="xl66" width="56" style="width: 42pt; font-size: 10pt; font-weight: 700; font-family: 等线; border-width: 0.5pt 0.5pt 1pt; border-style: solid; border-color: rgb(91, 155, 213);">版本备注</td>
+<td class="xl66" width="135" style="width: 101pt; font-size: 10pt; font-weight: 700; font-family: 等线; border-width: 0.5pt 0.5pt 1pt; border-style: solid; border-color: rgb(91, 155, 213);">支持语言</td>
+<td class="xl66" width="65" style="width: 49pt; font-size: 10pt; font-weight: 700; font-family: 等线; border-width: 0.5pt 0.5pt 1pt; border-style: solid; border-color: rgb(91, 155, 213);">特殊备注</td>
+</tr>
+
+<tr height="18" style="height:13.5pt">
+<td height="18" class="xl66" width="49" style="height: 13.5pt; width: 37pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">0</td>
+<td class="xl66" width="454" style="width: 341pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">E6878_10.0.3.1(H557SP7C00)_UTPS22.001.34.01.03-sec.ZIP</td>
+<td class="xl66" width="56" style="width: 42pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);"></td>
+<td class="xl66" width="135" style="width: 101pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">中文/英语</td>
+<td class="xl66" width="65" style="width: 49pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);"></td>
+</tr>
+
+<tr height="18" style="height:13.5pt">
+<td height="18" class="xl66" width="49" style="height: 13.5pt; width: 37pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">0</td>
+<td class="xl66" width="454" style="width: 341pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">E6878_10.0.3.1(H557SP23C00)_UTPS22.001.34.01.03-sec.ZIP</td>
+<td class="xl66" width="56" style="width: 42pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);"></td>
+<td class="xl66" width="135" style="width: 101pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">英语</td>
+<td class="xl66" width="65" style="width: 49pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);"></td>
+</tr>
+
+<tr height="18" style="height:13.5pt">
+<td height="18" class="xl66" width="49" style="height: 13.5pt; width: 37pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">0</td>
+<td class="xl66" width="454" style="width: 341pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">E6878_10.0.3.1(H557SP29C00)_UTPS22.001.34.01.03-sec.ZIP</td>
+<td class="xl66" width="56" style="width: 42pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);"></td>
+<td class="xl66" width="135" style="width: 101pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">中文/英语</td>
+<td class="xl66" width="65" style="width: 49pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);"></td>
+</tr>
+
+<tr height="18" style="height:13.5pt">
+<td height="18" class="xl66" width="49" style="height: 13.5pt; width: 37pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">0</td>
+<td class="xl66" width="454" style="width: 341pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">E6878_10.0.3.1(H563SP5C00)_UTPS22.001.34.01.03-sec.ZIP</td>
+<td class="xl66" width="56" style="width: 42pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);"></td>
+<td class="xl66" width="135" style="width: 101pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">中文/英语</td>
+<td class="xl66" width="65" style="width: 49pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);"></td>
+</tr>
+
+<tr height="18" style="height:13.5pt">
+<td height="18" class="xl66" width="49" style="height: 13.5pt; width: 37pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">0</td>
+<td class="xl66" width="454" style="width: 341pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">E6878_10.0.5.1(H612SP1C00)_UTPS22.001.34.01.03-sec.ZIP</td>
+<td class="xl66" width="56" style="width: 42pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);"></td>
+<td class="xl66" width="135" style="width: 101pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">中文/英语</td>
+<td class="xl66" width="65" style="width: 49pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);"></td>
+</tr>
+
+<tr height="18" style="height:13.5pt">
+<td height="18" class="xl66" width="49" style="height: 13.5pt; width: 37pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">0</td>
+<td class="xl66" width="454" style="width: 341pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">E6878_10.0.5.1(H612SP3C00)_UTPS22.001.34.01.03-sec.ZIP</td>
+<td class="xl66" width="56" style="width: 42pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);"></td>
+<td class="xl66" width="135" style="width: 101pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">中文/英语</td>
+<td class="xl66" width="65" style="width: 49pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);"></td>
+</tr>
+
+<tr height="18" style="height:13.5pt">
+<td height="18" class="xl66" width="49" style="height: 13.5pt; width: 37pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">233</td>
+<td class="xl66" width="454" style="width: 341pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">E6878_10.0.3.1(H552SP10C233)_UTPS22.001.33.00.03-debug-sec.ZIP</td>
+<td class="xl66" width="56" style="width: 42pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">debug</td>
+<td class="xl66" width="135" style="width: 101pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">英语</td>
+<td class="xl66" width="65" style="width: 49pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">拆机刷</td>
+</tr>
+
+<tr height="18" style="height:13.5pt">
+<td height="18" class="xl66" width="49" style="height: 13.5pt; width: 37pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">233</td>
+<td class="xl66" width="454" style="width: 341pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">E6878_10.0.3.1(H552SP12C233)_UTPS22.001.33.00.03-debug-sec.ZIP</td>
+<td class="xl66" width="56" style="width: 42pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">debug</td>
+<td class="xl66" width="135" style="width: 101pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">英语</td>
+<td class="xl66" width="65" style="width: 49pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">拆机刷</td>
+</tr>
+
+<tr height="18" style="height:13.5pt">
+<td height="18" class="xl66" width="49" style="height: 13.5pt; width: 37pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">233</td>
+<td class="xl66" width="454" style="width: 341pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">E6878_10.0.3.1(H556SP1C233)_UTPS22.001.33.00.03-sec.ZIP</td>
+<td class="xl66" width="56" style="width: 42pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);"></td>
+<td class="xl66" width="135" style="width: 101pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">英语</td>
+<td class="xl66" width="65" style="width: 49pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);"></td>
+</tr>
+
+<tr height="18" style="height:13.5pt">
+<td height="18" class="xl66" width="49" style="height: 13.5pt; width: 37pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">233</td>
+<td class="xl66" width="454" style="width: 341pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">E6878_10.0.3.1(H556SP2C233)_UTPS22.001.33.00.03-debug-sec.ZIP</td>
+<td class="xl66" width="56" style="width: 42pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">debug</td>
+<td class="xl66" width="135" style="width: 101pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">英语</td>
+<td class="xl66" width="65" style="width: 49pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">拆机刷</td>
+</tr>
+
+<tr height="18" style="height:13.5pt">
+<td height="18" class="xl66" width="49" style="height: 13.5pt; width: 37pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">233</td>
+<td class="xl66" width="454" style="width: 341pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">E6878_10.0.3.1(H556SP10C233)_UTPS22.001.33.01.03-debug-sec.ZIP</td>
+<td class="xl66" width="56" style="width: 42pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">debug</td>
+<td class="xl66" width="135" style="width: 101pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">英语</td>
+<td class="xl66" width="65" style="width: 49pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">拆机刷</td>
+</tr>
+
+<tr height="18" style="height:13.5pt">
+<td height="18" class="xl66" width="49" style="height: 13.5pt; width: 37pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">233</td>
+<td class="xl66" width="454" style="width: 341pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">E6878_10.0.3.1(H556SP11C233)_UTPS22.001.33.00.03-debug-sec.ZIP</td>
+<td class="xl66" width="56" style="width: 42pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">debug</td>
+<td class="xl66" width="135" style="width: 101pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">英语</td>
+<td class="xl66" width="65" style="width: 49pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">拆机刷</td>
+</tr>
+
+<tr height="18" style="height:13.5pt">
+<td height="18" class="xl66" width="49" style="height: 13.5pt; width: 37pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">233</td>
+<td class="xl66" width="454" style="width: 341pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">E6878_10.0.3.1(H552SP3C233)_UTPS22.001.33.00.03-sec.ZIP</td>
+<td class="xl66" width="56" style="width: 42pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);"></td>
+<td class="xl66" width="135" style="width: 101pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">英语</td>
+<td class="xl66" width="65" style="width: 49pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);"></td>
+</tr>
+
+<tr height="18" style="height:13.5pt">
+<td height="18" class="xl66" width="49" style="height: 13.5pt; width: 37pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">233</td>
+<td class="xl66" width="454" style="width: 341pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">E6878_10.0.3.1(H557SP3C233)_UTPS22.001.34.01.03-sec.ZIP</td>
+<td class="xl66" width="56" style="width: 42pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);"></td>
+<td class="xl66" width="135" style="width: 101pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">中文/英语</td>
+<td class="xl66" width="65" style="width: 49pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);"></td>
+</tr>
+
+<tr height="18" style="height:13.5pt">
+<td height="18" class="xl66" width="49" style="height: 13.5pt; width: 37pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">233</td>
+<td class="xl66" width="454" style="width: 341pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">E6878_10.0.3.1(H557SP4C233)_UTPS22.001.34.01.03-debug-sec.ZIP</td>
+<td class="xl66" width="56" style="width: 42pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">debug</td>
+<td class="xl66" width="135" style="width: 101pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">中文/英语</td>
+<td class="xl66" width="65" style="width: 49pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">拆机刷</td>
+</tr>
+
+<tr height="18" style="height:13.5pt">
+<td height="18" class="xl66" width="49" style="height: 13.5pt; width: 37pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">233</td>
+<td class="xl66" width="454" style="width: 341pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">E6878_10.0.3.1(H557SP7C233)_UTPS22.001.34.01.03-debug-sec.ZIP</td>
+<td class="xl66" width="56" style="width: 42pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">debug</td>
+<td class="xl66" width="135" style="width: 101pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">英语</td>
+<td class="xl66" width="65" style="width: 49pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">拆机刷</td>
+</tr>
+
+<tr height="18" style="height:13.5pt">
+<td height="18" class="xl66" width="49" style="height: 13.5pt; width: 37pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">233</td>
+<td class="xl66" width="454" style="width: 341pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">E6878_10.0.3.1(H557SP8C233)_UTPS22.001.34.01.03-debug-sec.ZIP</td>
+<td class="xl66" width="56" style="width: 42pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">debug</td>
+<td class="xl66" width="135" style="width: 101pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">英语</td>
+<td class="xl66" width="65" style="width: 49pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">拆机刷</td>
+</tr>
+
+<tr height="18" style="height:13.5pt">
+<td height="18" class="xl66" width="49" style="height: 13.5pt; width: 37pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">233</td>
+<td class="xl66" width="454" style="width: 341pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">E6878_10.0.3.1(H557SP9C233)_UTPS22.001.34.01.03-sec.ZIP</td>
+<td class="xl66" width="56" style="width: 42pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);"></td>
+<td class="xl66" width="135" style="width: 101pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">中文/英语</td>
+<td class="xl66" width="65" style="width: 49pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);"></td>
+</tr>
+
+<tr height="18" style="height:13.5pt">
+<td height="18" class="xl66" width="49" style="height: 13.5pt; width: 37pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">233</td>
+<td class="xl66" width="454" style="width: 341pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">E6878_10.0.3.1(H557SP12C233)_UTPS22.001.34.01.03-debug-sec.ZIP</td>
+<td class="xl66" width="56" style="width: 42pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">debug</td>
+<td class="xl66" width="135" style="width: 101pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">英语</td>
+<td class="xl66" width="65" style="width: 49pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">拆机刷</td>
+</tr>
+
+<tr height="18" style="height:13.5pt">
+<td height="18" class="xl66" width="49" style="height: 13.5pt; width: 37pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">233</td>
+<td class="xl66" width="454" style="width: 341pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">E6878_10.0.3.1(H557SP14C233)_UTPS22.001.34.01.03-debug-sec.ZIP</td>
+<td class="xl66" width="56" style="width: 42pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">debug</td>
+<td class="xl66" width="135" style="width: 101pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">英语</td>
+<td class="xl66" width="65" style="width: 49pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">拆机刷</td>
+</tr>
+
+<tr height="18" style="height:13.5pt">
+<td height="18" class="xl66" width="49" style="height: 13.5pt; width: 37pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">233</td>
+<td class="xl66" width="454" style="width: 341pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">E6878_10.0.3.1(H557SP23C233)_UTPS22.001.34.01.03-sec.ZIP</td>
+<td class="xl66" width="56" style="width: 42pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);"></td>
+<td class="xl66" width="135" style="width: 101pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">英语</td>
+<td class="xl66" width="65" style="width: 49pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);"></td>
+</tr>
+
+<tr height="18" style="height:13.5pt">
+<td height="18" class="xl66" width="49" style="height: 13.5pt; width: 37pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">233</td>
+<td class="xl66" width="454" style="width: 341pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">E6878_10.0.3.1(H557SP27C233)_UTPS22.001.34.01.03-sec.ZIP</td>
+<td class="xl66" width="56" style="width: 42pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);"></td>
+<td class="xl66" width="135" style="width: 101pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">中文/英语</td>
+<td class="xl66" width="65" style="width: 49pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);"></td>
+</tr>
+
+<tr height="18" style="height:13.5pt">
+<td height="18" class="xl66" width="49" style="height: 13.5pt; width: 37pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">233</td>
+<td class="xl66" width="454" style="width: 341pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">E6878_10.0.3.1(H557SP28C233)_UTPS22.001.34.01.03-debug-sec.ZIP</td>
+<td class="xl66" width="56" style="width: 42pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">debug</td>
+<td class="xl66" width="135" style="width: 101pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">英语</td>
+<td class="xl66" width="65" style="width: 49pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">拆机刷</td>
+</tr>
+
+<tr height="18" style="height:13.5pt">
+<td height="18" class="xl66" width="49" style="height: 13.5pt; width: 37pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">233</td>
+<td class="xl66" width="454" style="width: 341pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">E6878_10.0.3.1(H557SP29C233)_UTPS22.001.34.01.03-sec.ZIP</td>
+<td class="xl66" width="56" style="width: 42pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);"></td>
+<td class="xl66" width="135" style="width: 101pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">中文/英语</td>
+<td class="xl66" width="65" style="width: 49pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);"></td>
+</tr>
+
+<tr height="18" style="height:13.5pt">
+<td height="18" class="xl66" width="49" style="height: 13.5pt; width: 37pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">233</td>
+<td class="xl66" width="454" style="width: 341pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">E6878_10.0.3.1(H557SP31C233)_UTPS22.001.34.01.03-sec.ZIP</td>
+<td class="xl66" width="56" style="width: 42pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);"></td>
+<td class="xl66" width="135" style="width: 101pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">中文/英语</td>
+<td class="xl66" width="65" style="width: 49pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);"></td>
+</tr>
+
+<tr height="18" style="height:13.5pt">
+<td height="18" class="xl66" width="49" style="height: 13.5pt; width: 37pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">233</td>
+<td class="xl66" width="454" style="width: 341pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">E6878_10.0.3.1(H557SP35C233)_UTPS22.001.34.01.03-sec.ZIP</td>
+<td class="xl66" width="56" style="width: 42pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);"></td>
+<td class="xl66" width="135" style="width: 101pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">中文/英语</td>
+<td class="xl66" width="65" style="width: 49pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);"></td>
+</tr>
+
+<tr height="18" style="height:13.5pt">
+<td height="18" class="xl66" width="49" style="height: 13.5pt; width: 37pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">233</td>
+<td class="xl66" width="454" style="width: 341pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">E6878_10.0.3.1(H557SP40C233)_UTPS22.001.34.01.03-debug-sec.ZIP</td>
+<td class="xl66" width="56" style="width: 42pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">debug</td>
+<td class="xl66" width="135" style="width: 101pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">英语</td>
+<td class="xl66" width="65" style="width: 49pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">拆机刷</td>
+</tr>
+
+<tr height="18" style="height:13.5pt">
+<td height="18" class="xl66" width="49" style="height: 13.5pt; width: 37pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">233</td>
+<td class="xl66" width="454" style="width: 341pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">E6878_10.0.3.1(H563SP1C233)_UTPS22.001.34.01.03-sec.ZIP</td>
+<td class="xl66" width="56" style="width: 42pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);"></td>
+<td class="xl66" width="135" style="width: 101pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">中文/英语</td>
+<td class="xl66" width="65" style="width: 49pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);"></td>
+</tr>
+
+<tr height="18" style="height:13.5pt">
+<td height="18" class="xl66" width="49" style="height: 13.5pt; width: 37pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">233</td>
+<td class="xl66" width="454" style="width: 341pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">E6878_10.0.3.1(H563SP3C233)_UTPS22.001.34.01.03-sec.ZIP</td>
+<td class="xl66" width="56" style="width: 42pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);"></td>
+<td class="xl66" width="135" style="width: 101pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">中文/英语</td>
+<td class="xl66" width="65" style="width: 49pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);"></td>
+</tr>
+
+<tr height="18" style="height:13.5pt">
+<td height="18" class="xl66" width="49" style="height: 13.5pt; width: 37pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">233</td>
+<td class="xl66" width="454" style="width: 341pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">E6878_10.0.3.1(H563SP4C233)_UTPS22.001.34.01.03-debug-sec.ZIP</td>
+<td class="xl66" width="56" style="width: 42pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">debug</td>
+<td class="xl66" width="135" style="width: 101pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">中文/英语</td>
+<td class="xl66" width="65" style="width: 49pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">拆机刷</td>
+</tr>
+
+<tr height="18" style="height:13.5pt">
+<td height="18" class="xl66" width="49" style="height: 13.5pt; width: 37pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">233</td>
+<td class="xl66" width="454" style="width: 341pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">E6878_10.0.3.1(H563SP5C233)_UTPS22.001.34.01.03-sec.ZIP</td>
+<td class="xl66" width="56" style="width: 42pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);"></td>
+<td class="xl66" width="135" style="width: 101pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">中文/英语</td>
+<td class="xl66" width="65" style="width: 49pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);"></td>
+</tr>
+
+<tr height="18" style="height:13.5pt">
+<td height="18" class="xl66" width="49" style="height: 13.5pt; width: 37pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">233</td>
+<td class="xl66" width="454" style="width: 341pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">E6878_10.0.3.1(H557SP27C233)_UTPS22.001.34.01.03-sec.ZIP</td>
+<td class="xl66" width="56" style="width: 42pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);"></td>
+<td class="xl66" width="135" style="width: 101pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">英语</td>
+<td class="xl66" width="65" style="width: 49pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);"></td>
+</tr>
+
+<tr height="18" style="height:13.5pt">
+<td height="18" class="xl66" width="49" style="height: 13.5pt; width: 37pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">233</td>
+<td class="xl66" width="454" style="width: 341pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">E6878_10.0.3.1(H563SP1C233)_UTPS22.001.34.01.03-sec.ZIP</td>
+<td class="xl66" width="56" style="width: 42pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);"></td>
+<td class="xl66" width="135" style="width: 101pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">中文/英语</td>
+<td class="xl66" width="65" style="width: 49pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);"></td>
+</tr>
+
+<tr height="18" style="height:13.5pt">
+<td height="18" class="xl66" width="49" style="height: 13.5pt; width: 37pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">233</td>
+<td class="xl66" width="454" style="width: 341pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">E6878_10.0.3.1(H563SP11C233)_UTPS22.001.34.01.03-sec.ZIP</td>
+<td class="xl66" width="56" style="width: 42pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);"></td>
+<td class="xl66" width="135" style="width: 101pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">中文/英语</td>
+<td class="xl66" width="65" style="width: 49pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);"></td>
+</tr>
+
+<tr height="18" style="height:13.5pt">
+<td height="18" class="xl66" width="49" style="height: 13.5pt; width: 37pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">233</td>
+<td class="xl66" width="454" style="width: 341pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">E6878_10.0.3.1(H563SP13C233)_UTPS22.001.34.01.03-sec.ZIP</td>
+<td class="xl66" width="56" style="width: 42pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);"></td>
+<td class="xl66" width="135" style="width: 101pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">中文/英语</td>
+<td class="xl66" width="65" style="width: 49pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);"></td>
+</tr>
+
+<tr height="18" style="height:13.5pt">
+<td height="18" class="xl66" width="49" style="height: 13.5pt; width: 37pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">233</td>
+<td class="xl66" width="454" style="width: 341pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">E6878_10.0.3.1(H563SP15C233)_UTPS22.001.34.01.03-sec.ZIP</td>
+<td class="xl66" width="56" style="width: 42pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);"></td>
+<td class="xl66" width="135" style="width: 101pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">中文/英语</td>
+<td class="xl66" width="65" style="width: 49pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);"></td>
+</tr>
+
+<tr height="18" style="height:13.5pt">
+<td height="18" class="xl66" width="49" style="height: 13.5pt; width: 37pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">233</td>
+<td class="xl66" width="454" style="width: 341pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">E6878_10.0.3.1(H563SP7C233)_UTPS22.001.34.01.03-sec.ZIP</td>
+<td class="xl66" width="56" style="width: 42pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);"></td>
+<td class="xl66" width="135" style="width: 101pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">中文/英语</td>
+<td class="xl66" width="65" style="width: 49pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);"></td>
+</tr>
+
+<tr height="18" style="height:13.5pt">
+<td height="18" class="xl66" width="49" style="height: 13.5pt; width: 37pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">233</td>
+<td class="xl66" width="454" style="width: 341pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">E6878_10.0.3.1(H563SP17C233)_UTPS22.001.34.01.03-sec.ZIP</td>
+<td class="xl66" width="56" style="width: 42pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);"></td>
+<td class="xl66" width="135" style="width: 101pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">中文/英语</td>
+<td class="xl66" width="65" style="width: 49pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);"></td>
+</tr>
+
+<tr height="18" style="height:13.5pt">
+<td height="18" class="xl66" width="49" style="height: 13.5pt; width: 37pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">233</td>
+<td class="xl66" width="454" style="width: 341pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">E6878_10.0.3.1(H563SP21C233)_UTPS22.001.34.01.03-sec.ZIP</td>
+<td class="xl66" width="56" style="width: 42pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);"></td>
+<td class="xl66" width="135" style="width: 101pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">中文/英语</td>
+<td class="xl66" width="65" style="width: 49pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);"></td>
+</tr>
+
+<tr height="18" style="height:13.5pt">
+<td height="18" class="xl66" width="49" style="height: 13.5pt; width: 37pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">233</td>
+<td class="xl66" width="454" style="width: 341pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">E6878_10.0.3.1(H563SP22C233)_UTPS22.001.34.01.03-debug-sec.ZIP</td>
+<td class="xl66" width="56" style="width: 42pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">debug</td>
+<td class="xl66" width="135" style="width: 101pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">中文/英语</td>
+<td class="xl66" width="65" style="width: 49pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">拆机刷</td>
+</tr>
+
+<tr height="18" style="height:13.5pt">
+<td height="18" class="xl66" width="49" style="height: 13.5pt; width: 37pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">233</td>
+<td class="xl66" width="454" style="width: 341pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">E6878_10.0.3.1(H563SP23C233)_UTPS22.001.34.01.03-sec.ZIP</td>
+<td class="xl66" width="56" style="width: 42pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);"></td>
+<td class="xl66" width="135" style="width: 101pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">中文/英语</td>
+<td class="xl66" width="65" style="width: 49pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);"></td>
+</tr>
+
+<tr height="18" style="height:13.5pt">
+<td height="18" class="xl66" width="49" style="height: 13.5pt; width: 37pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">233</td>
+<td class="xl66" width="454" style="width: 341pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">E6878_10.0.3.1(H563SP24C233)_UTPS22.001.34.01.03-debug-sec.ZIP</td>
+<td class="xl66" width="56" style="width: 42pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">debug</td>
+<td class="xl66" width="135" style="width: 101pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">中文/英语</td>
+<td class="xl66" width="65" style="width: 49pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">拆机刷</td>
+</tr>
+
+<tr height="18" style="height:13.5pt">
+<td height="18" class="xl66" width="49" style="height: 13.5pt; width: 37pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">233</td>
+<td class="xl66" width="454" style="width: 341pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">E6878_10.0.3.1(H563SP25C233)_UTPS22.001.34.01.03-sec.ZIP</td>
+<td class="xl66" width="56" style="width: 42pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);"></td>
+<td class="xl66" width="135" style="width: 101pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">中文/英语</td>
+<td class="xl66" width="65" style="width: 49pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);"></td>
+</tr>
+
+<tr height="18" style="height:13.5pt">
+<td height="18" class="xl66" width="49" style="height: 13.5pt; width: 37pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">233</td>
+<td class="xl66" width="454" style="width: 341pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">E6878_10.0.5.1(H610SP4C233)_UTPS22.001.34.01.03-debug-sec.ZIP</td>
+<td class="xl66" width="56" style="width: 42pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">debug</td>
+<td class="xl66" width="135" style="width: 101pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">中文/英语</td>
+<td class="xl66" width="65" style="width: 49pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">拆机刷</td>
+</tr>
+
+<tr height="18" style="height:13.5pt">
+<td height="18" class="xl66" width="49" style="height: 13.5pt; width: 37pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">233</td>
+<td class="xl66" width="454" style="width: 341pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">E6878_10.0.5.1(H612SP1C233)_UTPS22.001.34.01.03-sec.ZIP</td>
+<td class="xl66" width="56" style="width: 42pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);"></td>
+<td class="xl66" width="135" style="width: 101pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">中文/英语</td>
+<td class="xl66" width="65" style="width: 49pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);"></td>
+</tr>
+
+<tr height="18" style="height:13.5pt">
+<td height="18" class="xl66" width="49" style="height: 13.5pt; width: 37pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">233</td>
+<td class="xl66" width="454" style="width: 341pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">E6878_10.0.5.1(H612SP3C233)_UTPS22.001.34.01.03-sec.ZIP</td>
+<td class="xl66" width="56" style="width: 42pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);"></td>
+<td class="xl66" width="135" style="width: 101pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">中文/英语</td>
+<td class="xl66" width="65" style="width: 49pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);"></td>
+</tr>
+
+<tr height="18" style="height:13.5pt">
+<td height="18" class="xl66" width="49" style="height: 13.5pt; width: 37pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">397</td>
+<td class="xl66" width="454" style="width: 341pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">E6878_UPDATE_10.0.3.1(H563SP1C397)_UTPS22.001.34.01.397.ZIP</td>
+<td class="xl66" width="56" style="width: 42pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);"></td>
+<td class="xl66" width="135" style="width: 101pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">英语/阿拉伯</td>
+<td class="xl66" width="65" style="width: 49pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);"></td>
+</tr>
+
+<tr height="18" style="height:13.5pt">
+<td height="18" class="xl66" width="49" style="height: 13.5pt; width: 37pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">983</td>
+<td class="xl66" width="454" style="width: 341pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">E6878_UPDATE_10.0.3.1(H563SP1C983)_UTPS22.001.34.01.03.ZIP</td>
+<td class="xl66" width="56" style="width: 42pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);"></td>
+<td class="xl66" width="135" style="width: 101pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">英语</td>
+<td class="xl66" width="65" style="width: 49pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);"></td>
+</tr>
+
+<tr height="18" style="height:13.5pt">
+<td height="18" class="xl66" width="49" style="height: 13.5pt; width: 37pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">983</td>
+<td class="xl66" width="454" style="width: 341pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">E6878_UPDATE_10.0.3.1(H563SP2C983)_UTPS22.001.34.01.03.ZIP</td>
+<td class="xl66" width="56" style="width: 42pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);"></td>
+<td class="xl66" width="135" style="width: 101pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">英语</td>
+<td class="xl66" width="65" style="width: 49pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);"></td>
+</tr>
+
+<tr height="48" style="height:36.0pt">
+<td height="48" class="xl66" width="49" style="height: 36pt; width: 37pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">983</td>
+<td class="xl66" width="454" style="width: 341pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">E6878_UPDATE_10.0.3.1(H563SP3C983)_UTPS22.001.34.01.03.ZIP</td>
+<td class="xl66" width="56" style="width: 42pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);"></td>
+<td class="xl66" width="135" style="width: 101pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">英语/西班牙/意大利/法语/德语/葡萄牙/荷兰/捷克/希腊/罗马</td>
+<td class="xl66" width="65" style="width: 49pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);"></td>
+</tr>
+
+<tr height="48" style="height:36.0pt">
+<td height="48" class="xl66" width="49" style="height: 36pt; width: 37pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">983</td>
+<td class="xl66" width="454" style="width: 341pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">E6878_UPDATE_10.0.3.1(H563SP4C983)_UTPS22.001.34.01.03.ZIP</td>
+<td class="xl66" width="56" style="width: 42pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);"></td>
+<td class="xl66" width="135" style="width: 101pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">英语/西班牙/意大利/法语/德语/葡萄牙/荷兰/捷克/希腊/罗马</td>
+<td class="xl66" width="65" style="width: 49pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);"></td>
+</tr>
+
+<tr height="18" style="height:13.5pt">
+<td height="18" class="xl66" width="49" style="height: 13.5pt; width: 37pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">983</td>
+<td class="xl66" width="454" style="width: 341pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">E6878_UPDATE_10.0.3.1(H563SP5C983)_UTPS22.001.34.01.03.ZIP</td>
+<td class="xl66" width="56" style="width: 42pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);"></td>
+<td class="xl66" width="135" style="width: 101pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">英语</td>
+<td class="xl66" width="65" style="width: 49pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);"></td>
+</tr>
+
+<tr height="18" style="height:13.5pt">
+<td height="18" class="xl66" width="49" style="height: 13.5pt; width: 37pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">983</td>
+<td class="xl66" width="454" style="width: 341pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">E6878_UPDATE_10.0.3.1(H563SP6C983)_UTPS22.001.34.01.03.ZIP</td>
+<td class="xl66" width="56" style="width: 42pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);"></td>
+<td class="xl66" width="135" style="width: 101pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">英语</td>
+<td class="xl66" width="65" style="width: 49pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);"></td>
+</tr>
+
+<tr height="18" style="height:13.5pt">
+<td height="18" class="xl66" width="49" style="height: 13.5pt; width: 37pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">1540</td>
+<td class="xl66" width="454" style="width: 341pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">E6878_UPDATE_10.0.3.1(H563SP2C1540).ZIP</td>
+<td class="xl66" width="56" style="width: 42pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);"></td>
+<td class="xl66" width="135" style="width: 101pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">英语</td>
+<td class="xl66" width="65" style="width: 49pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);"></td>
+</tr>
+
+<tr height="18" style="height:13.5pt">
+<td height="18" class="xl66" width="49" style="height: 13.5pt; width: 37pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">1540</td>
+<td class="xl66" width="454" style="width: 341pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">E6878_UPDATE_10.0.3.1(H563SP1C1540)_UTPS22.001.34.01.03.ZIP</td>
+<td class="xl66" width="56" style="width: 42pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);"></td>
+<td class="xl66" width="135" style="width: 101pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);">英语</td>
+<td class="xl66" width="65" style="width: 49pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213); background: rgb(221, 235, 247);"></td>
+</tr>
+
+<tr height="18" style="height:13.5pt">
+<td height="18" class="xl66" width="49" style="height: 13.5pt; width: 37pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">7002</td>
+<td class="xl66" width="454" style="width: 341pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">E6878_UPDATE_10.0.3.1(H563SP1C7002)_UTPS22.001.34.01.03.ZIP</td>
+<td class="xl66" width="56" style="width: 42pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);"></td>
+<td class="xl66" width="135" style="width: 101pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);">英语/阿拉伯</td>
+<td class="xl66" width="65" style="width: 49pt; font-size: 10pt; font-family: 等线; border: 0.5pt solid rgb(91, 155, 213);"></td>
+</tr>
+
+</tbody>
+
+</table>
+
+<hr>
+<hr>
+<p>ZIP为华为的一种固件类型，不是压缩包，请直接使用或者改成ZIP.BIN使用</p>
+<p><strong>如需此固件，请微信联系 QYYD5G</strong></p>
+]]></content>
+      <categories>
+        <category>华为E系列固件</category>
+      </categories>
+      <tags>
+        <tag>升级固件</tag>
+        <tag>firmware</tag>
+        <tag>version</tag>
+        <tag>华为E系列固件</tag>
+        <tag>华为E6878</tag>
+        <tag>华为5G随行wifi</tag>
       </tags>
   </entry>
   <entry>
@@ -24054,6 +24483,15 @@ AT^WIKEY=3,&quot;密码自己可换输，路由器底部为默认&quot;</code></
 
 2.本次更新不会删除任何用户数据</code></pre><hr>
 <hr>
+<p>型号：B310As-852</p>
+<h3 id="更新版本：21-333-01-52-59"><a href="#更新版本：21-333-01-52-59" class="headerlink" title="更新版本：21.333.01.52.59"></a>更新版本：21.333.01.52.59</h3><p>文件名：</p>
+<pre><code>B310As-852_UPDATE_21.333.01.52.59.BIN</code></pre><p>文件大小：60.9M</p>
+<p>更新说明：</p>
+<pre><code>本次升级对系统性能和稳定性进行了优化，会给您带来更好的体验，推荐您进行升级。</code></pre><p>更新注意事项：</p>
+<pre><code>1.如果升级过程中遇到任何问题，请去华为维修服务官网或网点寻求指导帮助。
+
+2.本次更新不会删除任何用户数据     </code></pre><hr>
+<hr>
 <p><strong>需要此固件请微信联系 QYYD5G</strong></p>
 ]]></content>
       <categories>
@@ -24936,6 +25374,13 @@ AT^WIKEY=3,&quot;密码自己可换输，路由器底部为默认&quot;</code></
 <pre><code>请注意，在更新过程中，请不要让华为4G路由 2断电，如果升级过程中遇到任何问题，请联系华为维修服务官网或网点寻求指导帮助。
 
 感谢对本产品的信任与支持，您可以通过热线、花粉论坛等途径与我们互动，我们会不断地改进。     </code></pre><hr>
+<hr>
+<h3 id="更新版本：10-0-3-1-H692SP90C233"><a href="#更新版本：10-0-3-1-H692SP90C233" class="headerlink" title="更新版本：10.0.3.1(H692SP90C233)"></a>更新版本：10.0.3.1(H692SP90C233)</h3><p>文件名：</p>
+<pre><code>MIX-B311_UPDATE_10.0.3.1(H692SP90C233).BIN</code></pre><p>文件大小：55.8M</p>
+<pre><code>本次升级对系统性能和稳定性进行了优化，会给您带来更好的体验，推荐您进行升级。     </code></pre><p>【更新注意事项】</p>
+<pre><code>1.如果升级过程中遇到任何问题，请去华为维修服务官网或网点寻求指导帮助。
+
+2.本次更新不会删除任何用户数据。          </code></pre><hr>
 <hr>
 <p><strong>需要此固件请微信联系 QYYD5G</strong></p>
 ]]></content>
@@ -25893,6 +26338,34 @@ This update improves system performance and stability. Please update your device
 2、优化离线设备显示体验
 
 3、提升系统稳定性</code></pre><p>【更新注意事项】</p>
+<p>请注意，在更新过程中，请不要让华为4G路由2 pro断电，如果升级过程中遇到任何问题，请联系华为维修服务官网或网点寻求指导帮助。</p>
+<p>感谢对本产品的信任与支持，您可以通过热线、花粉论坛等途径与我们互动，我们会不断地改进。</p>
+<p>[Update notes]</p>
+<pre><code>1.If you experience any issues during the update, please visit the Huawei Support website or contact your local service center for assistance.
+
+2.This update will not erase your personal data.     </code></pre><hr>
+<hr>
+<p>型号：B316-855</p>
+<h3 id="更新版本：10-0-3-1-H195SP3C233"><a href="#更新版本：10-0-3-1-H195SP3C233" class="headerlink" title="更新版本：10.0.3.1(H195SP3C233)"></a>更新版本：10.0.3.1(H195SP3C233)</h3><p>文件名：</p>
+<pre><code>MIX_B316-855_10.0.3.1(H195SP3C233)-sec.BIN</code></pre><p>文件大小：43.1M</p>
+<pre><code>亲爱的用户，欢迎使用 华为4G路由2 pro 新版本10.0.1.1(H191SP25C233) ，本次更新点如下，推荐您立即更新。
+This update improves system performance and stability. Please update your device for improved experience.</code></pre><p>【新增功能】</p>
+<pre><code>1、打开运行周报特性
+
+2、域名过滤显示白名单过滤选项
+
+3、DHCP网关参数配置管理特殊定制
+
+4、增加静态路由功能
+
+5、增加IPSec定制
+
+6、双网双通支持静态IP路由模式
+
+7、在开发者模式下，增加支持band选择功能</code></pre><p>【优化改进】     </p>
+<pre><code>1、APP名称显示为智慧生活.
+
+2、选网优化</code></pre><p>【更新注意事项】</p>
 <p>请注意，在更新过程中，请不要让华为4G路由2 pro断电，如果升级过程中遇到任何问题，请联系华为维修服务官网或网点寻求指导帮助。</p>
 <p>感谢对本产品的信任与支持，您可以通过热线、花粉论坛等途径与我们互动，我们会不断地改进。</p>
 <p>[Update notes]</p>
