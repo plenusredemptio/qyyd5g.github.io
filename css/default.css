@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&family=Source+Code+Pro");
 @-moz-keyframes spinAround {
   from {
     transform: rotate(0deg);
@@ -10238,6 +10237,21 @@ fieldset[disabled] .select select:hover {
   background-color: #fff;
   padding: 3rem 1.5rem 6rem;
 }
+html {
+  height: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+body > .section {
+  flex-grow: 1;
+}
 .ml-0,
 .mx-0 {
   margin-left: 0 !important;
@@ -10688,7 +10702,7 @@ fieldset[disabled] .select select:hover {
   color: #3273dc !important;
 }
 .size-small {
-  font-size: 0.9rem !important;
+  font-size: 0.85rem !important;
 }
 .line-height-inherit {
   line-height: inherit !important;
@@ -10702,6 +10716,10 @@ fieldset[disabled] .select select:hover {
   position: absolute;
   right: 0;
   top: 0;
+}
+.image .avatar {
+  height: 100%;
+  object-fit: cover;
 }
 .button.is-transparent {
   color: inherit;
@@ -10741,10 +10759,8 @@ article.article .article-meta {
   margin-bottom: 0.5rem;
 }
 article.article .content {
-  font-size: 1.1rem;
-}
-article.article .content a {
   word-wrap: break-word;
+  font-size: 1.1rem;
 }
 article.article .content h1 {
   font-size: 1.75em;
@@ -10777,6 +10793,13 @@ article.article .content blockquote.pullquote {
 }
 article.article .content blockquote footer strong + cite {
   margin-left: 0.5em;
+}
+article.article .content .message.message-immersive {
+  border-radius: 0;
+  margin: 0 -1.5rem 1.5rem -1.5rem;
+}
+article.article .content .message.message-immersive .message-body {
+  border: none;
 }
 .rtl {
   direction: rtl;
@@ -10840,7 +10863,7 @@ article.article .content blockquote footer strong + cite {
 .navbar-main .navbar-item {
   display: flex;
   align-items: center;
-  padding: 1.25rem 1rem;
+  padding: 1.25rem 0.75rem;
   margin: 0 0;
 }
 .navbar-main .navbar-item.is-active {
@@ -10992,6 +11015,7 @@ footer.footer .level-end .field {
   line-height: 1.5em;
   font-weight: normal;
   background-color: #fff;
+  min-height: 3rem;
 }
 .searchbox .searchbox-input-container {
   display: flex;
@@ -11222,16 +11246,16 @@ figure.highlight .section {
   border-radius: 4px;
 }
 .donate .qrcode img {
-  max-width: 230px;
+  max-width: 280px;
 }
 .donate:hover .qrcode {
   display: block;
 }
 .donate:first-child:not(:last-child) .qrcode {
-  left: -0.65rem;
+  left: -0.75rem;
 }
 .donate:last-child:not(:first-child) .qrcode {
-  right: -0.65rem;
+  right: -0.75rem;
 }
 #back-to-top {
   position: fixed;
@@ -11305,6 +11329,34 @@ figure.highlight .section {
 .fas {
   line-height: inherit;
 }
+.MathJax,
+.katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.katex {
+  white-space: nowrap;
+}
+.katex-display {
+  margin-top: -1em !important;
+}
+.katex-html {
+  padding-top: 1em;
+}
+.katex-html .tag {
+  align-items: unset;
+  background-color: unset;
+  border-radius: unset;
+  color: unset;
+  display: unset;
+  font-size: unset;
+  height: unset;
+  justify-content: unset;
+  line-height: unset;
+  padding-left: unset;
+  padding-right: unset;
+  white-space: unset;
+}
 @media screen and (min-width: 1280px) {
   .is-1-column .container,
   .is-2-column .container {
@@ -11323,17 +11375,18 @@ figure.highlight .section {
   }
 }
 @media screen and (min-width: 769px), print {
+  .is-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 1.5rem;
+    z-index: 99;
+  }
   .column-main.is-sticky,
   .column-left.is-sticky,
   .column-right.is-sticky,
   .column-right-shadow.is-sticky {
-    align-self: flex-start;
-    position: -webkit-sticky;
-    position: sticky;
     top: 0.75rem;
-  }
-  .column-right-shadow.is-sticky {
-    top: 1.5rem;
+    align-self: flex-start;
   }
 }
 @media screen and (max-width: 768px) {
